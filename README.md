@@ -186,9 +186,10 @@ The final result should look like in the below image.
 
 <p align="center">
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-css-ironhack-news/05-bonus-iteration-3.png" width="300px" alt="bonus iteration 3 preview" />
-  <br>
-
-  <a href="https://www.flaticon.com/free-icons/menu" title="menu icons"><i>Credits - Menu icon by ariefstudio (Flaticon)</i></a>
+</p>
+<br>
+<p align="center">
+  <i>Credits - Menu icon by ariefstudio <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">(Flaticon)</a></i>
 </p>
 
 
