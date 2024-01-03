@@ -178,7 +178,7 @@ Use the following full page screenshot as the guide:
 In this bonus iteration, your task is to **hide the "Navbar" links on small mobile screens** :iphone: and instead display the *"menu"* icon. 
 
 To do this, you will need to add a new element to the `index.html` to display the menu icon and add the necessary styles to the `style.css` file.
-You can find the menu icon in the `images` folder.
+You can find the menu icon in the `images/` folder.
 
 The final result should look like in the below image.
 
