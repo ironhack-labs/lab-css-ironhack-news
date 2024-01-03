@@ -220,6 +220,61 @@ The final result should look like in the below image.
   [Back to top](#faqs)
 </details>
 
+<details>
+  <summary>How do I define a media query in CSS?</summary>
+  <br>
+
+  Media queries in CSS use the following syntax: **`@media`** followed by the media type (like `screen`), and a condition. This condition can check things like the size of the screen (width and height) or its orientation (portrait or landscape). When the condition is true, the styles inside the media query are applied.
+
+  <br>
+
+**Syntax**
+
+```css
+@media <media-type> (<condition>) {
+  /* CSS rules */
+}
+```
+
+  *Note: In the above example, `<media-type>`, and `<condition>` are placeholders. Replace them with your specific values.*
+
+  <br>
+
+  Here's an example of defining a couple of media queries in CSS:
+
+**CSS**
+
+```css
+
+/* Apply this style when the screen width is 600px or less */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Apply this style when the screen width is between 600px and 1200px */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+```
+
+In the above example, the body background color changes depending on the screen width.
+The first media query applies when the screen width is 600px or less, and the second applies whenn the width is between 600px and 1200px.
+
+Beyond width, media queries can be used to apply styles based on other features like screen *height* and *orientation* (portrait or landscape), enabling more dynamic and adaptive designs.
+
+For more information on media queries and the syntax, check: [MDN: Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
+
+  <br>
+
+  [Back to top](#faqs)
+
+  <br>
+
+</details>
 
 
 <details>
