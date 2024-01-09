@@ -226,6 +226,10 @@ header {
     justify-content: center;
   }
 
+  .navbar li {
+    width: 25%;
+  }
+
   .main-article {
     flex-wrap: wrap;
   }
