@@ -185,13 +185,23 @@ header {
     align-items: center;
   }
 
+  .navbar li {
+    border-right: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
   .main-article {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .main-article img {
+  .main-article .image {
     width: 100%;
     height: auto;
   }
@@ -203,7 +213,7 @@ header {
   }
 
   .article {
-    width: fit-content;
+    width: 100%;
   }
 }
 
