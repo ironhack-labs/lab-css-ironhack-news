@@ -70,6 +70,10 @@ header {
   text-align: center;
 }
 
+.nav-logo {
+  display: none;
+}
+
 
 .newspaper-name {
   font-size: 24px;
@@ -181,278 +185,86 @@ header {
 
 
 
-/*ITERATION 1* MOBILE*/
+/*------------------------ITERATION 1 MOBILE--------------------------------*/
 
 @media screen and (max-width: 760px) {
   
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Header and Navbar */
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
-
 .nav-logo {
   display: none;
 }
 
 .navbar {
-  list-style-type: none;
-  width: 100%;
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .navbar li {
   width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   border-bottom: 1px solid white;
-  border-right: none;
 }
 
-.navbar li:last-child {
-  border-right: none;
-  border-bottom: none
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-/* Articles */
 .main-article {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.main-article img {
+.main-article .image, .main-article .content, .article {
   width: 100%;
-  height: auto;
 }
 
 .main-article .image {
-  width: 100%;
-  padding: 20px 20px;
-  height: auto;
+  margin-bottom: 25px;
 }
-
-.main-article .content {
-  width: 100%;
-  padding: 0 20px;
-  height: auto;
-}
-
-.articles-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-}
-
-.article {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-.article img {
-  width: 100%;
-  height: auto;
-}
-
-.article h2 {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.article p {
-  margin-top: 10px;
-}
-  
 }
 
 
-/*ITERATION 2* SMALL SCREEN*/
+/*------------------------ITERATION 2 SMALL SCREEN------------------------------*/
 
 @media screen and (min-width: 760px) and (max-width: 1024px) {
 
-  .nav-logo {
-    display: none;
-  }
-
-.navbar {
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-}
-
 .navbar li {
   width: 100%;
-  height: 40px;
-  display: flex;
-  border-right: 1px solid #ffffff;
 }
 
-.main-article {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  display: flex;
-}
-
-.main-article img {
-  width: 100%;
-  height: auto;
-}
-
-.main-article .image {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
-
-.main-article .content {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
 
 .articles-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
 }
 
 .article {
-  width: 50%;
+  width: 40%;
+  margin: 15px 0;
 }
 }
 
-/* BONUS * small mobile screens*/
+/*----------------------BONUS * small mobile screens----------------------------*/
 
 @media screen and (max-width: 480px) {
 
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-/*  Font sizes */
-p {
-  font-size: 1em;
-}
+  .newspaper-name {
+    border-bottom: none;
+  }
 
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-/* Header and Navbar */
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
 .nav-logo {
   display: flex;
   justify-content: center;
+  border-top: none
 }
 
 .navbar {
   display: none;
 }
 
-/* Articles */
-.main-article {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  display: flex;
-}
 
 .main-article img {
   width: 100%;
   height: auto;
 }
 
-.main-article .image {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
-
-.main-article .content {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
-
-.articles-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
-}
-
-.article {
-  width: 29%;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-.article img {
+.main-article .image, .main-article .content { 
+  {
   width: 100%;
-  height: auto;
 }
 
-.article h2 {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.article p {
-  margin-top: 10px;
-}
-
-  
 }
