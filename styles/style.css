@@ -177,8 +177,33 @@ header {
 }
   
 /* Write your CSS below */
+@media  screen and (max-width: 1024px) {
+
+  .navbar {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  .main-article {
+    width: 100%;
+  }
+
+  .articles-container {
+    align-items: space-between;
+  }
+
+  .article {
+    width: 48%;
+    margin: 15px 0;
+  }
+}
 
 @media  screen and (max-width: 760px) {
+
   .navbar {
     flex-direction: column;
     justify-content: center;
@@ -217,3 +242,5 @@ header {
   }
   
 }
+
+
