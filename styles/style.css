@@ -76,6 +76,10 @@ header {
   border-bottom: 1px solid white;
 }
 
+nav > img {
+  display: none;
+}
+
 .navbar {
   list-style-type: none;
   width: 100%;
@@ -244,3 +248,26 @@ header {
 }
 
 
+@media screen and (max-width: 480px) {
+
+  .navbar {
+    display: none;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav > img {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .main-article, .article {
+    width: 100%;
+  }
+
+
+}
