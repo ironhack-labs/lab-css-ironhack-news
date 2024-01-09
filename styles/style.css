@@ -235,6 +235,8 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-article img {
@@ -243,28 +245,27 @@ header {
 }
 
 .main-article .image {
-  width: 50%;
-  padding: 0 20px;
+  width: 100%;
+  padding: 20px 20px;
   height: auto;
 }
 
 .main-article .content {
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
   height: auto;
 }
 
 .articles-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 .article {
-  width: 29%;
+  width: 100%;
   padding: 20px;
   border: 1px solid #ccc;
 }
