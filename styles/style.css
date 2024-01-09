@@ -188,5 +188,32 @@ header {
     border-bottom: 1px solid #ffffff;
     width: 100%;
   }
+
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .main-article {
+    flex-direction: column;
+    width: 67%;
+    justify-content: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .main-article .content h2 {
+    margin-top: 20px;
+  }
+
+  .article {
+    width: 70%;
+    margin: 20px 0;
+  }
   
 }
