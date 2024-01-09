@@ -43,6 +43,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 /*  Font sizes */
@@ -177,3 +178,168 @@ header {
 }
   
 /* Write your CSS below */
+
+/* mobile screens */
+
+@media (max-width: 760px) {
+
+  .menu-icon {
+
+    display: none;
+  }
+
+
+
+  .navbar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navbar li {
+    width: 100%; 
+    border-bottom: 1px solid #ffffff; 
+  }
+
+  
+  .navbar li {
+    border-right: none;
+  }
+
+  
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+
+  .main-article {
+    flex-direction: column;
+  }
+
+  .main-article .image, .main-article .content {
+    width: 100%; 
+  }
+
+  
+  .main-article img {
+    width: 100%; 
+  }
+}
+
+
+/* tablet screens */
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+
+
+  .menu-icon {
+
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around; /* This will space out the navbar items evenly */
+    width: 100%;
+  }
+  
+  .navbar li {
+    display: flex;
+    justify-content: center; /* This will center the text inside each navbar item */
+    align-items: center; /* This will center the text vertically */
+  }
+
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+
+  .main-article {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .articles-container {
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 48%; 
+    margin-bottom: 20px; 
+  }
+
+  
+  .btn {
+    width: 100%; 
+  }
+}
+
+/* Small Mobile Screens styles */
+
+
+
+@media (max-width: 480px) {
+  /* Hide navbar links */
+  .navbar {
+    display: none;
+  }
+
+  .newspaper-name{
+
+    border-bottom: 0px;
+  }
+  .menu-icon {
+    display: block; /* Display the menu icon */
+    position: relative; /* Position relative to its normal position */
+    margin: 0 auto; /* Center the menu icon horizontally */
+    background: #333;
+    border: none;
+    padding: 10px; /* Add some padding */
+  }
+
+  .menu-icon img {
+    display: block; /* Display the menu icon image */
+    width: 30px; /* Adjust the size of the menu icon as needed */
+    height: auto;
+    margin: 0 auto; /* Center the menu icon image horizontally */
+  }
+
+  /* Adjust the header padding and other styles if necessary */
+  header {
+    /* Your existing styles for header */
+    position: relative; /* Confirm this based on your layout */
+    text-align: center; /* Center the title text */
+  }
+  
+  /* Ensure the newspaper name has appropriate spacing */
+  .newspaper-name {
+    /* Your existing styles for newspaper-name */
+    margin-bottom: 0px; /* Provide space for the menu icon below */
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .menu-icon {
+
+    display: none;
+  }
+
+}
