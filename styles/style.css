@@ -15,6 +15,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: lighter;
 }
 
+.menu-icon {
+  display: none;
+}
+
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -177,3 +181,91 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+ .navbar {
+flex-direction: column
+  
+   
+  }
+  
+  .navbar li {
+    width: 100%;
+    height: 40px; 
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-right: none;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  
+  /* Articles */
+  .main-article, 
+  .article {
+    width:100%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  
+  .article {
+    width:100%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .article h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .article p {
+    margin-top: 10px;
+  }
+  
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+.navbar {
+  display:none;
+}
+  
+  
+  
