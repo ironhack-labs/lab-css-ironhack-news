@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,12 +37,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 /* Basic styles */
@@ -68,6 +78,9 @@ header {
   background-color: #333;
   color: #fff;
   text-align: center;
+}
+header > img {
+  display: none;
 }
 
 .newspaper-name {
@@ -175,5 +188,82 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+/* ---BONUS */
+@media (max-width: 480px) {
+  header > nav {
+    display: none;
+  }
+
+  header > img {
+    display: inline-block;
+  }
+
+  .newspaper-name {
+    border-bottom: none;
+  }
+}
+
+/* --MAIN EXERCISE  */
+
+@media (max-width: 760px) {
+  /* ---NAVBAR */
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+  }
+
+  /* ---MAIN ARTICLE */
+  .main-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+  }
+  .main-article .content {
+    margin-top: 20px;
+  }
+
+  /* ----ARTICLES  */
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  /* ---NAVBAR */
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  /* ----ARTICLES  */
+
+  .articles-container {
+    justify-content: space-between;
+  }
+  .article {
+    width: 45%;
+    margin-bottom: 45px;
+  }
+}
