@@ -177,3 +177,94 @@ header {
 }
   
 /* Write your CSS below */
+
+
+/* Iteration 1 */
+@media (max-width: 760px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar li {
+    width: 100%;
+    border: 1px solid;
+    border color: white;
+  }
+
+  .main-article {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+      flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+  }
+}
+
+
+
+/* Iteration 2 */
+
+@media (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .article {
+    margin-top: 20px;  
+    width: 45%;
+  }
+
+}
+
+/* Iteration 3 */
+
+.burger-icon {
+  width: 30px;
+  margin: 10px;
+  height: auto;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+.burger-menu {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: none;
+}
+
+nav.show {
+  display: flex;
+}
+
+}
