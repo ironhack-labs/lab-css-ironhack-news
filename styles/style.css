@@ -186,7 +186,15 @@ header {
   background-color: #007bff;
 }
 
-/* Write your CSS below */
+
+
+/* --------------------- */
+/* Write your CSS below  */
+/* --------------------- */
+
+.burger {
+  display: none;
+}
 
 .navbar {
   display: flex;
@@ -270,12 +278,32 @@ header {
 }
 
 
+/* Bonus <480px */
+
+@media (max-width: 480px) {
+  .newspaper-name {
+    border: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+  }
+}
+
+
+
+
 /* Screensize between 760-1024px */
 
 @media (min-width: 1024px)  {
 
   /* Nav */
-
   header {
     display: flex;
     flex-direction: row;
