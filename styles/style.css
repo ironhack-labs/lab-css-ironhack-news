@@ -177,3 +177,119 @@ header {
 }
   
 /* Write your CSS below */
+/* adding media screen  for mobile */
+
+@media screen and (max-width: 760px)
+{
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .navbar li:last-child {
+      border: 1px solid white;
+    }
+    .navbar li {
+      border:1px solid white;
+      height: 50px;
+      width: 630px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #ffffff; 
+    
+   
+  }
+  .main-article{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+.content .btn{
+  align-self: flex-start;
+}
+   
+.article:first-child{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.article:nth-child(2)
+{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.article:nth-child(3)
+{
+  width: 100%;
+  margin-bottom: 20px;
+}
+  }
+
+  @media screen and (min-width: 760px) {
+    .navbar li {
+      border:1px solid white;
+      height: 50px;
+      width: 750px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #ffffff;
+    }
+    .main-article {
+      
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .main-article .content {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .main-article .image {
+      width: 50%; 
+      float: left; 
+      margin-right: 20px; 
+    }
+    .articles-container{
+      flex-direction: row;
+    }
+    .article:nth-child(1){
+      width: 50%;
+      
+      margin-bottom: 40xp;
+    }
+    .article:nth-child(2){
+      width: 50%;
+      
+      margin-bottom: 40xp;
+    }
+    .article:nth-child(3){
+      width: 50%;
+      
+      margin-bottom: 40xp;
+    }
+  
+}
