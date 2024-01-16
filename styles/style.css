@@ -177,3 +177,62 @@ header {
 }
   
 /* Write your CSS below */
+/* max-width 760px */
+
+@media (max-width: 760px) {
+
+  /* NavBar Updates */ 
+  .navbar {
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
+  }
+
+  .navbar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ffffff;
+    border-right: none;
+  }
+
+  /* Articles Updates */
+
+  .articles-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 80%; */
+    height: auto;
+    
+  }
+
+  .article {
+    flex: 1 1 auto;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  /* Main Article Updates*/
+  
+  .main-article .content {
+    justify-content: center;
+    width: 90%;
+    height: auto;
+  }
+  .main-article {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* min-width 760px max-width 1024px */
+
+@media screen (min-width: 760px) and (max-width: 1024px){
+  .navbar li {
+    justify-content: space-around; 
+  }
+
+  
+}
