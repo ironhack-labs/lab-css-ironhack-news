@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,7 +185,7 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
 
 .navbar {
@@ -190,7 +200,6 @@ header {
   border-bottom: 1px solid #fff;
   border-right: none;
 }
-
 
 /* Main Article */
 
@@ -208,6 +217,7 @@ header {
   width: 100%;
 }
 
+/* individual Articles */
 
 .articles-container {
   display: flex;
@@ -217,4 +227,97 @@ header {
 .article {
   width: 100%;
   margin-bottom: 40px;
+}
+
+
+
+/* Screensize between 760-1024px */
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  /* Nav */
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-right: 1px solid #fff;
+  }
+
+  /* Main Article */
+
+  .main-article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+  /* individual Articles */
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .article {
+    width: 45%;
+    height: 450px;
+    /* margin: 0 50px 40px 0; */
+  }
+}
+
+
+/* Screensize between 760-1024px */
+
+@media (min-width: 1024px)  {
+
+  /* Nav */
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .newspaper-name {
+    border: none;
+
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+  }
+
+  .navbar li {
+    width: 100%;
+    height: 48px;
+    border-right: 1px solid #fff;
+    border-bottom: none;
+  }
+
+  /* Main Article */
+
+  .main-article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+  /* individual Articles */
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .article {
+    width: 45%;
+    height: 450px;
+    /* margin: 0 50px 40px 0; */
+  }
 }
