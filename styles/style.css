@@ -216,18 +216,34 @@ header {
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 760px) and (max-width: 1024px) {
   .navbar {
     display: flex;
     justify-content: space-around;
   }
 
-    .main-article .image {
-      display: flex;
-      justify-content: flex-start;
-    
-    }
-
+  .main-article .image {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
   }
+
+  .navbar li {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1; 
+  }
+  
+  .articles-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .article {
+    width: 48%;
+    margin: 20px 0px 20px 0px;
+  }
+
+}
 
 
