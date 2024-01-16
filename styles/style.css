@@ -177,3 +177,44 @@ header {
 }
   
 /* Write your CSS below */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  border-right: none;
+}
+
+
+/* Main Article */
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-article .image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-article .content {
+  width: 100%;
+}
+
+
+.articles-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  width: 100%;
+  margin-bottom: 40px;
+}
