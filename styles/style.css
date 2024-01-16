@@ -231,14 +231,14 @@ header {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 760px) {
 
   .navbar li {
     width: 100%;
   }
 
   .article {
-    width: 100%;
+    width: 45%;
     margin-bottom: 30px;
   }
 
@@ -249,6 +249,7 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+
   .hamburguer-menu {
     display: block;
     margin: 0 auto;
