@@ -175,5 +175,65 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
   
 /* Write your CSS below */
+
+@media screen and (max-width: 760px) {
+
+.navbar {
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.navbar li {
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+
+.main-article {
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles-container {
+  flex-direction: column;
+}
+
+.article {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 30px auto;
+}
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  .articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  justify-content: space-between;
+}
+
+}
+
+
+
+
+
