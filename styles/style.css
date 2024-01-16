@@ -175,5 +175,99 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+nav img {
+  display: none;
+}
   
 /* Write your CSS below */
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-article .image {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .navbar li {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1; 
+  }
+  
+  .articles-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .article {
+    width: 48%;
+    margin: 20px 0px 20px 0px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  nav {
+    border: none;
+    height: 50px;
+  }
+
+  nav img {
+    display: inline;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    visibility: hidden;
+  }
+
+  .newspaper-name {
+    border: none;
+  }
+
+
+}
