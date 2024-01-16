@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  
 }
   
 *, *:before, *:after {
@@ -177,3 +178,119 @@ header {
 }
   
 /* Write your CSS below */
+
+/* media query for mobile screens width < 760px */
+@media all and (max-width: 760px) {
+  .navbar {
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%,
+  } 
+
+  .navbar li {
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%
+  }
+
+  .main-article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: justify;
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+  }
+
+  .article {
+    width: 94%;
+    padding: 20px;
+  }
+}
+
+
+/* media query for tablet screens, width > 760px and width < 1024px */
+@media all and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%,
+  } 
+
+  .navbar li {
+    text-align: center;
+    border-right: 1px solid #ffffff;
+    width: 100%
+  }
+
+  .main-article {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+    height: 400px;
+
+  } 
+
+
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items:flex-start;
+  position: relative;
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 20px;
+  gap: 30px;
+}
+
+.article {
+  width: 40%;
+  margin-bottom: 0;
+
+}
+
+
+.article1, .article2 {
+  flex: 1;
+
+} 
+
+} 
+
+
+/* media query for small mobile screens, width < 480px */
+@media all and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  } 
