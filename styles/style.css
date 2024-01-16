@@ -177,3 +177,20 @@ header {
 }
   
 /* Write your CSS below */
+@media (max-width: 760px) {
+  .navbar{
+    display: block;
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+  }
+ 
+}
