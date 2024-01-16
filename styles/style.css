@@ -175,6 +175,10 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+nav img {
+  display: none;
+}
   
 /* Write your CSS below */
 @media (max-width: 760px) {
@@ -246,4 +250,24 @@ header {
 
 }
 
+@media (max-width: 480px) {
+  nav {
+    border: none;
+    height: 50px;
+  }
 
+  nav img {
+    display: inline;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    visibility: hidden;
+  }
+
+  .newspaper-name {
+    border: none;
+  }
+
+
+}
