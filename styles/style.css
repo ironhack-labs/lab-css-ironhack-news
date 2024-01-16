@@ -244,7 +244,7 @@ header {
 }
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (min-width: 760px) {
     .navbar li {
       border:1px solid white;
       height: 50px;
