@@ -178,8 +178,6 @@ header {
   
 /* Write your CSS below */
 
-
-
 @media all and (max-width: 1024px) {
   .navbar {
     justify-content: space-evenly;
@@ -220,8 +218,10 @@ header {
 
   .main-article {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
+    margin: 5px 0;
   }
   
   .main-article .image {
@@ -240,12 +240,12 @@ header {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
   }
   
   .article {
     width: 100%;
-
+    margin: 5px 0;
   }
   
   
