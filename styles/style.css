@@ -229,9 +229,33 @@ header {
 
 /* min-width 760px max-width 1024px */
 
-@media screen (min-width: 760px) and (max-width: 1024px){
-  .navbar li {
+@media (min-width: 760px) and (max-width: 1024px){
+  
+  /* NavBar Updates */
+  .navbar {
     justify-content: space-around; 
+    align-content: center;
+  }
+
+
+  /*Main Article Updates*/
+
+  .main-article {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  /* Articles Updates*/
+  .articles-container {
+    width: 105%;
+  }
+
+  .article {
+    width: 40%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 50px;
+    justify-content: space-around;
   }
 
   
