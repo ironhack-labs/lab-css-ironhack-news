@@ -207,3 +207,23 @@ header {
 }
 
 }
+
+@media(min-width:761px) and (max-width:1024px){
+  .navbar{
+    display:flex;
+    justify-content: space-evenly;
+  }
+
+  .articles-container{
+    display:flex;
+    
+
+   
+  }
+  .articles-container .article{
+    width:40%;
+    margin-top:3%;
+ 
+   
+   }
+}
