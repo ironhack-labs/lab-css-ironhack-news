@@ -176,4 +176,34 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+@media(max-width:760px){
+.navbar{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.navbar li{
+  border-right:black;
+}
+.main{
+  display:flex;
+  flex-direction:column;
+}
+
+.main-article{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.articles-container{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  
+ 
+}
+.articles-container .article{
+ width:100%;
+}
+
+}
