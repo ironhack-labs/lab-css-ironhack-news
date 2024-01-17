@@ -177,3 +177,75 @@ header {
 }
   
 /* Write your CSS below */
+
+@media (width < 480px) {
+  .burger-icon {
+    display: block;
+  }
+  
+  .navbar {
+    visibility: hidden;
+  }
+}
+
+@media (width < 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width:auto;
+  }
+
+  .main-article {
+    display:contents;
+  }
+  .main-article .image {
+    width: fit-content;
+  }
+
+  .main-article .content {
+    width: fit-content;
+    padding-bottom: 50px;
+  }
+
+  .articles-container {
+    display:contents;
+  }
+
+  .article {
+    width: fit-content;
+  }
+}
+
+@media (width > 760px) and (width < 1024px) {
+  .navbar li {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .main-article .image {
+    width: fit-content;
+  }
+
+  .main-article .content {
+    width: fit-content;
+    padding-bottom: 50px;
+  }
+
+  .articles-container {
+    flex-wrap: wrap;
+  }
+
+  .article {
+    width: 45%;
+    margin: 5px;
+  }
+}
+
+
+
+
+
