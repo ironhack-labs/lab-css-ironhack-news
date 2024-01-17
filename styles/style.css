@@ -192,22 +192,25 @@ header {
 
   .main-article{
     flex-direction: column;
-    width: 80%;
+   width: fit-content;
   }
 
   .main-article .image{
-    width: 100%;
+   width: fit-content;
+    
   }
 
   .main-article .content{
-    width: 100%;
+    width: fit-content;
+    
   }
   .articles-container {
     flex-direction: column;
-    width:100%
+    width: fit-content;
+    
   }
   .article-article .image{
-    width: 100%;
+  width: fit-content;
   }
 }
 
