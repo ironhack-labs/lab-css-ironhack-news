@@ -116,15 +116,16 @@ header {
 }
 
 .main-article .image {
-  width: 50%;
-  padding: 0 20px;
+  width: 100%;
   height: auto;
+  padding: 10px 20px;
 }
 
 .main-article .content {
-  width: 50%;
-  padding: 0 20px;
+  width: 100%;
   height: auto;
+  padding: 10px 20px;
+  justify-content: center;
 }
 
 .articles-container {
@@ -177,3 +178,74 @@ header {
 }
   
 /* Write your CSS below */
+
+/* Mobile screens*/
+@media (width < 760px){
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+  }
+
+  .navbar li{
+    justify-content: center;
+    width: 100%;
+    border: 1px solid white;
+    margin: 0;
+    }
+
+    .main-article{ 
+      flex-direction: column;
+  
+    }
+    .main-article .image{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+    }
+    .articles-container {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .article{
+      width: 100%;
+      padding: 0;
+      margin:auto;
+    }
+  }
+
+  /*Small Screens (width > 760px and width < 1024px)*/
+
+  @media(width > 760px) and (width < 1024px){
+    .navbar li {
+      width: 33.33%;
+      border-right: 1px solid #ffffff;
+      border-bottom: none;
+    }
+
+    .main-article {
+      flex-direction: row;
+    }
+
+    .main-article .img{
+      width: 50%;
+    }
+
+    .main-article .content {
+      width: 50%;
+    }
+
+    .articles-container{
+      flex-direction: row;
+    }
+
+    .article{
+      width: 44%;
+      margin-bottom: 30px;
+    }
+  }
