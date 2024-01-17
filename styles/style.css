@@ -329,6 +329,8 @@ header {
   .menu-btn{
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
   }
 
