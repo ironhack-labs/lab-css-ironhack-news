@@ -177,3 +177,40 @@ header {
 }
   
 /* Write your CSS below */
+
+/*Mobile Screen*/
+@media (max-width: 760px){
+  .newspaper-name{
+    justify-content: center;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .main-article{
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+  }
+  .main-article li{
+    width: 100px;
+    border: solid 1px grey;
+  }
+  .article{
+
+  }
+  .articles-container{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .content{
+    justify-content: center;
+    
+  }
+  
+}
