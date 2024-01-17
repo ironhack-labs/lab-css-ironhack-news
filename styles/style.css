@@ -177,3 +177,50 @@ header {
 }
   
 /* Write your CSS below */
+
+/*
+Iteration 1 | Mobile Screens (width < 760px)
+We will start by styling the page for mobile screens first. 📱
+
+Add a media query to the style.css file that targets screens with a max-width of 760px and 
+the styles to make the page look like in the image below. In particular, you should add the styles to achieve the following:
+
+The Navbar elements ("Home", "News", "Tech" and "Other") should be displayed vertically, one below the other.
+All articles ("Main Article", "Article 1", "Article 2", and "Article 3") should be displayed in a column, one below the other.
+The "Main Article" image should be displayed at the top, followed by the title, text, and the "Read more" button below it.
+*/
+
+/*Mobile*/
+@media (max-width:760px){
+.navbar{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.navbar li{
+  width: 100%;
+  border-top: 1px solid white;
+}
+.main-article{
+  .content{
+    width: auto;
+  }
+  .image{
+    width: auto;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.articles-container{
+  .article{
+    flex-wrap: wrap;
+    width: auto;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+}
+}
