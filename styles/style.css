@@ -183,10 +183,11 @@ header {
 
 
 
-@media (max-width : 767px){
+@media (min-width:481px) and (max-width : 767px){
   .navbar{ 
     display:flex;
     flex-direction:column;
+    justify-content: center;
   }
 
   .newspaper-name{
@@ -240,6 +241,9 @@ header {
     padding: 0;
   }
 
+
+
+
   .main-article, .article {
     width: 90%;
     margin-bottom: 30px;
@@ -250,19 +254,21 @@ header {
     width: 90%;
     padding: 20px;
   }
+
+  .menu-btn{
+    display:none;
+
+  }
 }
 
 
 
-/* small screens width */
+
+
+/* width above 768px - tablet and laptop */
 
 @media (min-width: 768px){
 
-/*
-  .navbar {
-    display: flex;
-    flex-direction: row;
-  }*/
 
   .navbar {
     width: 100%;
@@ -306,4 +312,91 @@ header {
   
   }
 
+  .menu-btn{
+    display:none;
+  }
+
 }
+
+
+/* bonus exercise */
+
+@media (max-width : 480px){
+  .navbar{ 
+    display:flex;
+  }
+
+  .menu-btn{
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .newspaper-name{
+    border: 1px solid white;
+    border-right:none;
+    border-top:none;
+  }
+
+  .navbar li {
+    display: none;
+  }
+
+
+  .main-article {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    flex-wrap:wrap;
+    width:100%;
+  }
+
+  .main-article .image{
+    display:flex;
+    width:100%;
+    padding: 0 20px;
+
+  }
+
+
+  .main-article .content {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:100%;
+    padding: 0 20px;
+    
+  }
+
+  .main-article .content button {
+    display:flex;
+    justify-content: flex-start;
+    width:40%;
+    
+  }
+
+  .articles-container{
+    display:flex;
+    flex-direction:column;
+    padding: 0;
+  }
+
+
+
+
+  .main-article, .article {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  
+
+  .article {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+
+
+
+
