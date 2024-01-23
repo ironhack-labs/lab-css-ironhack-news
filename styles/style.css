@@ -84,7 +84,7 @@ header {
 }
 
 .navbar li {
-  width: 130px;
+  width: 742px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -177,3 +177,90 @@ header {
 }
   
 /* Write your CSS below */
+@media (max-width: 760px){
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .articles-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+  }
+  .navbar li {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;;
+  }
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+  
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+  }
+  
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-article .image{
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .main-article{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+@media (min-width: 760px) and (max-width: 1024px){
+  body {
+    font-size: 0.8rem;
+  }
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+  }
+  .articles-container{
+    display:flex;
+  }
+  .article {
+    width: 44%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+  .navbar li{
+    width:100%;
+  }
+}
+
