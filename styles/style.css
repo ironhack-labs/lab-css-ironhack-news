@@ -81,6 +81,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+
 }
 
 .navbar li {
@@ -177,3 +178,66 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+
+}
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.newspaper-name {
+  font-size: 24px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.navbar {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.navbar li {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ffffff;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/*.new-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 760px;
+  margin: 0 auto;
+}
+.newspaper-name {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articulos {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}*/
