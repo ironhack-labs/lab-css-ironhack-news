@@ -26,6 +26,10 @@ ul {
   font-weight: lighter;
 }
 
+#burger {
+  display: none;
+}
+
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
   position: fixed;
@@ -186,7 +190,7 @@ header {
   background-color: #007bff;
 }
 
-/* Write your CSS below */
+/* Media query for max width 760px */
 
 @media (max-width: 760px) {
   nav {
@@ -201,5 +205,69 @@ header {
       border-style: solid;
       border-width: 1px;
     }
+  }
+
+  /* Make main article responsive */
+
+  .main-article {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    & .image,
+    .content {
+      width: 100%;
+    }
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    & .article {
+      width: 100%;
+      margin: 1rem;
+      padding: 1.4rem;
+    }
+  }
+}
+
+/* Media query for width between 760px and 1024px */
+
+@media (760px < width <= 1024px) {
+  .navbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    & .article {
+      width: 45%;
+      margin: 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* media query for small mobile screens */
+
+@media (width < 510px) {
+  #burger {
+    display: block;
+    border-style: none;
+  }
+  .navbar {
+    display: none;
+    border-style: none;
+  }
+
+  .newspaper-name {
+    border-style: none;
   }
 }
