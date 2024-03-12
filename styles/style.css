@@ -102,6 +102,10 @@ header {
   font-weight: bold;
 }
 
+#hamburger-menu{
+  display: none;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -175,5 +179,72 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar{
+    /* justify-content: space-evenly;  */
+  }
+
+  .navbar li{
+    width: 100%;
+  }
+
+  .article{
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar{
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100vh;
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+  }
+
+  .main-article{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article > div{
+    width: 100% !important;
+  }
+
+  .articles-container{
+    flex-direction: column;
+  }
+
+  .article{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .navbar{
+    display: none;
+  }
+
+  .articles-container{
+    gap: 30px;
+  }
+
+  .newspaper-name{
+    border-bottom: none;
+  }
+
+  #hamburger-menu{
+    display: inline;
+    border: none;
+    background-color: #333;
+  }
+}
