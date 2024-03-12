@@ -179,6 +179,22 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar{
+    /* justify-content: space-evenly;  */
+  }
+
+  .navbar li{
+    width: 100%;
+  }
+
+  .article{
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
   
 /* Write your CSS below */
 @media screen and (max-width: 760px) {
@@ -208,36 +224,18 @@ header {
 
   .article{
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1024px) {
-  .navbar{
-    justify-content: space-evenly; 
-  }
-
-  .navbar li{
-    width: 100%;
-  }
-
-  .articles-container{
-    justify-content: flex-start;
-    column-gap: 10%;
-    row-gap: 4vh;
-  }
-
-  .article{
-    width: 45%;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .navbar{
     display: none;
   }
-  
+
   .articles-container{
-    gap: 2vh;
+    gap: 30px;
   }
 
   .newspaper-name{
