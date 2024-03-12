@@ -13,18 +13,15 @@ window.addEventListener("resize", () => {
 });
 
 
-var element = document.getElementById("hamburger-menu");
 
 var myFunction = function() {
-  var arrayOfElements=document.getElementsByClassName('navbar');
-  let firstItem = arrayOfElements[0];
-  
-  if(firstItem.style.display == "flex"){
-    firstItem.style.display = "none";
+  var element=document.getElementById('navbar-list');
+
+  if(element.style.display == "flex"){
+    element.style.display = "none";
   }
   else{
-    firstItem.style.display = "flex";
+    element.style.display = "flex";
   }
 };
-
-element.addEventListener("click", myFunction);
+document.getElementById("hamburger-menu").addEventListener("click", myFunction);
