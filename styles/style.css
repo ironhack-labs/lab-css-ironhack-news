@@ -175,5 +175,71 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+  .btn {
+    display: none;
+  }
 /* Write your CSS below */
+/* mobile */
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+  }
+
+  .navbar li {
+    border-bottom: 1px solid white;
+    border-right: none;
+    width: 100%;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    row-gap: 20px;
+
+  }
+  .article {
+    width: 100%;
+  }
+
+  .main-article {
+    flex-direction: column;
+    
+    
+   
+  }
+
+  .main-article > div {
+    width: 100% !important ;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px){
+  .navbar {
+    justify-content: space-evenly;
+  }
+.navbar li {
+  align-items: center;
+  width: 100%;
+}
+
+.article {
+  width: 45%;
+}
+.articles-container {
+  row-gap: 30px;
+}
+}  
+@media (max-width: 480px) {
+  .navbar {
+   display: none;
+  }
+  .btn {
+    background-color: #333;
+    border: none; display: inline;
+  }
+}
+
+ 
