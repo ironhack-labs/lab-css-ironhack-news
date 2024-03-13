@@ -173,7 +173,50 @@ header {
 }
 
 .btn-blue {
-  background-color: #007bff;
+  background-color: #156bc8;
 }
   
 /* Write your CSS below */
+@media (max-width: 760px)  {
+  .main-article > div {
+    width: 100%!important;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+.navbar li {
+  width: 100%;
+  border-top: 1px snow;
+  border-right: none;
+}
+
+.main-article {
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles-container {
+  flex-direction: column;
+}
+
+.article {
+  width: 100%;
+  margin-bottom: 20px;
+  }
+}
+
+  @media (min-width: 760px) and (max-width: 1024px) {
+    .article {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+
+    .navbar li {
+      width: 100%;
+    }
+
+  }
+ 
