@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +185,119 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+nav > img {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .articles-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .articles-container .article {
+    width: auto;
+  }
+
+  .articles-container article:nth-child(2) {
+    margin: 40px 0;
+  }
+
+  .main-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article h2 {
+    margin-top: 10px;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar li {
+    align-items: center;
+    width: 100%;
+    border-right: 1px solid #ffffff;
+  }
+
+  .main-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-article .image {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .articles-container .article {
+    width: 45%;
+  }
+
+  .articles-container article:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  nav > img {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+  }
+
+  .newspaper-name {
+    border: none;
+  }
+}
