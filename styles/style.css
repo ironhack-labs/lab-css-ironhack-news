@@ -27,8 +27,323 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
+
+/* Media Screen */
+
+@media screen and (max-width: 759px) {
+  
+  /*  Fonts */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* Basic styles */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  Font sizes */
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Header and Navbar */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.newspaper-name {
+  font-size: 24px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+
+.navbar {
+list-style-type: none;
+width: 100%;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.navbar li {
+width: 100%;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-bottom: 1px solid #ffffff;
+}
+
+.navbar li:last-child {
+border-bottom: 1px solid #ffffff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Articles */
+.main-article {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main-article img {
+  width: 100%;
+  height: auto;
+}
+
+.main-article .image {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+}
+
+.main-article .content {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.article {
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+}
+
+.article h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.article p {
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.btn-blue {
+  background-color: #007bff;
+}
+} 
+
+
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+
+/*  Fonts */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* Basic styles */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  Font sizes */
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Header and Navbar */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.newspaper-name {
+  font-size: 24px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.navbar {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar li {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ffffff;
+  flex-grow: 1;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Articles */
+.main-article {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+.main-article img {
+  width: 100%;
+  height: auto;
+}
+
+.main-article .image {
+  width: 50%;
+  padding: 0 20px;
+  height: auto;
+}
+
+.main-article .content {
+  width: 50%;
+  padding: 0 20px;
+  height: auto;
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.article {
+  margin-bottom: 30px;
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+}
+
+.article h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.article p {
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.btn-blue {
+  background-color: #007bff;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
 
 /*  Fonts */
 body {
@@ -95,6 +410,7 @@ header {
 .navbar li:last-child {
   border-right: none;
 }
+
 
 .navbar a {
   text-decoration: none;
@@ -175,5 +491,5 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+}
 /* Write your CSS below */
