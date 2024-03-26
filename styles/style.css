@@ -188,6 +188,16 @@ header {
     text-align: center;
   }
 
+  .main-article .content {
+    width: auto;
+    padding: 0 20px;
+
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+
   .navbar > li {
     width: 100%;
     text-align: center;
@@ -238,7 +248,6 @@ header {
   }
 }
 
-
 @media only screen and (max-width: 480px) {
 
   .menu-icon {
@@ -249,7 +258,7 @@ header {
     padding-bottom: 10px;
   }
 
-  .nav-icon {
+  .nav-icon-box {
     justify-content: center;
     align-items: center;
   }
