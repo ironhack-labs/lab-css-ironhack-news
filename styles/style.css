@@ -175,5 +175,77 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+nav img{
+  display: none;
+}
   
 /* Write your CSS below */
+
+
+@media screen and /*between 1024 & 760*/ (max-width: 1024px) and (min-width: 760px) {
+  
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar li{
+    width: calc(100vw/ 4);
+  }
+
+  .articles-container {
+    flex-flow: row wrap;
+  }
+
+  .article{
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen /* up till 760*/ and (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li{
+    width:100%;
+    border-bottom: white 1px solid;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .article{
+    width:100%;
+    margin-bottom: 30px;
+  }
+
+  .main-article{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+}
+
+@media screen and /*up till 480*/ (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  nav img{
+    display: inline-block;
+  }
+
+}
