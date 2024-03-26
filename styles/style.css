@@ -32,7 +32,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 /*  Fonts */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 /* Basic styles */
@@ -100,6 +100,10 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+.icon {
+  display: none;
 }
 
 /* Articles */
@@ -177,3 +181,124 @@ header {
 }
   
 /* Write your CSS below */
+
+/* MOBILE */
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar li {
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 10px;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-article .image {
+    width: 100%;
+  }
+  
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 40px;
+  }
+  
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .article h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .article p {
+    margin-top: 10px;
+  }
+}
+
+/* SMALL SCREENS */
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+  width: 100%; 
+  }
+
+  .article {
+  width: 44%;
+  margin-bottom: 30px;
+  }
+}
+
+  /* VERY SMALL SCREENS */
+
+  @media screen and (max-width: 520px) {
+    .navbar {
+      display: none;
+    }
+    
+    .icon {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .navbar {
+      display: none;
+    }
+    
+    .icon {
+      display: block;
+      margin: auto;
+      padding: 20px;
+    }
+    .newspaper-name {
+      border: none;
+    }
+  }
