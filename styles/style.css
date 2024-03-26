@@ -76,11 +76,19 @@ header {
   border-bottom: 1px solid white;
 }
 
+/*first step add the size media screen for which already designed*/ 
+@media screen and (width > 1024px) {
+
+
 .navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+
+.menu-icon { /*hiding the menu icon in bigger screens*/
+  display: none;
 }
 
 .navbar li {
@@ -100,6 +108,11 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+ /*just adding a little charm to practice the selector*/ 
+ .navbar  :hover {
+  background-color: #a84019;
 }
 
 /* Articles */
@@ -137,13 +150,14 @@ header {
 }
 
 .article {
-  width: 29%;
+  width: 29%; /*taking 29% of the parent which is section .articles-container*/
+  /*meaning we take the vw width - padding etc and divided into fitting 3 articles horizontally*/
   padding: 20px;
   border: 1px solid #ccc;
 }
 
 .article img {
-  width: 100%;
+  width: 100%; /*img taking 100% of the container after the 20px padding above*/
   height: auto;
 }
 
@@ -175,5 +189,273 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+}
+
   
 /* Write your CSS below */
+
+/*SMALL SCREENS - PHONE */ 
+
+
+@media screen and (max-width: 760px) {
+  
+/*navbar*/ 
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .menu-icon { /*hiding the menu icon in bigger screens*/
+    display: none;
+  }
+
+  .navbar li {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  
+  /*just adding a little charm to practice the selector*/ 
+  .navbar  :hover {
+    background-color: #a84019;
+  }
+
+
+  /*articles*/ 
+
+  main { /*this is the parent of main article*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+  }
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-article img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 7%;
+  }
+  
+  .main-article .image {
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .articles-container { /*this is the parent of the articles below*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column; /*changed to collumn here so they follow one another vertically*/
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .article {
+    width: 100%; /*taking 100% of the parent which is section .articles-container*/
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10%;
+  }
+  
+  .article img {
+    width: 100%; /*img taking 100% of the container after the 20px padding above*/
+    height: auto;
+  }
+  
+  .article h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .article p {
+    margin-top: 10px;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .btn-blue {
+    background-color: #007bff;
+  }
+
+}
+
+
+/* MEDIUM SCREENS - TABLET */ 
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .menu-icon { /*hiding the menu icon in bigger screens*/
+    display: none;
+  }
+
+  .navbar li {
+    width: calc(100%/4); /*similar to flex growth on the slides*/
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+  }
+  
+  .navbar li:last-child {
+    border-right: none;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+   /*just adding a little charm to practice the selector*/ 
+   .navbar  :hover {
+    background-color: #a84019;
+  }
+  /* Articles */
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .main-article img { /* this is a child of class .image*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 7%;
+  }
+  
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .articles-container { /*this is the parent of all .article*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start; /*this adjusts vertically*/
+    align-items: center; /*vertically per item*/
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .article {
+    width: 48%; /*taking 29% of the parent which is section .articles-container*/
+    /*meaning we take the vw width - padding etc and divided into fitting 3 articles horizontally*/
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+  
+  .article img {
+    width: 100%; /*img taking 100% of the container after the 20px padding above*/
+    height: auto;
+  }
+  
+  .article h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .article p {
+    margin-top: 10px;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .btn-blue {
+    background-color: #007bff;
+  }
+  
+  }
+
+
+
+
+
+/* BONUS - EXTRA SMALL SCREENS - HIDE NAVBAR */ 
+/*DO THIS LATER*/
+/*width < 480px*/ 
