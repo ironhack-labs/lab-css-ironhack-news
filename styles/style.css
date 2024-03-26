@@ -73,7 +73,7 @@ header {
 .newspaper-name {
   font-size: 24px;
   padding: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .navbar {
@@ -177,3 +177,49 @@ header {
 }
   
 /* Write your CSS below */
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+  }
+  
+  .main-article {
+    width: 100%;
+    flex-direction: column;
+    text-align:  center;
+    margin: 2rem;
+  }
+
+  .main-article .content {
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .articles-container {
+    
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .article {
+    width: 100%;
+    margin: 4%;
+    text-align: center;
+  }
+
+}
