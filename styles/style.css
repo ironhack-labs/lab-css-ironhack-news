@@ -64,11 +64,15 @@ h3 {
 }
 
 /* Header and Navbar */
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+  } 
+  /* header img{
+    display:none;
+  } */
 
 .newspaper-name {
   font-size: 24px;
@@ -92,6 +96,7 @@ header {
   border-right: 1px solid #ffffff;
 }
 
+
 .navbar li:last-child {
   border-right: none;
 }
@@ -110,6 +115,7 @@ header {
   display: flex;
 }
 
+
 .main-article img {
   width: 100%;
   height: auto;
@@ -121,11 +127,15 @@ header {
   height: auto;
 }
 
+
+
 .main-article .content {
   width: 50%;
   padding: 0 20px;
   height: auto;
 }
+
+
 
 .articles-container {
   display: flex;
@@ -135,6 +145,8 @@ header {
   align-items: center;
   padding: 20px;
 }
+
+
 
 .article {
   width: 29%;
@@ -177,3 +189,111 @@ header {
 }
   
 /* Write your CSS below */
+
+@media only screen and (min-width: 760px)and (max-width: 1024px) {
+  .main-article .image{
+    justify-content: left;
+    align-items: center;
+  };
+}
+
+@media only screen and (min-width: 760px)and (max-width: 1024px) {
+  .articles-container{
+  
+    flex-direction: row;
+  }
+
+  .article{
+    width: 45%;
+    margin: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 760px)and (max-width: 1024px) {
+.navbar {
+  justify-content: space-between;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar li{
+    width: 100%;
+    border: 1px solid #ffffff;
+  }
+}
+@media only screen and (min-width: 760px)and (max-width: 1024px) {
+  .navbar li{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-article .content {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 760px)and (max-width: 1024px) {
+  .main-article .content{
+    justify-content: right;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .articles-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .article{
+    margin: 5px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-article{
+  
+    padding: 5px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-article .image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-article{
+  
+    padding: 5px;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar{
+    display: none;
+    background-image: "/images/menu-icon.png";
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header img {
+   display: block;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+  }
+  
+}
