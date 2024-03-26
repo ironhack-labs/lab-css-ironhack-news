@@ -27,7 +27,8 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
+
 /* STYLES */
 
 /*  Fonts */
@@ -81,6 +82,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .navbar li {
@@ -175,5 +180,85 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+/* Media Query for small mobile screens with (width < 480px) */
+
+@media screen and (max-width: 480px) {
+  .menu-icon {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .navbar li {
+    display: none;
+    
+  }
+
+  .newspaper-name {
+    border: none; 
+}
+}
+
+
+/* Media Query for tablet screens with (width > 760px) and (width < 1024px) */
+
+@media screen and (min-width: 761px) and (max-width: 1023px) {
+  .navbar {  
+    justify-content: space-evenly;
+  }
+  .navbar li {
+    width: 100%;
+  }
+
+  .article {
+    width: 42%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Media Query for mobile screens with a max width of 760px */
+
+@media screen and (max-width : 760px) {
   
-/* Write your CSS below */
+  
+  .navbar {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar li {
+   border-bottom: 1px solid #ffffff;
+   width: 100%;
+  }
+  .main-article {
+    flex-direction: column;
+    
+  }
+
+  .articles-container {
+   flex-direction: column;    
+  }
+  .article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+
+.main-article .image {
+width: 100%;
+}
+.main-article .content {
+  width: 100%; 
+}
+
+h2 {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+} 
+
+}
+
