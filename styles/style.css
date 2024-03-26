@@ -177,3 +177,75 @@ header {
 }
   
 /* Write your CSS below */
+/* iPhone */
+@media (max-width: 760px) {
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid white;
+  }
+.articles-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.article {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.article img {
+  padding: 0px 0px 10px;
+}
+
+.main-article {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 20px 20px 0px 20px;
+}
+.main-article .image {
+  width: 100%;
+  padding: 0 20px 20px;
+  height: auto;
+}
+
+.main-article .content {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+}
+}
+/* Tablet */
+@media (min-width: 760px) and (max-width: 1024px) {
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.navbar li {
+flex-grow: 1; 
+} 
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .article {
+    flex-basis: 48%;
+    margin: 10px 0px;
+
+  }
+}
