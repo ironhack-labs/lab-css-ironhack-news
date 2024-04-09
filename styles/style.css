@@ -177,3 +177,30 @@ header {
 }
   
 /* Write your CSS below */
+@media (max-width: 760px){
+.navbar {
+  display: flex;
+  flex-direction: column;
+
+}
+.articles-container {
+  display: flex;
+  flex-direction: column; 
+}
+
+}
+
+
+/* parte 2*/
+
+@media (width >760) and (width < 1024){
+.navbar { 
+  
+  display: flex;
+  flex-direction: nowrap;
+}
+.articles-container {
+  display: flex;
+  flex-direction: column; 
+}
+}
