@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +38,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -81,6 +92,11 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+
+}
+
+.img1 {
+  display: none;
 }
 
 .navbar li {
@@ -175,5 +191,75 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+@media screen and (max-width:760px) {
+
+  /* barra de navegación ajustada */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    /* la funcion de abajo separará con lineas los botones */
+    border-bottom: 1px solid;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .article {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+
+/* segundo ejercicio */
+@media (min-width:760px) and (max-width:1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .navbar li {
+    text-align: center;
+    width: 25%;
+  }
+
+  .articles-container {
+    display: flex;
+
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+}
+
+
+/* tercer ejercicio */
+
+@media screen and (max-width:480px) {
+  .navbar li {
+    display: none;
+  }
+
+  .img1 {
+    display: block;
+    align-items: center;
+  }
+}
