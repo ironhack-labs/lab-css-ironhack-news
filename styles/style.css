@@ -177,3 +177,41 @@ header {
 }
   
 /* Write your CSS below */
+@media (max-width: 760px){
+
+ 
+  
+   
+ 
+  ul.navbar{
+    align-items: center;
+    display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   
+  }
+  section.articles-container{
+    width:2000px;
+    display:flex;
+    flex-direction:column;
+
+    
+  }
+  article.main-article{
+    width:570px;
+    display:flex;
+    flex-direction:column;
+  }
+  .content {
+    text-align: justify;
+  }
+  div.content{
+  width: 2000px;
+  margin:0px 150px 0px;
+  
+  }
+  .image{
+    margin:0px 150px 0px;
+    width: 500px; 
+    height: 300px;
+}
