@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +38,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -81,6 +92,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+
+header img {
+  display: none;
 }
 
 .navbar li {
@@ -175,5 +190,69 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+@media screen and (max-width: 760px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .navbar li {
+    border-top: 1px solid #ffffff;
+    border-right: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .main-article content {
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .articles-container article {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px),
+(max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
