@@ -14,8 +14,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 0;
   font-weight: lighter;
 }
-
-
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
   position: fixed;
@@ -29,12 +27,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
   
 /* STYLES */
-
 /*  Fonts */
 body {
   font-family: "Helvetica", sans-serif;
 }
-
 /* Basic styles */
 main {
   max-width: 1000px;
@@ -44,45 +40,37 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
 /*  Font sizes */
 p {
   font-size: 1em;
 }
-
 h1 {
   font-size: 3em;
 }
-
 h2 {
   font-size: 2em;
   margin-bottom: 1em;
 }
-
 h3 {
   font-size: 1.5em;
 }
-
 /* Header and Navbar */
 header {
   background-color: #333;
   color: #fff;
   text-align: center;
 }
-
 .newspaper-name {
   font-size: 24px;
   padding: 10px;
   border-bottom: 1px solid white;
 }
-
 .navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
   justify-content: flex-start;
 }
-
 .navbar li {
   width: 130px;
   height: 40px;
@@ -91,17 +79,14 @@ header {
   justify-content: center;
   border-right: 1px solid #ffffff;
 }
-
 .navbar li:last-child {
   border-right: none;
 }
-
 .navbar a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
-
 /* Articles */
 .main-article {
   margin: 20px;
@@ -109,24 +94,20 @@ header {
   border: 1px solid #ccc;
   display: flex;
 }
-
 .main-article img {
   width: 100%;
   height: auto;
 }
-
 .main-article .image {
   width: 50%;
   padding: 0 20px;
   height: auto;
 }
-
 .main-article .content {
   width: 50%;
   padding: 0 20px;
   height: auto;
 }
-
 .articles-container {
   display: flex;
   flex-wrap: wrap;
@@ -135,27 +116,22 @@ header {
   align-items: center;
   padding: 20px;
 }
-
 .article {
   width: 29%;
   padding: 20px;
   border: 1px solid #ccc;
 }
-
 .article img {
   width: 100%;
   height: auto;
 }
-
 .article h2 {
   font-size: 20px;
   margin-top: 10px;
 }
-
 .article p {
   margin-top: 10px;
 }
-
 .btn {
   background-color: #333;
   color: #fff;
@@ -167,13 +143,79 @@ header {
   text-decoration: none;
   margin-top: 30px;
 }
-
 .btn:hover {
   background-color: #555;
 }
-
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+/*ALL*/
+
+#nav-menu-icon {
+  visibility: hidden;
+}
+
+@media (max-width:760px) {
+  html{
+    font-size: 20px;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+  .articles-container{
+    flex-direction: column;
+  }
+  .main-article{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*MEDIUM-SIZE*/
+
+@media (min-width:761px) and (max-width:1024px) {
+  html{
+    font-size: 20px;
+  }
+  .navbar{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .articles-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .articles-container>*{
+    flex: 0 0 43%;
+  }
+}
+
+/*SMALL SIZE*/
+
+@media (max-width:480px) {
+  #nav-menu{
+    flex-direction: row;
+    height: 50px;
+    padding-top: 1%;
+  }
+  #nav-menu-icon{
+    visibility: visible;
+  }
+  .navbar{
+    visibility: hidden;
+  }
+  .articles-container{
+    flex-direction: column;
+  }
+  .main-article{
+    flex-direction: column;
+    align-items: center;
+  }
+}
