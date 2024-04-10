@@ -177,3 +177,59 @@ header {
 }
   
 /* Write your CSS below */
+
+@media(max-width:760px){
+.navbar{
+ display:flexbox;
+  flex-direction:column;
+  align-items: center;
+  
+}
+.article{
+  width: 100%
+}
+.navbar li{
+  border-top:solid #fff;
+  width:100%;
+  border-right: none;
+}
+
+.articles-container{
+  display: flexbox;
+  flex-direction: column;
+  width:100%;
+  gap:30px
+}
+.main-article{
+  display: flexbox;
+  flex-direction: column;
+  justify-content: left;
+}
+.main-article .content{
+  width: 100%;
+}
+.main-article .image {
+  width: 100%;
+  height: auto;
+}
+
+}
+
+@media(min-width: 760px) and (max-width: 1024px){
+  .navbar li{
+   width: 100%
+  }
+
+  
+  .article{
+    width: 49%;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+
+
+
