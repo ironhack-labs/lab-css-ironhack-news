@@ -177,3 +177,48 @@ header {
 }
   
 /* Write your CSS below */
+/* This is for phone size*/
+@media (max-width: 760px) {
+  .navbar {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-article{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .articles-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+/*This is for table size */
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+ 
+  .articles-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .articles {
+    flex: 50%;
+  }
+}
