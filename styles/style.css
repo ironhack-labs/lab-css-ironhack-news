@@ -177,3 +177,86 @@ header {
 }
   
 /* Write your CSS below */
+
+
+
+
+
+/* Mobile size css */
+
+@media (max-width: 760px) {
+.navbar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar ul{
+  display: flex;
+  margin-left: 0%;
+}
+
+.navbar li {
+  margin-bottom: 10px;
+  border: 5px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+
+.article{
+  display: flex; 
+  flex-wrap: wrap;
+  width: calc(50% - 1.5em);
+  margin: 10px;
+}
+
+}
+
+
+
+
+/* Computer size css */
+
+@media screen and (min-width: 761px) and (max-width: 1023px){
+
+.navbar {
+  display: flex;
+  flex direction: row;
+  align-items: center;
+  justify-content: center;
+
+}  
+.navbar ul{
+  display: flex;
+  flex direction: row;
+  align-items: center;
+ 
+}
+
+.navbar li{
+  display: flex;
+  flex direction: row;
+   justify-content: center;
+   border-right: none;
+  }
+   .navbar li:last-child {
+    margin-right: 0;
+}
+
+.articles-container{
+  display: flex;
+  flex-wrap: wrap;
+ width: calc(50% - 20px);
+margin: 10px;
+}
+} 
+   
+/* Small Mobile Screens (width < 480px) */
+
+@media (max-width: 480px) {
+  .navbar,
+  .navbar li {
+    display: none; /* Hide the unordered list and list items */
+  }
+}
