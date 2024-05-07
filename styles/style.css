@@ -177,3 +177,86 @@ header {
 }
   
 /* Write your CSS below */
+
+/*Iteration 1 | Mobile Screens (width < 760px)*/
+
+@media (max-width: 760px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    border: 1px solid white;
+    }
+  .navbar li {
+    border: 1px solid white;
+    width: 100%;
+  }
+
+  .main-article, .articles-container {
+    flex-direction: column;
+  }
+
+  .main-article .image, .main-article .content, .article {
+    width: 100%;
+  } 
+
+  .main-article, .image {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  }
+}
+
+/*Iteration 2 | Small Screens (width > 760px and width*/
+
+@media (min-width: 760px) and (max-width: 1024px){
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  .navbar li {
+    text-align: center;
+    border-bottom: 1px solid white;
+    flex-grow: 1
+  }
+  .main-article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .article {
+    width: 45%; 
+    margin-bottom: 20px; 
+  }  
+} 
+
+/*Bonus: Iteration 3 | Small Mobile Screens (width < 480px)*/
+
+.menu-icon {
+  display: none
+}  
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: flex;
+  }
+
+  .main-article, .articles-container {
+    flex-direction: column;
+  }
+
+  .main-article .image, .main-article .content, .article {
+      width: 100%  
+  }
+}
+
