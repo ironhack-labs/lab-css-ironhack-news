@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +185,101 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+@media (max-width: 760px) {
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+  }
+  .article {
+    width: 100%;
+  }
+  nav {
+    /* display: flex; */
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      /* border-top: none; */
+      li {
+        border-right: none;
+        gap: 1.2em;
+        border-bottom: 1px solid white;
+        width: 100%;
+        /* border-width: 100%; */
+      }
+    }
+    /* nav ul {
+      border-bottom: 1px solid white;
+    } */
+  }
+  main {
+    display: flex;
+
+    .main-article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* max-height: 40vh; */
+    }
+    .articles-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2.3rem;
+
+      .article {
+        /* display: block; */
+      }
+    }
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+  .articles-container {
+    flex-wrap: wrap;
+    .article {
+      width: 45%;
+      margin: 20px;
+    }
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    /* align-content: center; */
+  }
+  .navbar li {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    /* align-items: center; */
+  }
+}
+
+@media (width<480px) {
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: inline;
+  }
+  .newspaper-name {
+    border-bottom: none;
+  }
+}
