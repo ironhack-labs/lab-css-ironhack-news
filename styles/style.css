@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +185,92 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid white;
+  }
+  .navbar li {
+    border: 1px solid white;
+    width: 100%;
+  }
+
+  .main-article,
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .main-article .image,
+  .main-article .content,
+  .article {
+    width: 100%;
+  }
+
+  .main-article,
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Iteration 2 | Small Screens (width > 760px and width*/
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  .navbar li {
+    text-align: center;
+    border-bottom: 1px solid white;
+    flex-grow: 1;
+  }
+  .main-article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+    width: 100%;
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+/*Bonus: Iteration 3 | Small Mobile Screens (width < 480px)*/
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: flex;
+  }
+
+  .main-article,
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .main-article .image,
+  .main-article .content,
+  .article {
+    width: 100%;
+  }
+}
