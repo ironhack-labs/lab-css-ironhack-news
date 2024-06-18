@@ -15,7 +15,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: lighter;
 }
 
-
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
   position: fixed;
@@ -75,7 +74,12 @@ header {
   padding: 10px;
   border-bottom: 1px solid white;
 }
-
+nav{
+  display: flex;
+}
+nav img{
+  visibility: collapse;
+}
 .navbar {
   list-style-type: none;
   width: 100%;
@@ -177,3 +181,68 @@ header {
 }
   
 /* Write your CSS below */
+@media(width <= 760px){
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .navbar li{
+    width: 100%;
+  }
+  .main-article{
+    display: flex;
+    flex-direction: column;
+
+  }
+ 
+  .main-article div{
+    width: 100%;
+  }
+  .articles-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5vh;
+  }
+  .articles-container .article{
+    width: 100%;
+  }
+}
+
+@media (width > 760px) and (width < 1024px){
+
+  .navbar{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navbar li{
+    width: 25vh;
+  }
+  .main-article{
+    width: 100%;
+  }
+  .articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3vh 5vw;
+  }
+  .articles-container .article{
+    width: 45%;
+  }
+
+
+}
+@media(width <502px){
+  nav img{
+
+    visibility: visible;
+    text-align: center;
+  }
+  .navbar{
+    visibility: collapse;
+  }
+
+}
