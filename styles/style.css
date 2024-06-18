@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,8 +37,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
-/* STYLES */
 
 /*  Fonts */
 body {
@@ -73,7 +81,6 @@ header {
 .newspaper-name {
   font-size: 24px;
   padding: 10px;
-  border-bottom: 1px solid white;
 }
 
 .navbar {
@@ -83,13 +90,15 @@ header {
   justify-content: flex-start;
 }
 
-.navbar li {
-  width: 130px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid #ffffff;
+@media screen and (min-width: 761px) {
+  .navbar li {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+  }
 }
 
 .navbar li:last-child {
@@ -175,5 +184,88 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
-/* Write your CSS below */
+
+/* Added Media Queries*/
+/*Smartphone*/
+@media screen and (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .navbar li {
+    flex-basis: 100%;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding: 0.5rem;
+  }
+  .main-article {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .main-article .image,
+  .main-article .content {
+    flex-basis: 100%;
+  }
+  .articles-container {
+    gap: 2.5rem;
+  }
+  .article {
+    flex-basis: 100%;
+  }
+  .article img {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hide-mobile {
+    display: none;
+  }
+  .hide {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hide {
+    display: none;
+  }
+  .newspaper-name {
+    border-bottom: 1px solid white;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .navbar li {
+    flex-basis: 100%;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding: 0.5rem;
+  }
+  .main-article {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .articles-container {
+    gap: 1rem;
+  }
+  .article {
+    flex-basis: 48%;
+    margin-bottom: 1rem;
+  }
+  .article img {
+    margin-bottom: 1rem;
+  }
+}
