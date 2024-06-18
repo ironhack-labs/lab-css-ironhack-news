@@ -176,4 +176,62 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+@media (width < 760px){
+  .navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .navbar li {
+    width: 100%;
+    border: 0.5px solid #ffffff;
+  }
+
+  .main-article .image, .main-article .content{
+    width: 100%;
+  }
+
+  .content{
+    margin-bottom: 10px;
+  }
+
+  .main-article{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .article{
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+}
+
+@media (width > 760px) and (width < 1024px){
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.navbar li {
+  width: 25%;
+}
+.main-article{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.article{
+  width: 45%;
+  margin-bottom: 30px;
+}
+}
