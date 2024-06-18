@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +185,111 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+/* iPhone 
+ The Navbar elements ("Home", "News", "Tech" and "Other") should be displayed vertically, one below the other.
+All articles ("Main Article", "Article 1", "Article 2", and "Article 3") should be displayed in a column, one below the other.
+The "Main Article" image should be displayed at the top, followed by the title, text, and the "Read more" button below it.
+  */
+@media screen and (max-width: 760px) {
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    width: 100%;
+    border: 1px solid #ffffff;
+  }
+  .navbar li:last-child {
+    border-right: 1px solid #ffffff;
+  }
+  .main-article {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+
+/* small screens  
+
+Iteration 2 | Small Screens (width > 760px and width < 1024px)
+Next, we will add styles for tablet screens. :computer:
+
+Add a new media query to the style.css file that targets screens with a min-width of 760px and a max-width of 1024px. In particular, you should add the styles to achieve the following:
+
+The navbar links should be displayed horizontally, one next to the other, taking equal space and filling the entire width of the page.
+
+The "Main Article" should be displayed on the top of the page, taking the entire width of the page.
+
+The "Main Article" should be divided into two parts:
+
+on the left side, the image should be displayed,
+on the right side, the title, text, and the "Read more" button should be displayed.
+The other articles ("Article 1", "Article 2", and "Article 3") should be displayed by two in a row, taking equal space. */
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .content {
+    background-color: blue;
+  }
+  .navbar {
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .navbar li {
+    width: 100%;
+    height: 40px;
+    display: flex;
+
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+  }
+
+  .main-article {
+    width: 100%;
+  }
+  .articles-container {
+    width: 100%;
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 20px 0;
+  }
+  .article {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
