@@ -177,3 +177,82 @@ header {
 }
   
 /* Write your CSS below */
+/*Iteration 1 */
+@media (max-width: 760px) {
+  .navbar {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .navbar > li {
+    width: 100vw;
+    border-right: none;
+    border-bottom: solid 1px #ffffff;
+  }
+
+  .navbar > li:last-child {
+    border-bottom: none;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article .image {
+    display:flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    ;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+}
+
+/*iteration 2*/
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar > li {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 0 10%;
+  }
+
+  .main-article .image{
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .article {
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+}
