@@ -1,5 +1,7 @@
 /* CSS RESET - do not remove */
 /* Reset default browser styles and provide a consistent starting point */
+
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -176,4 +178,51 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    border: none;
+  }
+  .main-article {
+    flex-direction: column;
+    width: auto;
+  }
+  .main-article .image {
+    width: 100%;
+  }
+  .main-article .content {
+    justify-items: flex-start;
+    width: 100%;
+  }
+  .articles-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .article {
+    width: 100%;
+    margin-bottom: 40px;
+    }
+  .article:last-of-type {
+    margin: 0;
+  }
+  }
+  @media (min-width: 760px) and (max-width: 1024px) {
+    .navbar {
+      justify-content: space-evenly;
+    }
+    .navbar li {
+      width: 100%;
+    }
+    .article {
+      flex-wrap: wrap;
+      width: 40vw;
+    }
+    .article:last-of-type {
+      margin-top: 25px;
+    }
+  }
+
+
