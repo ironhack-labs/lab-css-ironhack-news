@@ -177,3 +177,51 @@ header {
 }
   
 /* Write your CSS below */
+
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+  }
+  .main-article {
+    flex-direction: column;
+    width: auto;
+  }
+  .main-article .image {
+    width: auto;
+  }
+  .main-article .content {
+    width: auto;
+  }
+  .article {
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .article:last-of-type {
+    margin: 0;
+  }
+  .articles-container {
+    flex-direction: column;
+    width: auto;
+  }
+}
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: space-evenly;
+  }
+  .navbar li {
+    width: 100%;
+  }
+  .article {
+    flex-wrap: wrap;
+    width: 40vw;
+  }
+  .article:last-of-type {
+    margin-top: 30px;
+  }
+}
