@@ -76,14 +76,14 @@ header {
   border-bottom: 1px solid white;
 }
 
-.navbar {
+.navbar, .navbar-mobile {
   list-style-type: none;
   width: 100%;
   display: flex;
   justify-content: flex-start;
 }
 
-.navbar li {
+.navbar li, .navbar-mobile li {
   width: 130px;
   height: 40px;
   display: flex;
@@ -177,3 +177,83 @@ header {
 }
   
 /* Write your CSS below */
+
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar li {
+    border-bottom: 2px solid #777;
+    width: 100vw;
+    border-right: none;
+  }
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .main-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  } 
+  .main-article .image, .main-article .content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+  .navbar li{
+    width: 100%;
+  }
+.articles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+  .main-article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+  .main-article .image, .main-article .content {
+    width: 100%;
+  }
+  .articles-container {
+    flex-wrap: wrap;
+  }
+  .article {
+    width: 50%;
+  }
+}
+
+.navbar-mobile {
+  display: none;
+ }
+
+ @media (max-width: 480px) {
+  .navbar-mobile {
+    display: block;
+    position:absolute;
+    background-color: #333;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile li {
+    width: 100%;
+  }
+}
