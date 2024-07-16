@@ -119,7 +119,7 @@ header {
   width: 50%;
   padding: 0 20px;
   height: auto;
-}
+}  
 
 .main-article .content {
   width: 50%;
@@ -175,5 +175,88 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
+.header-image {
+  display: none;
+}
 /* Write your CSS below */
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .article .btn {
+    width: fit-content;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+    margin-bottom: 20px;
+  }  
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .navbar li {
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .article {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .header-image {
+    display: block;
+  }
+  .newspaper-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
