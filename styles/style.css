@@ -80,7 +80,7 @@ header {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .navbar li {
@@ -90,6 +90,7 @@ header {
   align-items: center;
   justify-content: center;
   border-right: 1px solid #ffffff;
+  width: 250px;
 }
 
 .navbar li:last-child {
