@@ -102,6 +102,10 @@ header {
   font-weight: bold;
 }
 
+.menu-icon {
+  display: none;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -253,6 +257,24 @@ header {
 
   .articles-container {
     gap: 10px;
+  }
+
+}
+
+@media (width < 480px) {
+
+  .newspaper-name {
+    border-bottom: none;
+  }
+  
+  .navbar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+    /* width: 20px; */
+    padding: 5px;
   }
 
 }
