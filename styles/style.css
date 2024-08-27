@@ -180,6 +180,10 @@ header {
 
 @media (width < 760px) {
 
+  html {
+    font-size: 0.85em;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -222,6 +226,33 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0;
+  }
+
+}
+
+@media (760px < width < 1024px) {
+
+  html {
+    font-size: 0.9em;
+  }
+
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    justify-content: center;
+    width: 25%;
+  }
+
+  .article {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 15px;
+  }
+
+  .articles-container {
+    gap: 10px;
   }
 
 }
