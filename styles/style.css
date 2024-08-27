@@ -177,3 +177,80 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px){
+ .main-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width: 1000px;
+  
+ }
+
+.navbar {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles-container {
+  flex-direction: column;
+  width: 1500px;
+
+}
+.article:nth-child(2), .article:last-child {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+  
+  
+}
+
+@media screen and (min-width: 760px) and  (max-width:1024px) {
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles-container{
+  display: flex;
+    flex-direction: row;
+   ;
+  }
+
+  .article {
+    width: 45%;
+    
+}
+article:last-child {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 480px) {
+  .menu-img {
+   display: block;
+   margin: 0 auto;
+  }
+.navbar{
+  display: none;
+}
+}
+
+@media screen and ( min-width: 481px){
+  .menu-img{
+    display: none;
+  }
+}
