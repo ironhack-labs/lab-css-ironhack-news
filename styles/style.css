@@ -191,4 +191,37 @@ header {
     width: 100%;
   }
 
+  .main-article {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+  
+  .main-article .content {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .article {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
 }
