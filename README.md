@@ -95,7 +95,7 @@ Your task in the following iterations will be to add styles using media queries 
 
 <br>
 
-----
+
 
 ### Iteration 1 | Mobile Screens (width < 760px)
 

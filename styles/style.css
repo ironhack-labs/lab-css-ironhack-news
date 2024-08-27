@@ -175,5 +175,343 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+ 
 /* Write your CSS below */
+/* Write your CSS below */
+/* Write your CSS below */
+/* Write your CSS below */
+/* Write your CSS below */
+
+@media (min-width: 481px) and (max-width: 760px) {
+
+
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+  }
+  
+  .navbar li {
+    width: 100%;
+    height:  1 em;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-left: none;
+    border-right: none; 
+    flex-direction: column;
+    
+  }
+  
+  .navbar li:last-child {
+    
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+    border-top: 1px solid #ffffff;
+    border-left: none;
+    
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .navbar2 {
+    width: 100%;
+    height: 0;
+    display: none;
+    justify-content: flex-start;
+  } 
+
+.main-article {
+  width: 29%;
+  border: 1px solid #ccc;
+  width: 100%;
+  min-width: 80px;
+  flex-direction: column;
+  display: flex;
+}
+
+.main-article img {
+  width: 100%;
+  min-width: auto;
+  height: auto;
+  flex-direction: column;
+  padding: none;
+}
+
+.main-article .image {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+.main-article .content {
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  min-width: 80px;
+}
+  section {
+    width: 29%;
+    margin: 1px solid #ccc;
+    width: 108%;
+    min-width: 80px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+  }
+
+.article {
+  margin: 1px solid #ccc;
+  width: 100%;
+  min-width: 80px;
+  margin-top: 10px;
+  justify-content: space-around;
+  
+}
+
+.article img {
+  width: 100%;
+  height: 100%;
+}
+
+.article h2 {
+  font-size: 20px;
+  min-width: 80px;
+}
+
+.article p {
+  margin-top: 10px;
+  min-width: 80px;
+
+}
+
+}
+
+/* `min-width` of `760px` and a `max-width` of `1024px`.*/ 
+/* `min-width` of `760px` and a `max-width` of `1024px`.*/ 
+/* `min-width` of `760px` and a `max-width` of `1024px`.*/ 
+/* `min-width` of `760px` and a `max-width` of `1024px`.*/ 
+/* - The `navbar` links should be displayed horizontally, 
+one next to the other, taking equal space and filling 
+the entire width of the page.*/
+
+@media (min-width: 760px) and (max-width: 48000px) {
+/* `min-width` of `760px` and a `max-width` of `1024px`.*/ 
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar li {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ffffff;
+  flex: 1;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar2 {
+  width: 100%;
+  height: 0;
+  display: none;
+  justify-content: flex-start;
+}
+
+
+.body {
+width: 100%;
+border: 1px solid #ccc;
+height: 100%;
+min-width: 740px;
+min-height: 1740px;
+flex-direction: row;
+display: flex;
+column-count:2;
+align-items: stretch;
+}
+
+.main-article img {
+width: 100%;
+height: 100%;
+flex-direction: row;
+padding: none;
+}
+
+.main-article .image {
+width: 50%%;
+height: 100%;
+flex-direction: row;
+}
+
+.main-article .content {
+width: 50%;
+height: 100%;
+flex-direction: column;
+min-width: 80px;
+
+}
+section {
+  min-width: 29%;
+  margin: 1px solid #ccc;
+  width: 107%;
+  min-width: 80px;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+   align-items: center;
+
+
+
+}
+
+.article {
+margin: 1px solid #ccc;
+width: 49%;
+min-width: 80px;
+margin-top: 10px;
+border-right: 10 
+
+
+
+}
+
+.article img {
+width: 100%;
+height: 100%;
+}
+
+.article h2 {
+font-size: 20px;
+min-width: 80px;
+}
+
+.article p {
+margin-top: 10px;
+min-width: 80px;
+
+} 
+
+.navbar2 {
+  width: 100%;
+  height: 0;
+  display: none;
+  justify-content: flex-start;
+}
+
+}
+
+/*
+### Bonus: Iteration 3 | Small Mobile Screens (width < 480px)
+
+In this bonus iteration, your task is to **hide the "Navbar" links on small mobile screens** :iphone: and instead display the *"menu"* icon. 
+
+To do this, you will need to add a new element to the `index.html` to display the menu icon and add the necessary styles to the `style.css` file.
+You can find the menu icon in the `images/` folder.
+
+The final result should look like in the below image. */
+
+@media  (max-width: 480px) {
+  .navbar {
+    width: 100%;
+    display: none;
+    justify-content: flex-start;
+  }
+  
+  .navbar li {
+    width: 130px;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+    flex: 1;
+  }
+  
+  .navbar li:last-child {
+    border-right: none;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  .navbar2 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .navbar2 li {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+    flex: 1;
+  }
+  
+  .navbar2 li:last-child {
+    border-right: none;
+  }
+  
+  .navbar2 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .main-article {
+    width: 29%;
+    border: 1px solid #ccc;
+    width: 100%;
+    min-width: 80px;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .main-article img {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: none;
+  }
+  
+  .main-article .image {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .main-article .content {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    min-width: 80px;
+}
