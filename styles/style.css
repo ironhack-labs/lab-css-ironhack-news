@@ -177,3 +177,130 @@ header {
 }
   
 /* Write your CSS below */
+
+@media (max-width: 480px){
+
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newspaper-name {
+    border: none;
+  }
+
+  .menu-icon {
+    width: 32px;
+    margin: auto;
+    padding-bottom: 8px;
+  }
+
+  .navbar li {
+    display: none;
+  }
+
+  .articles-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    width: 82vw;
+    margin-bottom: 32px;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image, .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image img, .content h2, .content p {
+    text-align: left;
+    width: 64vw;
+  }
+
+  .content h2 {
+    padding-top: 24px;
+  }
+
+  .btn btn-blue {
+    width: 500px;
+  }
+
+}
+
+@media (max-width: 760px){
+
+  header, .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100vw;
+    border: 0.1px solid white;
+  }
+
+  .articles-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    width: 82vw;
+    margin-bottom: 32px;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image, .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image img, .content h2, .content p {
+    text-align: left;
+    width: 64vw;
+  }
+
+  .content h2 {
+    padding-top: 24px;
+  }
+
+  .btn btn-blue {
+    width: 500px;
+  }
+
+}
+
+
+@media (min-width: 761px) and (max-width: 1023px) {
+
+
+  .navbar{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .article {
+    width: 45%;
+  }
+}
