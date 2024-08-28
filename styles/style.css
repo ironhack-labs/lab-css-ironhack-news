@@ -8,6 +8,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
   
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
@@ -19,7 +20,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
   position: fixed;
-  top: 0;
   right: 0;
   background-color: #ee4545;
   color: #fff;
@@ -33,6 +33,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /*  Fonts */
 body {
   font-family: "Helvetica", sans-serif;
+}
+@media(max-width: 760px){
+
+
 }
 
 /* Basic styles */
@@ -71,9 +75,11 @@ header {
 }
 
 .newspaper-name {
+  display: flex;
   font-size: 24px;
   padding: 10px;
-  border-bottom: 1px solid white;
+  justify-content: center;
+  border-bottom: 2px solid white;
 }
 
 .navbar {
@@ -84,17 +90,19 @@ header {
 }
 
 .navbar li {
-  width: 130px;
+  width: 760px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #ffffff;
+  border-bottom: 2px solid white;
+  line-height: 1.2px;
+
 }
 
-.navbar li:last-child {
+/*.navbar li:last-child {
   border-right: none;
-}
+}*/
 
 .navbar a {
   text-decoration: none;
@@ -104,26 +112,37 @@ header {
 
 /* Articles */
 .main-article {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
   display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 03px solid #ccc;
 }
 
 .main-article img {
-  width: 100%;
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 90%;
   height: auto;
 }
 
 .main-article .image {
-  width: 50%;
-  padding: 0 20px;
+  width: 90%;
+  padding: 20px;
+
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-article .content {
-  width: 50%;
-  padding: 0 20px;
+  width: 80%;
+  padding: 5px;
   height: auto;
 }
 
@@ -133,7 +152,7 @@ header {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .article {
@@ -166,6 +185,7 @@ header {
   font-weight: bold;
   text-decoration: none;
   margin-top: 30px;
+  
 }
 
 .btn:hover {
@@ -177,3 +197,53 @@ header {
 }
   
 /* Write your CSS below */
+.navbar{
+  display: grid;
+  gap: 25px;
+  grid-template: auto / 1fr;
+  align-items: center;
+  justify-items: center;
+      
+}
+main {
+  width: 760px;
+  display: flex;
+  align-items: center;
+}
+.navbar li{
+  line-height: 0px;
+}
+.articles-container
+{  display: flex;
+  flex-direction: column;
+  width: 343%;
+  padding: 10px;
+}
+.article img{
+  width: 100%;
+ height: auto;
+ padding-left: 60px;
+padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article p{
+  width: 100%;
+ height: auto;
+ padding-left: 60px;
+padding-right: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.article h2{
+  width: 80%;
+  padding: 5px;
+  margin-left: 60px;
+  height: auto;
+}
