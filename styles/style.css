@@ -177,3 +177,89 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-device-width: 760px) {
+  .navbar, .articles-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+
+  .main-article{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .article {
+    width: 97%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-device-width: 760px) and (max-device-width: 1024px) { 
+  /* STYLES HERE */
+  .navbar{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-device-width: 480px) { 
+  .newspaper-name {
+    border:none;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .nav-menu{
+    display: block;
+  }
+
+  .main-article {
+    width: 90%;
+  }
+
+  .article {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .main-article .content {
+    padding: 0px;
+  }
+
+  .main-article .image {
+    padding:  0px;
+  }
+}
+
+@media screen and (min-device-width: 480px) { 
+  .nav-menu{
+    display: none;
+  }
+}
