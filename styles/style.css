@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +185,114 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+@media screen and (min-width: 480px) and (max-width: 760px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;   
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;  
+  }
+
+  .article {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar li {
+    width: 25%;
+  }
+
+  .articles-container {
+    display: flex;    
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }  
+
+  .newspaper-name {
+    border: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;  
+  }
+
+  .article {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
