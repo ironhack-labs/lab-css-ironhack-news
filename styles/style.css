@@ -157,7 +157,7 @@ header {
 }
 
 .btn {
-  background-color: #333;
+  background-color: #1a1343;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -175,5 +175,140 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+}
+
+/* Aquí para Pantalla móvil*/
   
-/* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items: center;
+
+  }
+  .navbar li {
+    border:none;
+  }
+
+  .navbar li {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+
+  }
+
+  .newspaper-name {
+    border: none
+  }
+
+  .articles-container {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-article .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }  
+
+  .main-article .image {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+}
+
+/*Termina pantalla móvil*/
+
+/*Termina pantalla TABLET*/
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  align-items: center;
+  }
+
+  .navbar li {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+}
+
+/*Termina pantalla TABLET*/
+
+/*EMPIEZA BONUS*/
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none; 
+    
+  }
+
+
+  
+    .menu-icon {
+      display: inline; 
+    }
+  
+  
+
+  .articles-container {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-article .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }  
+
+  .main-article .image {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+}
+
