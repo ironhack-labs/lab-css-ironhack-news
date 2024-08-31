@@ -177,3 +177,63 @@ header {
 }
   
 /* Write your CSS below */
+
+/*Mobile screrens. Iteration 1*/
+@media (width < 760px){
+
+  /* nav elements displayed vertically */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /*Articles displayed in a column*/
+  .articles-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*main article img at the top, followed by the rest below it*/
+  .main-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*Small screens. Iteration 2*/
+@media (min-width: 760px) and (max-width: 1024px){
+
+  /*navbar horiz., equal space, filling entire width*/
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navbar li {
+    justify-content: center;
+    
+  }
+
+  .navbar a {
+    justify-content: center;
+    
+  }
+
+  /*Other articles, two in a row, equal space*/
+  .articles-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .articles-container .article {
+    flex: 1 1 calc(50% - 20px)
+  }
+
+}
