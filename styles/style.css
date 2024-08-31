@@ -102,6 +102,10 @@ header {
   font-weight: bold;
 }
 
+.menu-icon {
+  display: none;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -177,3 +181,105 @@ header {
 }
   
 /* Write your CSS below */
+
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar li {
+    width: 100%;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+  .articles-container {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .article {
+    flex: 1 1 calc(50% - 40px);
+  }
+
+  .articles-container::after {
+    content: '';
+    flex: 1 1 calc(50% - 40px);
+    margin-bottom: 16px;
+  }
+
+  .main-article {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  main {
+    margin: 20px;
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+
+  .article{
+    width: 100%;
+  }
+
+  .main-article, .articles-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-inline: 0px;
+    padding-inline: 0px;
+    gap: 40px;
+  }
+
+  main{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .main-article .image, .main-article .content {
+    width: 100%;
+  }
+
+  .main-article {
+    margin: 0;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .newspaper-name {
+    border: none;
+  }
+
+  .navbar li{
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    align-self: center;
+    margin: 10px;
+  }
+}
