@@ -177,3 +177,102 @@ header {
 }
   
 /* Write your CSS below */
+
+/*---------------------------------------------- SAM a partir de aqui es inventando un poco bastante---------------------------------------*/
+
+
+
+/* Iteración 1 | Pantallas móviles (ancho < 760px) */
+
+@media screen and (max-width: 760px) {
+   nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+    .articles-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .article {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+  .main-article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .main-article .image img {
+      width: 100%;
+      height: auto;
+  }
+
+  .main-article .content {
+      text-align: center;
+      padding: 10px;
+  }
+}
+
+/* Iteración 2 | Pantallas pequeñas (760px < ancho < 1024px) */
+
+
+@media  screen and (min-width: 760px) and (max-width: 1024px) {
+  
+  nav ul {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  nav ul li {
+      flex: 1;
+      text-align: center;
+  }
+
+  
+  .main-article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .main-article .image {
+      width: 50%;
+  }
+
+  .main-article .image img {
+      width: 100%;
+      height: auto;
+  }
+
+  .main-article .content {
+      width: 50%;
+      padding: 20px;
+      text-align: left;
+  }
+
+  
+
+  .articles-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+  }
+
+  .article {
+      width: 100%;
+  }
+}
+
+
