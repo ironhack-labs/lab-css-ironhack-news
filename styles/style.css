@@ -177,3 +177,74 @@ header {
 }
   
 /* Write your CSS below */
+@media screen  and (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid;  
+}
+.navbar li {
+  width: 100%;
+  border-bottom: solid;
+}
+.main-article {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  }
+.main-article .image {
+width: 100%;
+}
+.main-article .content {
+  width: 100%;
+  margin: 50px 0;
+}
+.articles-container {
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+.article {
+  width: 100%;
+  margin: 20px 0;
+}
+}
+
+@media screen  and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    }
+
+    .navbar li {
+      width: 25%;
+    }
+    .articles-container {
+      display:flex;
+    }
+    .article {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+  
+  .newspaper-name {
+    border: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    display: none;
+  }
+}
