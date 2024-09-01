@@ -177,3 +177,100 @@ header {
 }
   
 /* Write your CSS below */
+.menu-icon {
+  display: none; /* Ocultar por defecto en pantallas grandes */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+@media (max-width: 760px){
+
+
+  header nav {
+    display: flex;
+    justify-content: center; 
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column; 
+    padding: 0;
+    width: 100%;
+    align-items: flex-start; 
+  }
+  .navbar li {
+    width: 100%; 
+    border-right: none; 
+    border-bottom: 1px solid #ffffff; 
+  }
+  .main-article{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  .articles-container{
+    
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+   
+    
+  }
+  .main-article .image,
+  .main-article .content,
+  .main-article  {
+    justify-content: center;
+    width:100%;
+  }
+
+  .articles-container .article{
+    
+    width:100%;
+  
+  }
+
+}
+
+@media (width > 760px) and (width < 1024px){
+
+  header nav {
+
+    display: flex;
+    width: 100%;
+    
+  }
+  nav .navbar {
+    
+    width: 100%;
+    justify-content: center;
+
+  }
+  nav .navbar li{
+    width:100%;
+  }
+
+  .articles-container{
+    
+    flex-wrap:wrap;
+    gap: 30px;
+   
+  }
+
+  .articles-container .article{
+    
+    width:45%;
+    
+  }
+
+
+}
+
+@media (width < 480px){
+
+
+
+}
+
