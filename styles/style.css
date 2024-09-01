@@ -177,3 +177,50 @@ header {
 }
   
 /* Write your CSS below */
+
+@media(width < 760px) {
+  .navbar {
+    flex-flow: column;
+  }
+
+  .navbar > li {
+    width: 100%;
+  }
+
+  .articles-container {
+    flex-flow: column;
+  }
+
+  .main-article {
+    flex-flow: column;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media(width > 760px) and (width < 1024px){
+  .navbar li {
+    width: 100%;
+  }
+
+  .articles-container {
+    row-gap: 30px;
+  }
+
+  .article {
+    width: 45%;
+    padding: 30px;
+  }
+}
