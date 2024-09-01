@@ -83,6 +83,10 @@ header {
   justify-content: flex-start;
 }
 
+nav img{
+  display:none;
+}
+
 .navbar li {
   width: 130px;
   height: 40px;
@@ -176,4 +180,104 @@ header {
   background-color: #007bff;
 }
   
+
 /* Write your CSS below */
+
+
+@media (width > 760px) and  (width < 1024px){
+  .navbar {
+    
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .navbar li {
+    width: 25%;
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+ 
+  .article:last-of-type {
+    
+    margin-bottom: 0;
+  }
+
+
+  
+}
+
+
+@media (width < 760px){
+  
+    .navbar {
+      flex-direction: column;
+    }
+
+    .navbar li {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ffffff;
+    }
+    .navbar li:last-of-type {
+      
+      border-bottom:none;
+      
+    }
+    
+    .article {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .main-article {
+      
+      /* width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      
+    }
+    
+    .main-article .image {
+      width: 100%;
+      padding:0;
+      
+    }
+    
+    .main-article .content {
+      width: 100%;
+      padding: 0;
+    }
+    
+    .article {
+      margin-bottom: 40px;
+    }
+    .article:last-of-type {
+      margin-bottom: 0px;
+    }
+}
+
+@media(width < 480px){
+  nav img{
+    display:inline;
+    padding: 10px;
+    }
+  
+  .navbar {
+      display: none;
+    }
+    .newspaper-name {
+      
+      border-bottom: none;
+    }
+  
+}
+
