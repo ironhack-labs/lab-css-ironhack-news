@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -17,6 +28,20 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
+
+
+/*
+Add a media query to the style.css file that targets screens with a max-width of 760px and the styles to make the page look like in the image below. In particular,
+you should add the styles to achieve the following: The Navbar elements ("Home", "News", "Tech" and "Other") should be displayed vertically,
+one below the other. All articles ("Main Article", "Article 1", "Article 2", and "Article 3") should be displayed in a column,
+one below the other. The "Main Article" image should be displayed at the top,
+followed by the title,
+text,
+and the "Read more" button below it.*/
+
+
+
+
 .viewport-dimensions {
   position: fixed;
   top: 0;
@@ -27,7 +52,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +200,19 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navson {
+    width: 100%;
+  }
+
+
+
+
+}
