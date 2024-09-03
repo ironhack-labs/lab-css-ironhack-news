@@ -4,6 +4,10 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
+
+#Menu-Icon{
+  display:block
+}
   
 *, *:before, *:after {
   box-sizing: inherit;
@@ -177,3 +181,102 @@ header {
 }
   
 /* Write your CSS below */
+
+@media screen and (max-width: 760px) {
+}
+#Menu-Icon{
+  display:none
+}
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navbar li {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+    border: 1px solid white;
+    width: 500vw
+  }
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+    margin: 10px;
+    }
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    }
+
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar li {
+    width: 130vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #FFFFFF;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+  }
+  .articles-container {
+    display: flex;
+    align-items:flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  .article {
+    width: 46%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }                   
+}
+@media screen and {max-width: 480px;
+  
+}
+#Menu-Icon{
+  display:none
+}
