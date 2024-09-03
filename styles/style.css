@@ -80,7 +80,11 @@ header {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  
+  
+  
 }
 
 .navbar li {
@@ -108,23 +112,30 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .main-article img {
-  width: 100%;
-  height: auto;
+  width: 150px;
+  margin-bottom: 30px;
+  position: relative;
+  right: 100px;
+  
 }
 
 .main-article .image {
-  width: 50%;
+  width: 20%;
   padding: 0 20px;
   height: auto;
 }
 
 .main-article .content {
-  width: 50%;
+  width: 400px;
   padding: 0 20px;
   height: auto;
+  
 }
 
 .articles-container {
@@ -177,3 +188,47 @@ header {
 }
   
 /* Write your CSS below */
+@media (max-width: 760px) {
+
+.header h1{
+  height: 45px;
+}
+  
+.navbar{
+  height: 100px;
+}
+
+.main-article {
+ position: relative;
+ left: 20px;
+ 
+}
+main.article image {
+  width: 250px;
+  position: relative;
+  left: 80px;
+}
+
+.main-article content{
+  position: relative;
+  right: 20;
+
+
+}
+.articles-container{
+  flex-direction: column;
+  width: 50px;
+}
+.article{
+  width: 350px;
+  position: relative;
+  right: 150px;
+}
+.main-article content h2{
+  position: relative;
+  left: 100px;
+}
+
+
+
+}
