@@ -175,5 +175,119 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+.mobile-nav {
+  display: none;
+}
   
 /* Write your CSS below */
+
+
+/* Mobile screens */
+@media screen and (width < 760px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  .navbar > li {
+    width: 100%;
+    border-bottom: 1px solid white;
+    border-right: none;
+  }
+ 
+  .mobile-nav {
+    display: none;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  
+  .main-article .image {
+    width: 100%;
+  }
+  
+  .main-article .content {
+    width: 100%;
+  } 
+ 
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  
+  .article {
+    width: 100%;
+  }
+  
+  .article img {
+    width: 100%;
+  }
+
+
+  
+ 
+  
+}
+
+/* Small screens */
+@media screen and (width > 760px) and (width < 1024px) {
+  .navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  .navbar > li {
+    width: 100%;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .articles-container {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .article {
+    width: 47.5%;
+    margin-bottom: 5%;
+  }
+  
+  .article img {
+    width: 100%;
+  }
+  
+  
+}
+
+/* Small mobile screens */
+@media screen and (width < 480px){
+  nav {
+    display: none;
+  }
+
+  .mobile-nav{
+    display: inline-flex;
+    justify-items: center;
+    width: 30px;
+    height: 30px;
+  }
+
+}
