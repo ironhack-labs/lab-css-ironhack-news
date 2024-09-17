@@ -11,3 +11,11 @@ window.addEventListener("resize", () => {
   // Set the text of the element to show the viewport width
   viewportDimensions.innerHTML = `Viewport Width: <b>${width}px</b>`;
 });
+
+
+const collapsibles = document.querySelectorAll(".collapsible");
+collapsibles.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.classList.toggle("collapsible-expanded");
+  })
+);
