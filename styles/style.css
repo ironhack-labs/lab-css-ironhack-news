@@ -2,7 +2,7 @@
 /* Reset default browser styles and provide a consistent starting point */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 12px;
 }
   
 *, *:before, *:after {
@@ -21,25 +21,26 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #ee4545;
-  color: #fff;
+  background-color: #f4f4f4;
+  color: #551a1a;
   font-weight: 500;
-  padding: 5px 8px;
+  padding: 20px ;
   font-size: 14px;
 }
   
 /* STYLES */
 
+
 /*  Fonts */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 /* Basic styles */
 main {
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px 20px;
+  margin: 10px 0;
+  padding:  30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,20 +61,21 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.6em;
+
 }
 
 /* Header and Navbar */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #111010;
+  color: #410808;
   text-align: center;
 }
 
 .newspaper-name {
   font-size: 24px;
   padding: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 10px solid white;
 }
 
 .navbar {
@@ -177,3 +179,45 @@ header {
 }
   
 /* Write your CSS below */
+
+@media screen and (width < 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    border-bottom: 1px solid white;
+width: 100%
+  }
+
+  .main-article {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content{
+    width:100%
+  }
+}
+
+@media screen and (760px <= width < 1024px){
+
+.navbar {
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  width: 100%;
+}
+
+ .article{
+    width: 45%;
+  }
+
+}
