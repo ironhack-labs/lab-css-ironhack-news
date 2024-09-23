@@ -175,5 +175,84 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
   
 /* Write your CSS below */
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+  .main-article {
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-article .image {
+    position: relative;
+    width: 100%;
+  }
+  .main-article .content {
+   width: 100%;
+  }
+  .articles-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .article {
+    width: 100%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+  }
+  .main-article {
+    width: 100%;
+  }
+  .articles-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  .article {
+    flex: 1 1 calc(40% - 10px); 
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+  }
+  .navbar.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
