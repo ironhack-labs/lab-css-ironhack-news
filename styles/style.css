@@ -177,3 +177,104 @@ header {
 }
   
 /* Write your CSS below */
+/* Iteration 1 - Mobile Screens (width < 760px) */
+@media (max-width: 760px) {
+
+  /* Navbar vertical */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    width: 100%;  /* Hacer que cada elemento ocupe el 100% del ancho */
+    border-right: none;  /* Eliminar las líneas divisorias laterales */
+    border-bottom: 1px solid #fff; /* Agregar una línea divisoria inferior */
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;  /* Eliminar la línea divisoria del último elemento */
+  }
+
+  /* Artículos en columna */
+  .main-article, .articles-container {
+    flex-direction: column;  /* Disponer los artículos en columna */
+  }
+
+  .main-article {
+    padding: 10px;
+  }
+
+  .main-article .image, .main-article .content {
+    width: 100%;  /* Asegurar que la imagen y el contenido ocupen el 100% del ancho */
+    padding: 0;  /* Eliminar el padding */
+  }
+
+  .articles-container {
+    align-items: stretch;  /* Asegurar que los artículos se estiren al 100% del contenedor */
+  }
+
+  .article {
+    width: 100%;  /* Cada artículo ocupa el ancho completo */
+    margin-bottom: 20px;  /* Añadir margen entre los artículos */
+  }
+
+  /* Cambiar el orden en el main-article */
+  .main-article {
+    display: flex;
+    flex-direction: column; /* Mostrar la imagen primero y luego el texto */
+  }
+
+  .btn {
+    align-self: flex-start;  /* Alinear el botón al inicio del contenedor */
+  }
+}
+
+/* Iteration 2 - Small Screens (width > 760px and width < 1024px) */
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  /* Navbar horizontal */
+  .navbar {
+    flex-direction: row; /* Cambiar a disposición horizontal */
+    justify-content: space-between; /* Espacio igual entre los elementos */
+  }
+
+  .navbar li {
+    width: auto; /* Los elementos tomarán el espacio necesario */
+    flex-grow: 1; /* Los elementos crecen para llenar el ancho */
+    border-right: 1px solid #ffffff; /* Restaurar el borde entre elementos */
+    text-align: center;
+  }
+
+  .navbar li:last-child {
+    border-right: none; /* Sin borde derecho en el último elemento */
+  }
+
+  /* Main Article toma todo el ancho */
+  .main-article {
+    flex-direction: row; /* Disposición en fila */
+    padding: 20px; /* Añadir padding para mayor espacio */
+  }
+
+  .main-article .image {
+    width: 50%; /* Imagen toma el 50% del ancho */
+    padding: 0; /* Eliminar padding adicional */
+  }
+
+  .main-article .content {
+    width: 50%; /* Contenido toma el 50% del ancho */
+    padding: 20px; /* Añadir un padding */
+  }
+
+  /* Otros artículos en dos columnas */
+  .articles-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 48%; /* Cada artículo ocupa el 48% del contenedor para crear dos columnas */
+    margin-bottom: 20px; /* Añadir un margen inferior */
+  }
+}
+
