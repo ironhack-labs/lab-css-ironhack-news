@@ -177,3 +177,109 @@ header {
 }
   
 /* Write your CSS below */
+
+/* Iteración 1: Pantallas móviles (ancho < 760 px) */
+@media (max-width: 760px) {
+  .navbar {
+      flex-direction: column; /* Muestra los elementos en columna */
+      align-items: center; /* Centra los elementos */
+      width: 100%; /* Asegura que ocupe todo el ancho */
+  }
+
+  .navbar li{
+      width: 100%; /* Cada elemento de la navbar ocupa el ancho completo */
+      border-right: none; /* Elimina el borde derecho */
+      text-align: center; /* Centra el texto */
+  }
+
+  .main-article {
+      display: flex;
+      flex-direction: column; /* Muestra el artículo principal en columna */
+      width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .main-article img {
+      width: 100%; /* La imagen ocupa el ancho completo */
+  }
+
+  .main-article .content {
+      padding: 10px; /* Espaciado interno */
+  }
+
+  .articles-container {
+      display: flex;
+      flex-direction: column; /* Muestra los artículos en columna */
+      width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .article {
+      width: 100%; /* Cada artículo ocupa el ancho completo */
+      margin-bottom: 20px; /* Margen inferior entre artículos */
+  }
+
+  .article img {
+      width: 100%; /* Las imágenes de los artículos ocupan el ancho completo */
+  }
+}
+/* Iteración 2: Pantallas pequeñas (ancho > 760 px y ancho < 1024 px) */
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+      flex-direction: row; /* Muestra los elementos en fila */
+      justify-content: space-between; /* Espacio entre elementos */
+  }
+
+  .main-article {
+      display: flex; /* Usa flexbox para el artículo principal */
+      flex-direction: row; /* Divídelo en dos partes */
+      width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .main-article .image {
+      width: 50%; /* La imagen ocupa el 50% */
+  }
+
+  .main-article .content {
+      width: 50%; /* El contenido ocupa el 50% */
+      padding: 20px; /* Espaciado interno */
+  }
+
+  .articles-container {
+      display: flex;
+      flex-wrap: wrap; /* Permite el ajuste de los artículos */
+      justify-content: space-between; /* Espacio entre artículos */
+  }
+
+  .article {
+      width: 48%; /* Cada artículo ocupa casi el 50% */
+      margin-bottom: 20px; /* Margen inferior entre artículos */
+  }
+}
+
+/* Iteración 3: Pantallas móviles pequeñas (ancho < 480 px) */
+
+@media (max-width: 320px) {
+  .navbar {
+      display: none; /* Oculta la barra de navegación */
+  }
+
+  .menu-icon {
+      display: block; /* Muestra el ícono del menú */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+      margin: 10px; /* Espaciado alrededor del ícono */
+  }
+}
+
+/* Para pantallas más grandes (mayor a 480px) */
+@media (min-width: 481px) {
+  .menu-icon {
+      display: none; /* Oculta el ícono del menú */
+  }
+
+  .navbar {
+      display: flex; /* Muestra la barra de navegación */
+      flex-direction: row; /* Muestra los elementos de la navbar en fila */
+      justify-content: space-between; /* Espacio entre elementos */
+  }
+}
+
+
