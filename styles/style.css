@@ -177,3 +177,96 @@ header {
 }
   
 /* Write your CSS below */
+@media all and (max-width:760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 0 1 auto;
+  }
+
+  .navbar li {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: none;
+    width: 100%;
+    padding: auto;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-article .image, .main-article .content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-article img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1024px) and (min-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 0 1 auto;
+  }
+
+  .navbar li {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    width: 100%;
+    padding: auto;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .article {
+    width: calc(50% - 20px);
+  }
+}
+
+@media all and (max-width: 760px) {
+  .navbar {
+    display: none; 
+  }
+
+  .menu-icon {
+    display: block; 
+    margin: 10px auto; 
+  }
+}
