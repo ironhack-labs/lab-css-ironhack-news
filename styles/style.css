@@ -90,6 +90,11 @@ header {
   align-items: center;
   justify-content: center;
   border-right: 1px solid #ffffff;
+  flex-grow: 1;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .navbar li:last-child {
@@ -177,3 +182,97 @@ header {
 }
   
 /* Write your CSS below */
+/*Iteration 1: Mobile Screens (width < 760px)*/
+@media (max-width: 760px) {
+
+  /*Navbar*/
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  /*Articles*/
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .article {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .main-article h2 {
+    margin-top: 10px;
+  }
+
+}
+
+/*Iteration 2 | Small Screens*/
+@media (min-width: 760px) and (max-width: 1024px){
+
+  /*Navbar*/
+  .navbar li {
+    flex-grow: 1;
+  }
+
+  /*Article*/
+
+  .articles-container {
+    flex-wrap:wrap;
+  }
+
+  .article {
+    width: 43%;
+    margin-bottom: 30px;
+  }
+
+}
+
+  /*Bonus: Iteration 3 | Small Mobile Screens*/
+  @media (width < 480px){
+
+    /*Navbar*/
+    .navbar li {
+      display: none;
+    }
+
+    .newspaper-name {
+      border: none;
+    }
+
+    .menu-icon {
+      display: inline;
+    }
+
+    /*Main article*/
+    .main-article {
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .article {
+      width: 100%;
+    }
+
+    .articles-container {
+      padding: 0;
+    }
+  }
