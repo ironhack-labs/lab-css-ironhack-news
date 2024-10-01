@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +185,83 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+/* Iteration 1 Mobile screens (width<760px) */
+
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar li {
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .main-article .image {
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  .btn-blue {
+    width: 140px;
+    text-align: center;
+  }
+}
+
+@media (760px <= width <= 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-article .content {
+    padding: 0px 10px;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .article {
+    width: 40%;
+  }
+}
