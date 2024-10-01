@@ -175,5 +175,90 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+  nav img{
+    display: none;
+  }
 /* Write your CSS below */
+@media (max-width:760px){
+  .articles-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav img{
+    display: none;
+  }
+  .article{
+    width:100%;
+    margin: 0rem 0rem 2em;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar li{
+    border: 1px solid white;
+    width: 100%;
+  }
+  .main-article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main-article .image, .main-article .content{
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar li{
+    text-align: center;
+    width: 100%;
+  }
+  .main-article{
+    width: 100%;
+  }
+  .articles-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  .article{
+    width:45%;
+    margin: 0.5em 0rem 2em;
+  }
+  nav img{
+    display: none;
+  }
+  
+  }
+
+  @media (max-width:480px) {
+   .navbar{
+      display: none;
+    }
+    #burger{
+    display: block;
+    padding:1rem;
+    
+    }
+    header nav{
+      display: flex;
+      justify-content: center;
+    align-items: center;
+    }
+    .newspaper-name{
+      border: none;
+    }
+  }
