@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +38,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -100,6 +111,10 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+.navicon {
+  display: none;
 }
 
 /* Articles */
@@ -175,5 +190,115 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+@media screen and (max-width: 760px) {
+
+  .newspaper-name {
+    border-bottom: 0;
+  }
+
+  .navbar {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-right: 0;
+    border-top: 0.5px solid white;
+  }
+
+  .navbar li:last-child {
+    border-right: 0;
+  }
+
+  .main-article {
+    display: block;
+  }
+
+  .main-article .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+    display: block;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar li {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .main-article .image {
+
+    width: auto;
+    height: auto;
+  }
+
+  .main-article .image img {
+    width: auto;
+    height: 200px;
+  }
+
+  .main-article .content {
+    width: auto;
+    height: auto;
+  }
+
+  .articles-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .articles-container article:last-child {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .articles-container .article {
+    height: auto;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navicon {
+    display: block;
+    background: none;
+    border: none;
+    padding-bottom: 10px;
+  }
+
+}
