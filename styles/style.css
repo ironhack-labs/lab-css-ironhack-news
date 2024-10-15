@@ -83,6 +83,10 @@ header {
   justify-content: flex-start;
 }
 
+#menu-icon {
+  display: none;
+}
+
 .navbar li {
   width: 130px;
   height: 40px;
@@ -177,3 +181,84 @@ header {
 }
   
 /* Write your CSS below */
+@media ( width < 760px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    li {
+      border-right: none;
+      width: 100%;
+      border-bottom: 1px solid white;
+    }
+  }
+  .main-article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    
+    .content {
+      width: 100%;
+    }
+    .image {
+      width: 100%;
+    } 
+  }
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .article {
+      width: 100%;
+    }
+  }
+}
+@media (width > 760px) and (width < 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      padding-right: 80px;
+    }
+  }
+  .main-article {
+    width: 100%;
+  }
+  .articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+    gap: 20px;
+  
+    .article {
+      width: 48%; 
+    }
+  }
+}
+@media (width < 480px) {
+  .navbar {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    padding-bottom: 15px;
+    cursor: pointer;
+  }
+  .newspaper-name {
+    border-bottom: none;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+
+
+  
+
