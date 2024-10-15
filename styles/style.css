@@ -102,6 +102,10 @@ header {
   font-weight: bold;
 }
 
+#menu-icon {
+  display: none;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -177,3 +181,75 @@ header {
 }
   
 /* Write your CSS below */
+
+/* mobile screen media */
+@media (width < 760px) {
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .article{
+    width: 100%;
+  }
+}
+
+/* Small screen media */
+
+@media (width > 760px) and (width < 1024px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+  }
+  .article {
+    flex-basis: 40%;
+  }
+}
+
+/* Small mobile screen */
+
+@media (width < 480px) {
+  .navbar  {
+    display: none;
+  }
+  #menu-icon {
+    display: flex;
+
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
