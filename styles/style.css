@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +38,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -116,13 +127,11 @@ header {
 }
 
 .main-article .image {
-  width: 50%;
   padding: 0 20px;
   height: auto;
 }
 
 .main-article .content {
-  width: 50%;
   padding: 0 20px;
   height: auto;
 }
@@ -175,5 +184,74 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+  }
+
+  .navbar li {
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .navbar li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-article img {
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+  }
+
+  .article {
+    width: 47%;
+    margin-bottom: 16px;
+  }
+
+  .article p {
+    height: 70px;
+  }
+
+}
