@@ -176,4 +176,70 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+/* Responsive Design: Mobile: (width < 760px) */
+
+@media (width < 760px) {
+
+
+  /* Navbar elements */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+  }
+
+  /* Articles */
+
+  .main-article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .articles-container {
+    gap: 30px;
+  }
+
+  .article {
+    width: 100%;
+  }
+  
+}
+
+/* Responsive Design: Small Screens (width > 760px && width < 1024px) */
+
+@media (width > 760px) and (width < 1024px) {
+
+  /* Navbar elements */
+  .navbar li {
+    width: 100%;
+  }
+
+  /* Articles */
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+}
