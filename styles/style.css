@@ -102,6 +102,10 @@ header {
   font-weight: bold;
 }
 
+.secret-image{
+  display: none;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -171,9 +175,138 @@ header {
 .btn:hover {
   background-color: #555;
 }
-
 .btn-blue {
   background-color: #007bff;
 }
   
 /* Write your CSS below */
+/* iPhone*/
+@media screen and (min-width: 481px) and (max-width: 760px){
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar li {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+  }
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10%;
+  }
+
+}
+  
+/* Tablet*/
+@media screen and (max-width: 1024px) and (min-width: 761px){
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .navbar li {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+  }
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+  .article {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 5cqmax;
+  }
+} 
+
+/* Small Mobile*/
+@media screen and (max-width: 480px){
+  .navbar li{
+  display: none;
+  border: none;
+  }
+  .newspaper-name{
+    border: none;
+  }
+  .secret-image{
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+  .main-article {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-article .image {
+    width: 100%;
+    height: auto;
+  }
+  .main-article .content {
+   width: 100%;
+   height: auto;
+  }
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10%;
+  }
+}
