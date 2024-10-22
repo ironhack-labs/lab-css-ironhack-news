@@ -177,3 +177,182 @@ header {
 }
   
 /* Write your CSS below */
+/* Media query for max width 760px */
+ /* The Navbar elements ("Home", "News", "Tech" and "Other") should be displayed vertically, one below the other.
+All articles ("Main Article", "Article 1", "Article 2", and "Article 3") should be displayed in a column, one below the other.
+The "Main Article" image should be displayed at the top, followed by the title, text, and the "Read more" button below it. */
+
+@media screen and (min-width: 481px) and (max-width: 760px){
+ 
+.navbar {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ffffff;
+  border-right: none;
+}
+
+.main-article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+  }
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.article{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  
+}
+
+/* Media query tablet
+Iteration 2 | Small Screens (width > 760px and width < 1024px)
+Next, we will add styles for tablet screens. :computer:
+
+Add a new media query to the style.css file that targets screens with a min-width of 760px and a max-width of 1024px. In particular, you should add the styles to achieve the following:
+
+The navbar links should be displayed horizontally, one next to the other, taking equal space and filling the entire width of the page.
+
+The "Main Article" should be displayed on the top of the page, taking the entire width of the page.
+
+The "Main Article" should be divided into two parts:
+
+on the left side, the image should be displayed,
+on the right side, the title, text, and the "Read more" button should be displayed.
+The other articles ("Article 1", "Article 2", and "Article 3") should be displayed by two in a row, taking equal space. */
+
+@media screen and (min-width: 761px) and (max-width: 1024px){
+ 
+.navbar {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar li {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ffffff;
+  border-bottom: none;
+}
+
+.main-article {
+    flex-direction: row;
+  }
+
+  .main-article .image {
+    width: 70%;
+
+  }
+  .main-article .content {
+    width: 100%;
+  }
+
+.articles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.article{
+  width: 45%;
+  padding: 10px;
+  margin: 10px;
+}
+  
+}
+
+/* Media query very small screen
+In this bonus iteration, your task is to hide the "Navbar" links on small mobile screens :iphone: and instead display the "menu" icon.
+
+To do this, you will need to add a new element to the index.html to display the menu icon and add the necessary styles to the style.css file. You can find the menu icon in the images/ folder.
+
+The final result should look like in the below image.
+
+ */
+
+
+
+@media screen and (max-width: 480px){
+
+  .newspaper-name {
+    border: none;
+  }
+
+  #nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ nav img {
+  display: block;
+
+ }
+
+.navbar li {
+  display: none;
+}
+
+.main-article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+  }
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.article{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  
+}
+
+
+
+
