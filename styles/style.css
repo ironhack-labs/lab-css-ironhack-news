@@ -175,5 +175,114 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+.burger-menu{
+  display: none;
+}
   
 /* Write your CSS below */
+
+@media screen and (max-width: 1024px) and (min-width: 760px) {
+  .navbar {
+    justify-content: space-evenly;
+  }
+  .navbar li {
+    width: 256px;
+  }
+
+  .article {
+    width: calc(50% - 30px);
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+  .burger-menu{
+    display: none;
+  }
+}
+
+/* mobile */
+@media  screen and (max-width: 761px) and (min-width: 480px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    border-right: none;
+  }
+  .main-article{
+    display: block;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .burger-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 481px){
+  .navbar {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    border-right: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+  .newspaper-name {
+    border-bottom: none;
+  }
+  .main-article{
+    display: block;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
