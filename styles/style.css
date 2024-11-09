@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -80,11 +90,11 @@ header {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .navbar li {
-  width: 130px;
+  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
@@ -175,5 +185,170 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
+#menu {
+  display: none;
+}
+
 /* Write your CSS below */
+@media (max-width: 760px) {
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: column;
+  }
+
+  .newspaper-name {
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .navbar li {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .main-article img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-article .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+    display: flex;
+  }
+
+  .btn-blue {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    background-color: #007bff;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .article {
+    width: 100%;
+    padding: 20px;
+    margin-top: 5%;
+    border: 1px solid #ccc;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .article p {
+    margin-top: 10px;
+  }
+
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+  }
+
+  .btn:hover {
+    background-color: #555;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1023px) {
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .article {
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 5%;
+    border: 1px solid #ccc;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar > h1 {
+    border: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  #menu {
+    display: block;
+    height: 40px;
+    border: none;
+  }
+}
