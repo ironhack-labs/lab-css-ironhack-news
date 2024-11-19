@@ -156,7 +156,7 @@ header {
   margin-top: 10px;
 }
 
-.btn {
+.btn-blue {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
@@ -168,7 +168,7 @@ header {
   margin-top: 30px;
 }
 
-.btn:hover {
+.btn-blue:hover {
   background-color: #555;
 }
 
@@ -177,3 +177,74 @@ header {
 }
   
 /* Write your CSS below */
+
+/* Mobile first approach - estilo padrão para telas pequenas */
+
+
+@media (max-width: 760px) {
+ 
+  .navbar {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .navbar li {
+    width: 100%; 
+    border-right: none; 
+    border-bottom: 1px solid #ccc;
+  }
+
+  .main-article {
+    flex-direction: column; 
+  }
+
+  .main-article .image, 
+  .main-article .content {
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  .articles-container {
+    flex-direction: column; 
+    gap: 20px; 
+  }
+
+  .article {
+    width: 100%;
+    
+    
+  }
+}
+
+
+@media (max-width: 480px) {
+ 
+  .newspaper-name {
+    font-size: 20px; 
+    padding: 5px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .btn-blue{
+    font-size: 0.9em; 
+    padding: 8px 16px;
+  }
+
+  .navbar::after {
+    content: '☰';
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar li{
+    display: none;
+  }
+
+}
+
+
