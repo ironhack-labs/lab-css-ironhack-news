@@ -81,15 +81,19 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .navbar li {
-  width: 130px;
+  /* width: 130px; */
+  width: 110%;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #ffffff;
+  /* border-right: 1px solid #ffffff; */
+  border-bottom: 1px solid #ffffff;
 }
 
 .navbar li:last-child {
@@ -108,6 +112,7 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  flex-direction: column;
 }
 
 .main-article img {
@@ -116,13 +121,11 @@ header {
 }
 
 .main-article .image {
-  width: 50%;
   padding: 0 20px;
   height: auto;
 }
 
 .main-article .content {
-  width: 50%;
   padding: 0 20px;
   height: auto;
 }
@@ -131,13 +134,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
+  gap: 2rem;
 }
 
 .article {
-  width: 29%;
   padding: 20px;
   border: 1px solid #ccc;
 }
@@ -177,3 +180,94 @@ header {
 }
   
 /* Write your CSS below */
+@media (min-width: 760px) and (max-width: 1023px) {
+  .navbar {
+
+    flex-direction: row;
+    align-items: flex-starts;
+  }
+  .navbar li {
+    border-right: 1px solid #ffffff; 
+  }
+
+  .main-article {
+    flex-direction: row;
+  }
+  .main-article .image {
+    width: 50%;
+
+  }
+  
+  .main-article .content {
+    width: 50%;
+  
+}
+.main-article {
+  flex-direction: row;
+}
+.main-article .image {
+  width: 50%;
+
+}
+
+.main-article .content {
+  width: 50%;
+
+}
+/* body {
+background-color: red;
+} */
+.articles-container {
+
+flex-direction: row;
+gap: 2rem 0;
+
+}
+
+.article {
+width: 45%;
+
+}
+
+
+
+}
+@media (min-width: 1024px) {
+  .navbar {
+
+    flex-direction: row;
+    align-items: flex-starts;
+  }
+
+  .navbar li {
+    width: 130px; 
+  }
+
+  .main-article {
+    flex-direction: row;
+  }
+  .main-article .image {
+    width: 50%;
+
+  }
+  
+  .main-article .content {
+    width: 50%;
+  
+}
+/* body {
+  background-color: red;
+} */
+.articles-container {
+
+  flex-direction: row;
+  gap: 0;
+
+}
+
+.article {
+  width: 29%;
+
+}
+
+}
