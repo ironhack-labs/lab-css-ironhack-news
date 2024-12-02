@@ -28,6 +28,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-size: 14px;
 }
   
+
 /* STYLES */
 
 /*  Fonts */
@@ -81,7 +82,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-}
+} 
 
 .navbar li {
   width: 130px;
@@ -175,5 +176,97 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+.menu-icon {
+  display: none;
+}
+
+
+
+@media(max-width: 760px){
+
+  .navbar{
+  display:flex;
+  flex-direction: column;
+  align-items: center; 
+  }
+
+  .navbar li{
+    width: 100vw;
+    height: 5.6rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+.navbar li:last-child {
+  border-bottom: none;
+}
+
+.main-article {
+  padding: 10px;
+ flex-direction: column;
+}
+
+.main-article .image {
+  width: 100%;
+  height: auto;
+}
+
+.main-article .content {
+  width: 100%;
+  height: auto;
+}
+
+.articles-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.article {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px ;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: space-around !important;
+  }
   
-/* Write your CSS below */
+  .navbar li {
+    flex: 1 !important;
+  }
+
+  .article {
+    width: 48%; 
+    margin-bottom: 20px;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+}
+
+  @media (max-width:480px) {
+    .navbar{
+      display: none;
+    }
+    .menu-icon {
+      display: block; 
+      padding: 10px;
+    }
+    .newspaper-name {
+      border-bottom: none;
+    }
+    
+  }
+
+
