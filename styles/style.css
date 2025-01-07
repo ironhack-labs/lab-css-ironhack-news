@@ -95,7 +95,7 @@ header {
     flex-wrap: wrap;
   }
 
-  nav>li>img {
+  nav div>img {
     display: none;
   }
 }
@@ -118,8 +118,8 @@ header {
     align-items: center;
   }
 
-  .navbar>img {
-
+  .navbar>div>img {
+    display: block;
     height: 70%;
     max-height: 50px;
     object-fit: cover;
