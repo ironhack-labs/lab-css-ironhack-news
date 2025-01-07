@@ -175,5 +175,96 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+.menu-icon {
+  display: none;
+}
   
 /* Write your CSS below */
+/* Making the website responsive */
+@media screen and (max-width: 760px) {
+  .menu-icon {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: stretch; /* Stretch the navbar items to the full width */
+  }
+  
+  .navbar li {
+    width: 100%; /* Make the navbar items take the full width */
+    border-right: none; /* Remove the right border */
+    border-bottom: 1px solid #ffffff; /* Add a bottom border */
+  }
+
+  .navbar li:last-child {
+    border-bottom: none; /* Remove the bottom border for the last item */
+  }
+
+  .main-article {
+    flex-direction: column; /* Stack the main article vertically */
+    align-items: center; /* Center the main article content */
+  }
+
+  .main-article .image {
+    width: 100%; /* Make the image take the full width */
+  }
+
+  .main-article .content {
+    width: 100%; /* Make the content take the full width */
+  }
+
+  .articles-container {
+    flex-direction: column; /* Stack the articles vertically */
+    align-items: center; /* Center the articles */
+  }
+
+  .article {
+    width: 100%; /* Make the articles take the full width */
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  .navbar li {
+    width: 100%;
+  }
+
+  .main-article {
+    flex-direction: row; /* Stack the main article horizontally */
+    width: 100%; /* Make the main article take the full width */
+  }
+  .articles-container {
+    flex-direction: row; /* Stack the articles horizontally */
+    width: 100%; /* Make the container take the full width */
+    flex-wrap: wrap; /* Allow the articles to wrap to the next line */
+    justify-content: space-between; /* Space the articles evenly */
+  }
+  .article {
+    width: calc(50% - 20px); /* Adjust width to display 2 in a row with some space between */
+    margin: 10px; /* Add margin for spacing */
+  }
+}
+
+/* for very small screens */
+@media screen and (max-width: 480px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    margin: auto;
+  }
+}
