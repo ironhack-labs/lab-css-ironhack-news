@@ -85,7 +85,9 @@ header {
   text-align: center;
 }
 
-@media screen and (max-width: 760px) {
+
+
+@media screen and (min-width: 660px) {
   nav ul {
     background-color: rgb(24, 24, 24);
     display: flex;
@@ -95,9 +97,11 @@ header {
     flex-wrap: wrap;
   }
 
-  nav div>img {
+  header div {
     display: none;
   }
+
+
 }
 
 .navbar {
@@ -125,13 +129,17 @@ header {
     object-fit: cover;
 
   }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
 
-
-
-.navbar img {
+/* .navbar img {
   display: block;
-}
+} */
 
 .newspaper-name {
   font-size: 24px;
@@ -153,13 +161,6 @@ header {
 
 }
 
-/* li a {
-  flex: 1 1 100%;
-} */
-
-/* .navbar li:last-child {
-  border-right: none;
-} */
 
 .navbar a {
   text-decoration: none;
@@ -169,6 +170,10 @@ header {
 
 /* Articles */
 .main-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -194,12 +199,13 @@ header {
 
 .articles-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
   padding: 20px;
+  flex-wrap: wrap;
 }
+
 
 .article {
   width: 29%;
@@ -242,3 +248,20 @@ header {
 }
 
 /* Write your CSS below */
+@media screen and (max-width: 600px) {
+  .articles-container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  .article {
+    flex: 1;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+  }
+}
