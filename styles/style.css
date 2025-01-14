@@ -69,7 +69,9 @@ header {
   color: #fff;
   text-align: center;
 }
-
+.btn-menu{
+  display: none;
+}
 .newspaper-name {
   font-size: 24px;
   padding: 10px;
@@ -177,3 +179,79 @@ header {
 }
   
 /* Write your CSS below */
+@media (max-width: 760px) {
+nav ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+nav ul li{
+  /* background-color: #007bff; */
+  width: 100% !important;
+  border-bottom: 1px solid #ffffff;
+}
+.main-article {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.main-article .image {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+}
+.main-article .content {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+}
+.article {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  nav ul{
+    display: flex;
+ 
+  }
+  nav ul li{
+    /* background-color: #007bff; */
+    width: 50% !important;
+    border-bottom: 1px solid #ffffff;
+  }
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .main-article .content {
+    width: 40%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .article {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+@media (max-width: 480px) {
+.navbar{
+  display: none ;
+}
+.btn-menu{
+  display: inline ;
+}
+}
