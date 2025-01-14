@@ -177,3 +177,130 @@ header {
 }
   
 /* Write your CSS below */
+
+
+@media (max-width: 760px){
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+    border-bottom:1px solid #ffffff;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-article {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .articles-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+
+.burger-menu {
+  margin: 10px;
+  padding:10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+@media(min-width:760px) and (max-width: 1024px){
+  
+  .navbar { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar li{
+    width: 30%;
+  }
+
+  .articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+  }
+  .article{
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .newspaper-name{
+    border-bottom: none;
+  }
+  .burger-menu {
+    display: flex;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 16px;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .navbar li a {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+}
