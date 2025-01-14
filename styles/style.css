@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +38,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -108,6 +119,9 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
 .main-article img {
@@ -116,7 +130,7 @@ header {
 }
 
 .main-article .image {
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
   height: auto;
 }
@@ -175,5 +189,86 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
+.menu-icon {
+  display: none;
+}
+
 /* Write your CSS below */
+@media (max-width: 760px) {
+  .navbar {
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navbar li {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .main-article {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-article .image,
+  .main-article .content {
+
+    width: 96%;
+    padding: 10px
+  }
+
+  article {
+    align-content: center;
+    flex-flow: column wrap;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .article {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-article {
+    flex-direction: row;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .articles-container .article {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
