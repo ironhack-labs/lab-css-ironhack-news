@@ -63,6 +63,7 @@ h3 {
   font-size: 1.5em;
 }
 
+
 /* Header and Navbar */
 header {
   background-color: #333;
@@ -76,20 +77,24 @@ header {
   border-bottom: 1px solid white;
 }
 
+#navflex{
+  display: flex;
+}
 .navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .navbar li {
-  width: 130px;
+  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-right: 1px solid #ffffff;
+  
 }
 
 .navbar li:last-child {
@@ -108,6 +113,9 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
 }
 
 .main-article img {
@@ -115,16 +123,17 @@ header {
   height: auto;
 }
 
-.main-article .image {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
 
-.main-article .content {
+ .main-article .image {
   width: 50%;
   padding: 0 20px;
   height: auto;
+} 
+  .main-article .content {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  
 }
 
 .articles-container {
@@ -137,8 +146,9 @@ header {
 }
 
 .article {
-  width: 29%;
+  width: 45%;
   padding: 20px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
 }
 
@@ -175,5 +185,64 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+@media (max-width:480px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+    
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  
+  
+  }
+  
+   .main-article .image {
+    width: 100%;
+  } 
+    .main-article .content {
+    width: 100%;
+  
+  }
+  
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    flex-wrap: wrap;
+    
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+}
+
