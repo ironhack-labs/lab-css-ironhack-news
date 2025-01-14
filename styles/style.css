@@ -177,3 +177,88 @@ header {
 }
   
 /* Write your CSS below */
+
+@media only screen and (max-width: 760px) {
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+        padding: 0;
+        margin: 0;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  .navbar a:last-child {
+    border-bottom: none;
+  }
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.main-article img {
+  width: 100%;
+  border-radius: 8px;
+}
+.main-article h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  text-align: start;
+}
+.main-article p {
+  font-size: 1em;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.main-article button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.article h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.article p {
+  font-size: 1em;
+  margin: 10px 0;
+  text-align: justify;
+}
+}
+
