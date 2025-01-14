@@ -177,3 +177,170 @@ header {
 }
   
 /* Write your CSS below */
+
+@media (min-width: 768px){
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.main-article .content {
+  width: 40%;
+  padding: 0 20px;
+  height: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.main-article .image {
+  width: 35%;
+  padding: 0 20px;
+  height: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: row;
+  align-items: flex-start;
+
+  padding: 20px;
+}
+.article {
+  width: 40%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+}
+
+@media (max-width:760px){
+  .navbar{
+    list-style-type: none;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .navbar li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff; /* Adding width and solid style */
+  }
+
+
+  .main-article {
+    display: flex;
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: center;
+    width: 100%;
+  }
+  .main-article .image {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .main-article .content {
+    width: 100%; /* Text content takes full width */
+    padding: 0 20px;
+    text-align: center; /* Centers the text for a better mobile layout */
+    height: auto;
+  }
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  }
+  @media (min-width: 761px) and (max-width: 1023px) {
+    .articles-container{ 
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .article {
+      width: 48%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+  }
+  @media(max-width: 480px){
+    .navbar{
+      list-style-type: none;
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .navbar li {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #ffffff; 
+    }
+
+  
+  .main-article {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+  }
+  .main-article .image {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .main-article .content {
+    width: 100%; 
+    padding: 0 20px;
+    text-align: left; 
+    height: auto;
+    
+  }
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  }
+    
