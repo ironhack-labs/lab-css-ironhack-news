@@ -15,7 +15,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: lighter;
 }
 
-
+/*
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
   position: fixed;
@@ -175,5 +175,126 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
   
 /* Write your CSS below */
+
+/* Media query for screens with a max-width of 760px */
+@media (max-width: 760px) {
+ 
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ffffff;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    padding: 0; 
+  }
+  .main-article 
+ {
+    display: flex;
+    flex-direction: column;   
+    width:100%;
+    height:100%;
+    text-align:center;
+    padding:0;
+    border: 3px solid grey;
+    justify-content: center;
+    position: relative;
+    
+  }
+
+  .main-article .image{
+    width: 100%;
+    padding:10px;
+  }
+  .main-article .content{
+  margin-top: 10px;
+  width: 100%;
+  }
+  .articles-container{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    padding:0; 
+    flex-grow:1;
+    position: relative;
+    
+  }
+
+  .article{
+    width: 100%;
+    padding:10px;
+  }
+
+  .main-article button {
+    align-self: flex-start;
+  }
+}
+
+/* Small Screens (width > 760px and width < 1024px) */
+
+  /* Estilos aquí */
+
+
+@media (width > 760px) and (width < 1024px) {
+  
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    padding: 0; 
+  }
+  .main-article 
+ {
+    display: flex;
+    flex-direction: column;   
+    width:100%;
+    height:100%;
+    text-align:center;
+    padding:0;
+    border: 3px solid grey;
+    justify-content: center;
+    position: relative;
+    
+  }
+
+  .main-article .image{
+    width: 100%;
+    padding:10px;
+  }
+  .main-article .content{
+  margin-top: 10px;
+  width: 100%;
+  }
+  .articles-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);  /* Two equal columns */
+      gap: 20px; 
+    }
+    
+  
+
+  .article{
+    
+    width: 100%;
+    padding:10px;
+  }
+
+  .main-article button {
+    align-self: flex-start;
+  }
+}
+
