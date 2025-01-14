@@ -109,24 +109,20 @@ header {
   border: 1px solid #ccc;
   display: flex;
 }
-
 .main-article img {
   width: 100%;
   height: auto;
 }
-
 .main-article .image {
   width: 50%;
   padding: 0 20px;
   height: auto;
 }
-
 .main-article .content {
   width: 50%;
   padding: 0 20px;
   height: auto;
 }
-
 .articles-container {
   display: flex;
   flex-wrap: wrap;
@@ -135,27 +131,22 @@ header {
   align-items: center;
   padding: 20px;
 }
-
 .article {
   width: 29%;
   padding: 20px;
   border: 1px solid #ccc;
 }
-
 .article img {
   width: 100%;
   height: auto;
 }
-
 .article h2 {
   font-size: 20px;
   margin-top: 10px;
 }
-
 .article p {
   margin-top: 10px;
 }
-
 .btn {
   background-color: #333;
   color: #fff;
@@ -176,4 +167,80 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+@media (max-width:760px) {
+  .navbar {
+    flex-direction: column;
+    width:100%;
+  }
+  .navbar li{
+    border-bottom: 1px solid white;
+    border-right:none;
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+    border: 1px solid;
+  }
+  .main-article {
+    flex-direction: column;
+
+  }
+  .main-article .image, .main-article .content {
+    width:100%;
+    padding:0;
+  }
+  .articles-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .article {
+    width:100%;
+  }
+}
+
+@media (min-width:760px) and (max-width:1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar li{
+    flex:1;
+    text-align: center;
+    border-right: 1px solid white;
+  }
+  .navbar li:last-child {
+    border-right:none;
+  }
+  .main-article {
+    flex-direction:row;
+    width:100%;
+    padding: 20px;
+  }
+  .main-article .image {
+    width:50%;
+    padding: 0;
+    position: relative;
+    bottom: 10px;
+  }
+  .main-article .content {
+    width:50%;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+  }
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width:100%;
+    }
+  .article {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    flex: 0 1 calc(40%);
+    box-sizing:border-box;
+    }
+  }
