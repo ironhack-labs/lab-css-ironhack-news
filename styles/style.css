@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +38,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -76,21 +87,28 @@ header {
   border-bottom: 1px solid white;
 }
 
+nav img {
+  display: none
+}
+
 .navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .navbar li {
-  width: 130px;
+  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+
 }
+
 
 .navbar li:last-child {
   border-right: none;
@@ -108,6 +126,8 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-article img {
@@ -116,14 +136,14 @@ header {
 }
 
 .main-article .image {
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
   height: auto;
 }
 
 .main-article .content {
-  width: 50%;
-  padding: 0 20px;
+  width: 100%;
+  padding: 20px 20px 0px 20px;
   height: auto;
 }
 
@@ -131,14 +151,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
 .article {
-  width: 29%;
+  width: 100%;
   padding: 20px;
+  margin-bottom: 40px;
   border: 1px solid #ccc;
 }
 
@@ -175,5 +196,63 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
-/* Write your CSS below */
+
+
+/* Write your CSS below 
+ITERATION 2*/
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+  }
+
+  .navbar li {
+    width: 100%;
+    border: 1px solid #ffffff;
+
+  }
+
+
+
+  .main-article {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+  }
+
+  .main-article .content {
+    padding-top: 0px;
+  }
+
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+
+}
+
+/* Write your CSS below 
+ITERATION 3*/
+
+@media (max-width: 510px) {
+  nav img {
+    display: block;
+    height: 50px
+  }
+
+  .navbar {
+    display: none
+  }
+}
