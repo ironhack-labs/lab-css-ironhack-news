@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +185,57 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+.menu-img {
+  display: none;
+}
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  .main-article,
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-article .image,
+  .main-article .content,
+  .article {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 760px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .article {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .menu-img {
+    display: block;
+    margin: auto auto;
+  }
+  .newspaper-name{
+    border-bottom: none;
+  }
+}
