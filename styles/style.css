@@ -81,10 +81,11 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
 }
 
 .navbar li {
-  width: 130px;
+  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
@@ -108,6 +109,9 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-article img {
@@ -122,7 +126,7 @@ header {
 }
 
 .main-article .content {
-  width: 50%;
+  width: 80%;
   padding: 0 20px;
   height: auto;
 }
@@ -130,16 +134,17 @@ header {
 .articles-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
 .article {
-  width: 29%;
+  width: 80%;
   padding: 20px;
   border: 1px solid #ccc;
+  margin: 20px;
 }
 
 .article img {
@@ -177,3 +182,116 @@ header {
 }
   
 /* Write your CSS below */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:760px){
+
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+  }
+  .main-article .content {
+    width: 40%;
+    padding: 0 20px;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    
+  }
+  .main-article .image {
+    width: 35%;
+    padding: 0 20px;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: row;
+    align-items: flex-start;
+    
+    padding: 20px;
+  }
+  .article {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+}
+
+@media (min-width:1024px){
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .article {
+    width: 27%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+ 
+}
