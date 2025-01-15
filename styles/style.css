@@ -176,4 +176,76 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+@media (max-width: 760px){
+.navbar{
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-right: 0px;
+}
+.navbar li{
+  width: 100%;
+  border-right: 0px;
+  border-bottom: 0.5px solid white;
+  
+}
+.article1, .articles-container, .content{
+  flex-direction: column;
+}
+.main-article .image {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+  
+}
+.main-article .content {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+  margin-top: 100px;
+}
+.main-article {
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.articles-container .article{
+  width:100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+} 
+@media(min-width : 760px ) and ( max-width : 1024px){
+.navbar li{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+.articles-container .article{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:50%;
+}
+
+}
+@media(max-width: 480px){
+  .navbar{
+    background-image: url('../images/menu-icon.png');
+    background-repeat:no-repeat;
+    background-position: center top;
+
+  }
+  .navbar li{
+    opacity: 0;
+  }
+}
+
