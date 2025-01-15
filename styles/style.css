@@ -15,8 +15,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: lighter;
 }
 
-
-/*  DO NOT REMOVE - Styling for the label showing the viewport width */
+/* DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
   position: fixed;
   top: 0;
@@ -27,10 +26,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
-/*  Fonts */
+/* Fonts */
 body {
   font-family: "Helvetica", sans-serif;
 }
@@ -45,7 +44,7 @@ main {
   align-items: center;
 }
 
-/*  Font sizes */
+/* Font sizes */
 p {
   font-size: 1em;
 }
@@ -175,5 +174,33 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
-/* Write your CSS below */
+
+
+@media screen and max-width: 760px { 
+  body {
+    font-size: 14px 
+  }
+  .main-article {
+    flex-direction: column 
+  }
+  .main-article .image, .main-article .content {
+    width: 100%
+    padding: 10px 
+  }
+  navbar { 
+    flex-direction: column;
+    gap: 10px; 
+  }
+}
+
+@media (min-width: 760px) and max-width: 1024px { 
+  main {
+    padding: 5px; 
+  }
+  .navbar li {
+    width: auto 
+  }
+  .article {
+    width: 50%;
+  }
+}
