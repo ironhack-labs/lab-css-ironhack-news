@@ -177,3 +177,243 @@ header {
 }
   
 /* Write your CSS below */
+
+@media (max-width: 760px) {
+  
+  .navbar {
+    display: flex;
+    flex-direction: column; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid white; 
+    border-right: none; 
+  }
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    max-width: 500px;
+    width: 100%; 
+    text-align: left; 
+    padding-top: 5px; 
+  }
+   
+  .main-article h2 {
+   margin: 5px 0 20px 0;
+   font-size: 1.9rem;
+  }
+
+  .main-article p {
+    font-size: 0.9rem; 
+    line-height: 1.2; 
+    margin: 0 0 20px 0; 
+    max-width: 450px;
+    text-align: left; 
+  }
+
+  .main-article .btn.btn-blue {
+    padding: 10px 20px; 
+    text-align: center; 
+    border-radius: 5px; 
+    margin: 20px 0px 10px 0;
+   }
+
+   .main-article .btn.btn-blue:hover{
+    background-color: #555;
+   }
+
+    .articles-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-top: 1%;
+    }
+
+    .article {
+     display: flex;
+     flex-direction: column; 
+     align-items: self-start;
+     max-width: 500px;
+     width: 100%;
+     padding: 20px; 
+    }
+
+    .article img {
+     width: 100%;
+     height: auto;
+    }
+
+    .article h2 {
+     margin: 10px 0 20px 0;
+     font-size: 1.2rem;
+    }
+
+    .article p {
+     font-size: 0.9rem; 
+     margin: 0 0 15px 0; 
+     width: 100%;
+     margin: 0 auto;
+     line-height: 1.2; 
+     text-align: justify; 
+    } 
+
+    .article .btn.btn-blue {
+     padding: 10px 20px; 
+     text-align: center; 
+     border-radius: 5px; 
+     margin: 20px 0px 10px 0;
+    }
+
+    .article .btn.btn-blue:hover {
+      background-color: #555;
+    } 
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+ 
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .navbar li {
+    width: 25%; 
+    text-align: center;  
+    border-right: 1px solid white;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .main-article .image {
+    width: 45%;
+  }
+
+  .main-article .content {
+    max-width: 50%;
+  }
+
+  .main-article h2 {
+    margin-bottom: 20px;
+    font-size: 2rem; 
+  }
+
+  .main-article .btn.btn-blue {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .articles-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch; 
+    gap: 20px 50px; 
+  }
+  
+  .article:nth-child(3) {
+    grid-column: 1;
+  }
+
+  .article {
+    width: 100%;  
+  }
+
+  .article img {
+    width: 100%;
+  }
+  
+  .article h2 {
+    font-size: 1.4rem; 
+    margin: 10px 0;
+  }
+  
+  .article p {
+    font-size: 0.9rem; 
+    margin-bottom: 10px;
+  }
+  
+  .article .btn-blue {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .article .btn-blue:hover {
+    background-color: #555;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    background: none;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* this is a test, google my best friend*/
+
+  .navbar.show {
+    display: flex; 
+    flex-direction: column;
+    background-color: #333; 
+    position: absolute; 
+    top: 80px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 250px;
+    border-radius: 12px; 
+    z-index: 1000;
+  }
+
+  .navbar li {
+    margin: 0; 
+    padding: 8px 5px; 
+    border-bottom: 1px solid #444;
+  }
+
+  .navbar li:last-child {
+    border-bottom: none; 
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 16px;
+    text-align: center; 
+  }
+}
