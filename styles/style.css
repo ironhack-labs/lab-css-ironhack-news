@@ -177,3 +177,69 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     }
+
+  .navbar li {
+    border-style: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+  }
+  
+  .main-article {
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .main-article .content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-article .image {
+    width: auto;
+    padding: 0;
+  }
+  
+  .articles-container {
+    padding: 0;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 320%;
+  }
+
+  .article {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (min-width:760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .main-article {
+    width: 100%;
+  }
+  
+  .articles-container {
+    width: 100%;
+  }
+}
