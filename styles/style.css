@@ -177,3 +177,110 @@ header {
 }
   
 /* Write your CSS below */
+.menuIcon {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .newspaper-name {
+    border-bottom: none;
+  }
+
+  .menuIcon {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5px 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+  }
+  
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+
+  .main-article {
+    flex-direction: column;
+  }
+      
+  .main-article .content {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .articles-container {
+    gap: 40px;
+  }
+  
+  .article {
+    width: 100%;
+  }
+  
+  .btn {
+    width: 130px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    border-right: 1px solid #ffffff;
+    padding: 0 50px;
+    flex: 1;
+  }
+
+  .navbar li:last-child {
+    padding-right: none;
+  }
+
+  .article {
+    width: 45%;
+  }
+
+  .article:last-child {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px){
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    border-right: 1px solid #ffffff;
+    padding: 0 50px;
+    flex: 1;
+  }
+
+  .navbar li:last-child {
+    padding-right: none;
+  }
+
+  .article {
+    width: 45%;
+  }
+
+  .article:last-child {
+    margin-top: 40px;
+  }
+}
