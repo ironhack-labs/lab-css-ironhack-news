@@ -136,6 +136,7 @@ header {
   padding: 20px;
 }
 
+
 .article {
   width: 29%;
   padding: 20px;
@@ -177,3 +178,94 @@ header {
 }
   
 /* Write your CSS below */
+
+nav img {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    border-right: 0
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-article .content {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+}
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+  }
+
+  .article {
+    width: 100%;
+    
+  }
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  .navbar li {
+    width: 25%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 480px) { 
+  
+    .newspaper-name {
+    border: 0
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  nav img {
+    display: inline;
+  }
+
+  .main-article .image {
+    padding: 0
+  }
+
+  .main-article .content {
+    padding: 0;
+  }
+
+
+}
