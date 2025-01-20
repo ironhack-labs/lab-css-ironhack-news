@@ -177,3 +177,90 @@ header {
 }
   
 /* Write your CSS below */
+/* Media Queries */
+
+@media (max-width: 760px) {
+
+  body {
+    background-color: #555;
+  }
+ 
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    border-right: 0px;
+  }
+
+  .main-article{
+    flex-wrap: wrap;
+  }
+
+  .main-article .image{
+    width: 100%;
+  }
+
+  .main-article .content{
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .article{
+    width: 100%;
+    margin: 25px 0;
+  }
+  
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  body{
+    background-color: aquamarine;
+  }
+
+
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  
+  .navbar li {
+    flex-grow: 1;
+    border-right: 1px solid #ffffff;
+  }
+  
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+  .articles-container {
+    gap:40%;
+  }
+
+  .article {
+    width: 29%;
+    margin-bottom: 50px;
+  }
+  
+}
+
+@media (min-width: 480px) {
+
+  .mobile-menu {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 480px){
+  .navbar {
+    display: none;
+  }
+
+  .newspaper-name {
+    border: none;
+  }
+}
+
