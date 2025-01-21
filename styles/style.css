@@ -108,6 +108,7 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+
 }
 
 .main-article img {
@@ -177,3 +178,72 @@ header {
 }
   
 /* Write your CSS below */
+@media  (max-width: 760px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+    padding: 0;
+    
+  }
+  .main-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+  }
+  .main-articel .content{
+    width: 100%;
+  }
+  .image{
+    width: 100%;
+  }
+  .articles-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .article{
+    width: 100%;
+  }
+  }
+  @media (min-width:761px) {
+    .navbar{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .main-article{
+      display: flex; 
+
+    }
+    .articles-container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+     .article{
+      flex: 1 0 48%;
+     }
+      
+    }
+    @media (max-width:479px) {
+       
+       .navbar{
+        display: flex;
+        flex-direction: column;
+      }
+      li{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+      }
+      .menu-icon{
+         display: block;
+      }
+    }
+
+   
+  
+
+
