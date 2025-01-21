@@ -176,4 +176,56 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+/* Write your CSS below {} */
+@media only screen and (max-width:760px) {
+  .navbar{
+    display:flex;
+    flex-direction: column;
+  }
+  .content{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .articles-container{
+    display:flex;
+    flex-direction: column;
+  }
+  .image{
+    align-self:center;
+    margin-bottom: 10px;
+    order:-1;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px){
+  .navbar {
+    display: flex;
+    width: 100%;
+  }
+  
+  .navbar li {
+    flex: 1;
+  }
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next row */
+  }
+  
+  .article {
+    flex: 1 0 50%; /* Each article will take 50% of the container */
+  }
+}
+.iconmenu {
+  display: none;
+}
+  
+@media only screen and (max-width:480px){
+  .iconmenu{
+    display:block;
+  }
+  
+  .navbar{
+    display:none;
+  }
+  
+}
