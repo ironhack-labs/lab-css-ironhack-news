@@ -177,3 +177,88 @@ header {
 }
   
 /* Write your CSS below */
+/* !to use hamburger */
+#hamburger, .checkHamburger{
+  display: none;
+}
+
+/* ! phone */
+@media (max-width: 760px) {
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    width: 100%;
+    border: 1px solid #ffffff;
+  }
+
+  .navbar li:last-child {
+    border-right: 1px solid #ffffff;
+  }
+  .main-article{
+    display: block;
+  }
+  .main-article .image {
+    width: 100%;
+  }
+  
+  .main-article .content {
+    width: 100%;
+  }
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0px;
+  }
+  .article {
+    width: 100%;
+    /* ! i change padding because its weird if main and other article have not the same padding */
+    padding: 40px;
+  }
+}
+
+
+/* ! tablet */
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar{
+    align-items: center;
+  }
+  .navbar li {
+    width: 100%;
+    border: 1px solid #ffffff;
+  }
+  .navbar li:first-child {
+    border-left: none;
+  }
+  .article {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+  }
+}
+/* ! hamburger little screen */
+@media (max-width: 480px) {
+  .newspaper-name {
+    border-bottom: none;
+  }
+  #hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .navbar{
+    display: none;
+  }
+  .navbar li {
+    border-left: none;
+    border-right: none;
+  }
+  .navbar li:last-child {
+    border-right: none;
+  }
+  .checkHamburger:checked + label + ul{
+    display: flex;
+  }
+}
