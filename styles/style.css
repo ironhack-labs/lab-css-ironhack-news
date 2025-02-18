@@ -102,7 +102,7 @@ header {
   font-weight: bold;
 }
 
-/* Articles */
+
 .main-article {
   margin: 20px;
   padding: 20px;
@@ -177,3 +177,143 @@ header {
 }
   
 /* Write your CSS below */
+@media only screen and (max-width: 760px) {
+  .navbar{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar li{
+ width:100%;
+    border-bottom:1px solid white;
+  }
+  .main-article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .main-article img{
+    width:100%;
+    height:auto;
+  }
+  .main-article h1{
+    font-size:24px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .main-article p{
+    font-size:15px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+ .articles-container{
+    display:flex;
+    flex-direction:column;
+    padding:0;
+    margin:0;
+  }
+  .article{
+    margin:20px 0;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+  }
+  .article h2{
+    font-size:22px;
+    text-align:center;
+    margin-top:10px 0;
+  }
+  .article p{
+    font-size:14px;
+    text-align:center;
+  
+  }
+  .article img{
+    max-width:100%;
+    height:auto;
+  }
+}
+
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  
+  .navbar {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      width: 100%;
+  }
+
+  .navbar a {
+      flex: 1; 
+      text-align: center; 
+      padding: 10px;
+  }
+
+  
+  .main-article {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  
+  .main-article img {
+      width: 100%; 
+      height: auto;
+  }
+
+  .main-article .content {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  .main-article h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+  }
+
+  .main-article p {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+  }
+
+  .articles-container {
+      display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+      gap: 20px;
+      padding: 20px 0;
+     
+  }
+
+  .article {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width:60%;
+  }
+
+  .article img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+
+  .article h2 {
+      font-size: 1.5em;
+      margin-top: 10px;
+  }
+
+  .article p {
+      font-size: 1em;
+      margin-top: 10px;
+  }
+}
