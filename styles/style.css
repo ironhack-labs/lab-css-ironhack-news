@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -81,6 +91,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .navbar li {
@@ -175,5 +189,201 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+/* Breakpoint < 760px */
+
+@media (max-width: 760px) {
+ 
+  /* Navigation bar */
+
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .navbar li:last-child {
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+  }
+
+  /* Main Article */
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  /* Arcticles */
+
+  .articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: column;
+    padding: 20px;
+
+  }
+
+  .article {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+
+/* Breakpoint 761px - 1024px */
+
+@media (min-width: 760px) and (max-width: 1024px) {
+ 
+  /* Navigation bar */
+
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .navbar li:last-child {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  /* Main Article */
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-article .image {
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  /* Arcticles */
+
+  .articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: column;
+    padding: 20px;
+
+  }
+
+  .article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 45%;
+  }
+}
+
+/* Smaller than 480px  */
+
+@media (max-width: 480px) {
+ 
+  /* Navigation bar */
+
+  .navbar {
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .menu-icon {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: ;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .navbar li:last-child {
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+  }
+
+  /* Main Article */
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  /* Arcticles */
+
+  .articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: column;
+    padding: 20px;
+
+  }
+
+  .article {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+
