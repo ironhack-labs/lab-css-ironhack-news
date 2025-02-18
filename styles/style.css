@@ -177,3 +177,107 @@ header {
 }
   
 /* Write your CSS below */
+@media only screen and (max-width: 760px) {
+  .navbar {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+  }
+  .navbar a {
+      display:flex;
+      text-align: center;
+      margin: 10px 0;
+      border-bottom: 1px solid #ffffff;
+  }
+
+  .article-container {
+      display: block;
+  }
+  .article {
+    
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .main-article {
+      display:flex;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  .main-article img {
+      max-width: 100%;
+      height: auto;
+  }
+  .main-article h2 {
+      margin: 10px 0;
+  }
+  .main-article p {
+      margin-bottom: 10px;
+  }
+  .main-article .read-more {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+  }
+  .menu-icon {
+    display: none;
+}
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    
+  }
+  
+  .navbar a {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .main-article {
+      display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .main-article img {
+      width: 50%;
+      height: auto;
+  }
+  .main-article .content {
+      width: 50%;
+      padding: 20px;
+  }
+
+  .article-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 100%;
+  }
+
+  .article {
+      width: 100%;
+  }
+  .menu-icon {
+    display: none;
+}
+}
+
+/* Hide Navbar and Show Menu Icon on Small Screens */
+@media (max-width: 760px) {
+  .navbar {
+      display: none;
+  }
+
+  .menu-icon {
+      display: block;
+      margin: 10px;
+  }
+}
+
