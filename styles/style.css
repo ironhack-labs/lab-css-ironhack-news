@@ -108,6 +108,7 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  
 }
 
 .main-article img {
@@ -133,7 +134,7 @@ header {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
+  
 }
 
 .article {
@@ -176,4 +177,106 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+@media (max-width: 760px) {
+ .navbar {
+  flex-direction: column;
+  align-items: center;
+ }
+ .navbar li {
+  width: 100%;
+  border-bottom: 1px solid #ffffff; /*  Add a border to separate the links */
+  border-right: none; /* delite border-right */
+ }
+
+ /* Make articles in colums*/
+  .articles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ }
+
+ .article {
+  width: 100%; /* make it width */
+}
+
+.main-article .image {
+  width: 100%;
+  padding: 0;
+}
+/* Make main article the same as articles */
+.main-article {
+  flex-direction: column;
+  width: 100%;
+  padding: 20px
+  text-align left ;
+
+  }
+
+.main-article,
+.article {
+  width: 100%;
+  margin: 0;
+  border: 1 px solid #ccc;
+  margin-bottom: 20px;
+}
+
+  .main-article .content  {
+    
+    width: 100%;
+    padding: 0px;
+    text-align: left;
+  }
+  .main-article .content h2 {
+  font-size: 20px;
+  padding: 10px 0px;
+  
+  }
+}
+
+ @media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+  .navbar li {
+    flex: 1; /* to make the links take the same space */
+    text-align: center;
+    border-right: 1px solid #fff;
+  }
+ 
+   .main-article {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-article .content {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+  }
+
+
+   .articles-container {
+    display: flex; /*container for articles */
+    flex-wrap: wrap; /* new line */
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .article {
+    width: 48%; 
+    margin-bottom: 20px; 
+    margin-top: 10px;
+  }
+
+}
+
+ 
+  
