@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -175,5 +185,105 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    border: 1px solid gray;
+  }
+  .navbar li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid gray;
+  }
+  .main-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    column-gap: 60px;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-article img {
+    width: 100%;
+    display: block;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .main-article .content,
+  .article {
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1023px) {
+  .navbar {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    border: 1px solid gray;
+  }
+  .navbar li {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    width: 100%;
+    border: 1px solid gray;
+  }
+
+  .main-article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .content {
+    padding: 40px;
+  }
+
+  .main-article img,
+  .article img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    display: block;
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 60px;
+  }
+
+  .article {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}
