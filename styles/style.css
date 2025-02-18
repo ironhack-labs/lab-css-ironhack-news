@@ -177,3 +177,61 @@ header {
 }
   
 /* Write your CSS below */
+
+/* first break point */
+
+@media screen and (width < 760px) {
+
+
+
+.navbar {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-article,
+.main-article img,
+.main-article .image,
+.main-article .content,
+.articles-container,
+.article,
+.article img
+.article h2,
+.article p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main-article,
+.main-article .content,
+.articles-container,
+.article,
+.article h2,
+.article p {
+  margin: 20px;
+  padding: 50px;
+}
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
