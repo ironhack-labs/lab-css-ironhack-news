@@ -92,6 +92,10 @@ header {
   border-right: 1px solid #ffffff;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .navbar li:last-child {
   border-right: none;
 }
@@ -177,3 +181,74 @@ header {
 }
   
 /* Write your CSS below */
+
+@media screen and (min-width: 480px) and (max-width: 760px) {
+.navbar {
+  flex-direction: column;
+}
+
+.navbar li {
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  border-right: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.articles-container {
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+main {
+  max-width: 100%;
+}
+
+.article {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+}
+
+@media screen and (min-width:760px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  .article {
+    width: 40%;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 0px) {
+.navbar {
+    display: none;
+  }
+
+  .menu-icon {
+  display: flex;
+  justify-content: center;
+  }
+
+  nav div {
+    height: 50px;
+    padding: 10px;
+  }
+  
+}
