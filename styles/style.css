@@ -177,3 +177,143 @@ header {
 }
   
 /* Write your CSS below */
+
+
+/* ITERACIÓN 1: PARA PANTALLAS MENORES DE 760PX */
+
+@media (max-width: 760px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-top: 1px solid #ffffff;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+
+  .main-article img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%; 
+    padding: 0 20px;
+  }
+
+  .btn {
+    width: 100%; 
+  }
+  
+  .article,
+  .main-article {
+    width: 100%; 
+    margin-bottom: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .article h2,
+  .article p {
+    margin: 10px 0;
+  }
+}
+
+/* ITERACIÓN 2: PANTALLAS ENTRE 760 Y 1024PX */
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: auto;
+    border-right: 1px solid #ffffff;
+  }
+
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+  
+  .main-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px; /
+  }
+
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 48%; /*SI PONGO 50% NO TERMINA DE ENCAJAR*/
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .article h2,
+  .article p {
+    margin: 10px 0;
+  }
+}
+
+
