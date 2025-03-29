@@ -175,5 +175,138 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
+
+/*Añadido para que no salva el botón de navegación cuando el tamaño sobrepasa los 1024 px */
+.navButton {
+  visibility: collapse;
+  width: 0px;
+  height: 0px;
+}
+
+
 /* Write your CSS below */
+
+@media (max-width: 760px) {
+
+  .newspaper-name {
+    border: 1px solid;
+    border-top: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-content: stretch;
+    visibility: visible;
+  }
+
+  .navbar li {
+    width: 100%;
+    border: 1px solid;
+  }
+
+  .navbar li:last-child {
+    border-right: 0.1px solid;
+  }
+
+  
+  .main {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .main-article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .articles-container .article {
+    width: 100%;
+  }
+
+  .navButton {
+    visibility: collapse;
+    width: 0px;
+    height: 0px;
+  }
+
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: space-evenly;
+    visibility: visible;
+  }
+
+  .navbar li {
+    width: 100%;
+    justify-self: center;
+    border-bottom: 1px solid;
+  }
+
+  .articles-container {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .articles-container .article {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  .articles-container .article:last-child {
+    margin-bottom: 0;
+  }
+
+  .navButton {
+    visibility: collapse;
+    width: 0px;
+    height: 0px;
+  }
+  
+
+}
+
+
+@media (max-width: 480px) {
+
+  .newspaper-name {
+    border: none;
+  }
+
+  .navbar {
+    visibility: collapse;
+    width: 0px;
+    height: 0px;
+  }
+
+  .navButton {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    visibility: visible;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+
+}
