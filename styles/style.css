@@ -227,5 +227,32 @@ header {
     width: 100%;
   }
 
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .articles-container {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .articles-container .article {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  .articles-container .article:last-child {
+    margin-bottom: 0;
+  }
 
 }
