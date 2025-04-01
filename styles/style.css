@@ -59,6 +59,7 @@ h2 {
   margin-bottom: 1em;
 }
 
+
 h3 {
   font-size: 1.5em;
 }
@@ -69,6 +70,8 @@ header {
   color: #fff;
   text-align: center;
 }
+
+
 
 .newspaper-name {
   font-size: 24px;
@@ -83,6 +86,7 @@ header {
   justify-content: flex-start;
 }
 
+
 .navbar li {
   width: 130px;
   height: 40px;
@@ -91,6 +95,7 @@ header {
   justify-content: center;
   border-right: 1px solid #ffffff;
 }
+
 
 .navbar li:last-child {
   border-right: none;
@@ -102,6 +107,8 @@ header {
   font-weight: bold;
 }
 
+
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -109,6 +116,7 @@ header {
   border: 1px solid #ccc;
   display: flex;
 }
+
 
 .main-article img {
   width: 100%;
@@ -120,6 +128,7 @@ header {
   padding: 0 20px;
   height: auto;
 }
+
 
 .main-article .content {
   width: 50%;
@@ -177,3 +186,69 @@ header {
 }
   
 /* Write your CSS below */
+@media (width < 760px) {
+  .navbar {
+    flex-direction:column;
+    
+    align-items: center;
+}
+}
+
+@media (width < 760px) {
+  .navbar li{
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+}
+
+@media (width < 760px) {
+  .main-article{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (width < 760px) {
+  .main-article .image{
+    width: 100%;
+  }
+}
+
+@media (width < 760px) {
+  .main-article .content{
+    width: 100%;
+  }
+}
+
+@media (width < 760px) {
+  .articles-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (width < 760px) {
+.article{
+  width: 100%;
+}
+}
+
+@media (min-width: 760px) and (max-width: 1024px){
+  .navbar{          
+      flex-direction: row;        
+      justify-content: space-around;             
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px){
+  .navbar li {
+    width: 100%; 
+  }
+}
+@media (min-width: 760px) and (max-width: 1024px){
+.article {
+  width: 45%;
+  margin-bottom: 20px;
+}
+}
+
