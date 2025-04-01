@@ -15,7 +15,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: lighter;
 }
 
-
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
   position: fixed;
@@ -28,52 +27,57 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-size: 14px;
 }
   
-/* STYLES */
-
-/*  Fonts */
 body {
   font-family: "Helvetica", sans-serif;
+  background-color: #f5f5f5;
 }
 
-/* Basic styles */
 main {
   max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0;
+  background-color: white;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
-/*  Font sizes */
 p {
-  font-size: 1em;
+  font-size: 0.9em;
+  color: #333;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 10px 0;
 }
 
 h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
 }
 
-h3 {
-  font-size: 1.5em;
-}
-
-/* Header and Navbar */
 header {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #333;
   color: #fff;
-  text-align: center;
 }
 
 .newspaper-name {
-  font-size: 24px;
-  padding: 10px;
-  border-bottom: 1px solid white;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding: 8px 15px;
+  text-align: left;
+  margin: 0;
+}
+
+nav {
+  border-top: 1px solid #555;
+  overflow-x: auto; 
 }
 
 .navbar {
@@ -81,33 +85,38 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  min-width: 480px; 
 }
 
 .navbar li {
-  width: 130px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid #555;
 }
 
-.navbar li:last-child {
-  border-right: none;
-}
-
-.navbar a {
+.navbar li a {
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
+  padding: 10px 35px;
+  display: block;
+  font-weight: normal;
 }
 
-/* Articles */
 .main-article {
   margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
+  padding: 0;
+  border: 1px solid #ddd;
   display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.main-article .image {
+  width: 40%;
+  padding: 20px;
 }
 
 .main-article img {
@@ -115,31 +124,29 @@ header {
   height: auto;
 }
 
-.main-article .image {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
+.main-article .content {
+  width: 60%;
+  padding: 20px 20px 20px 0;
 }
 
-.main-article .content {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
+.main-article h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .articles-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
+  padding: 0 20px 20px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .article {
-  width: 29%;
-  padding: 20px;
-  border: 1px solid #ccc;
+  width: calc(33.33% - 10px);
+  padding: 0;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
 }
 
 .article img {
@@ -148,32 +155,74 @@ header {
 }
 
 .article h2 {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 1.1em;
+  margin: 10px 0;
+  padding: 0 15px;
 }
 
 .article p {
-  margin-top: 10px;
+  margin: 0;
+  padding: 0 15px;
+  font-size: 0.9em;
 }
 
 .btn {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 15px;
   border: none;
   border-radius: 5px;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 0.9em;
+  font-weight: normal;
   text-decoration: none;
-  margin-top: 30px;
-}
-
-.btn:hover {
-  background-color: #555;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .btn-blue {
   background-color: #007bff;
 }
+
+.article .btn {
+  margin: 15px;
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) {
+  .main-article {
+    flex-direction: column;
+  }
   
-/* Write your CSS below */
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .article {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .articles-container {
+    flex-direction: column;
+    padding: 0 15px 15px;
+  }
+  
+  .article {
+    width: 100%;
+  }
+  
+  .main-article {
+    margin: 15px;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  
+  .navbar li a {
+    padding: 10px 20px;
+  }
