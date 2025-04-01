@@ -175,5 +175,76 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+.hamburger-menu {
+  display: none; 
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger-menu img {
+  width: 40px; 
+  height: auto;
+}
   
 /* Write your CSS below */
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .main-article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .main-article .content h2{
+    padding-top: 0.5em;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+  }
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px){
+
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: block; 
+  }
+
+  .navbar {
+    display: none; 
+  }
+
+
+}
