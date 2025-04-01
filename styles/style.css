@@ -169,11 +169,133 @@ header {
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #5555;
 }
 
 .btn-blue {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+
+
+
+
+
+/*MOBILE*/
+
+
+/* navbar */
+
+
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-right: 1px solid #ffffff;
+  }
+}
+
+
+/* Articles */
+@media (max-width: 760px) {
+  .articles {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 760px) {
+  .main-article .image {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .main-article .content {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 760px) {
+  .content p {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+
+  }
+}
+
+
+@media (max-width: 760px) {
+  .articles-container {
+    display: flex;
+    align-items: center;
+    width: 110%
+  }
+}
+
+@media (max-width: 760px) {
+  .article {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+
+
+/*TABLET*/
+
+
+/* navbar */
+
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-right: 1px solid #ffffff;
+  }
+}
+
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .main-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .article {
+    width: 40%;
+    margin: 20px;
+  }
+}
