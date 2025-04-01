@@ -177,3 +177,103 @@ header {
 }
   
 /* Write your CSS below */
+
+nav button {
+  display: none;
+}
+
+
+/**************************/
+/* Start of MEDIA < 480px */
+/**************************/
+
+@media (max-width: 480px){
+    nav button {
+    display: inline-block;
+  }
+
+  .navbar {
+    position: fixed;
+    transform: translatex(-100%);
+
+    transition: 0s;
+    background-color: #333;
+  }
+
+  nav.show-menu .navbar{
+    transform: translatex(0%);
+  }
+}
+
+/************************/
+/* End of MEDIA < 480px */
+/************************/
+
+/**************************/
+/* Start of MEDIA < 760px */
+/**************************/
+
+@media (max-width: 760px){
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid #ffffff;
+  }
+
+  .main-article {
+    border: 1px solid #ccc;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+  
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+}
+
+/************************/
+/* End of MEDIA < 760px */
+/************************/
+
+
+
+/*********************************/
+/* Start of MEDIA 760px - 1024px */
+/*********************************/
+@media (max-width: 1024px) and (min-width: 760px){
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .navbar li {
+    width: 25%;
+  }
+
+  .article {
+    width: 48%;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+/*******************************/
+/* End of MEDIA 760px - 1024px */
+/*******************************/
