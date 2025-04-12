@@ -102,6 +102,15 @@ header {
   font-weight: bold;
 }
 
+.navbar-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  background-color: #333;
+  padding: 15px;
+  cursor: pointer;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -177,3 +186,160 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar{
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    
+  }
+  .navbar li{
+    width: 100%;
+    border-top:1px solid#fff;
+    
+  }
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  
+  .main-article img {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  
+  .main-article .image {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .main-article .content {
+    width: 100%;
+    padding: 0 10px;
+    height: auto;
+    margin-right:10px;
+    margin-top: 10px;
+  }
+  .articles-container {
+    display:top;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin-block: 10px;
+  }
+
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+}
+  
+@media screen and (min-width: 761px) and (max-width: 1023px) {
+
+  .navbar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #333;
+  }
+  
+  .navbar li {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ffffff;
+  }
+  
+  .navbar li:last-child {
+    border-right: none;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar li a:hover {
+    background-color: #555;
+  }
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+}
+
+@media screen and (width < 480px) {
+  .navbar-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+  
+  .navbar li {
+    border: none;
+  }
+
+  .newspaper-name {
+    border-bottom: none;
+  }
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    margin-bottom: 10px;
+  }
+}
