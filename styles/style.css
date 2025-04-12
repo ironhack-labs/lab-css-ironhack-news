@@ -176,4 +176,129 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+/* My CSS below */
+.bars{
+  display: none;
+
+}
+
+@media screen and(max-width: 760px){
+  .navbar{
+    background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: none;
+
+}
+
+.navbar >li{
+ border-right: none;
+ border-bottom: 1px solid;
+ width: 100vw;
+  
+}
+
+.main-article {
+  margin: auto;
+  padding: auto;
+  border: 1px solid #4b4747;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.main-article img {
+  width: 100%;
+  height: auto;
+}
+
+.main-article .image {
+  width: 100%;
+  padding: 0 20px; 
+  height: auto;
+
+}
+
+.main-article .content {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.article{
+  width: 100%;
+
+}
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px){
+.navbar{
+  display: flex;
+
+}
+
+.navbar li{
+  padding-right: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.articles-container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.article{
+  width: 45%;
+  margin-bottom: 5%;
+  
+}
+}
+
+@media screen and (max-width: 480px) {
+.navbar{
+  display: none;
+
+
+} 
+.bars{ 
+  display: block;
+  margin: auto;
+} 
+.main-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.main-article .image, .main-article .content{
+  width: 100%;
+  padding: 0;
+}
+
+.articles-container{
+display: flex;
+flex-wrap: wrap;
+
+}
+.article{
+  width: 100%;
+  margin-bottom: 5px;
+}
+}
