@@ -2,7 +2,7 @@
 /* Reset default browser styles and provide a consistent starting point */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 1rem;
 }
   
 *, *:before, *:after {
@@ -25,7 +25,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   color: #fff;
   font-weight: 500;
   padding: 5px 8px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
   
 /* STYLES */
@@ -37,12 +37,12 @@ body {
 
 /* Basic styles */
 main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px 20px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px 20px;
 }
 
 /*  Font sizes */
@@ -81,6 +81,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+
+.hidden-link {
+  display: none;
 }
 
 .navbar li {
@@ -148,7 +152,7 @@ header {
 }
 
 .article h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 10px;
 }
 
@@ -175,5 +179,120 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
   
-/* Write your CSS below */
+/* INTERACTION 1*/
+@media (max-width: 760px){
+  .navbar{
+    align-items: center;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    padding: none;
+
+  }
+
+.navbar >li { 
+border-right:none;
+border-bottom: 1px solid #333;
+width: 100vw ;
+
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.main-article .image {
+  width: 20em;
+  padding: 0 20px;
+  height: auto;
+}
+
+.main-article .content {
+  width: 100%;
+  padding: 20px;
+  height: auto;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  margin: 20px;
+  padding: 20px;;
+ 
+}
+
+.article {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+}
+
+/* INTERACTION 2*/
+
+@media screen and (min-width: 761px) and (max-width: 1024px){
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .navbar >li { 
+    border-bottom: 1px solid #333;
+    width: 100% ; 
+    }
+
+    .main-article {
+      display: flex;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    
+    .main-article .image {
+      width: 48%;
+      padding: 0 20px;
+      height: auto;
+    }
+    
+    .main-article .content {
+      width: 50%;
+      padding: 40px;
+      height: auto;
+    }
+
+    .articles-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+}
+
+/*INTERACTION 3*/
+
+@media (max-width: 480px){
+
+  .navbar{
+  display: flex;
+  }
+  
+  .hidden-link{
+    display:block ;
+    margin: 10px auto;
+    padding-bottom: 10px;
+  }
+}
