@@ -175,5 +175,111 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+.hidden {
+  display: none;
+}
   
 /* Write your CSS below */
+ @media (width < 760px){
+
+
+.navbar li  {
+  color: #ffffff;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  width: 100vw;
+  
+}
+
+.navbar {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.articles-container {
+  display: flex ;
+  flex-direction: column ;
+  gap: 20px;
+   
+}
+
+.article, .main-article {
+    width: 90vw;
+}
+
+.main-article {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+ article img {
+  width: 100%;
+  height: auto;
+}
+
+.main-article .content {
+  width: 80%;
+  padding: 0 20px;
+  height: auto;
+}
+ }
+
+
+@media (width > 760px) and (width < 1024px) {
+  .navbar li  {
+    color: #ffffff;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    width: 100vw;
+    
+  }
+  
+  .navbar {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .articles-container {
+    display: flex ;
+    flex-direction: row ;
+    gap: 20px;
+     
+  }
+  
+  .article {
+      width: 40vw;
+  }
+}
+
+@media (width < 480px) {
+  div .hidden {
+    display: flex;
+
+
+  }
+  header div {
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+  .navbar {
+    display: none;
+  }
+}
