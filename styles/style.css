@@ -177,3 +177,106 @@ header {
 }
   
 /* Write your CSS below */
+
+@media(width < 760px){
+
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.2s;
+
+  }
+  
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+}
+
+@media(min-width: 760px) and (max-width: 1024px){
+ 
+  ul.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: baseline;
+    width: 100%;
+
+  }
+
+  ul.navbar a{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    align-content: space-between;
+    gap: 35px;
+    
+  }
+
+  .article {
+    width: 47%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+}
+
+@media (width < 480px){
+
+ 
+  nav ul {
+    display: none;
+    content: url("/images/menu-icon.png");
+    padding: 5%;
+    width: 1%;
+    max-width: 20%;
+    max-height: 20%;
+    margin:auto;
+
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.2s;
+    margin: auto;
+    min-width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    
+  }  
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    margin: auto;
+  }
+}
