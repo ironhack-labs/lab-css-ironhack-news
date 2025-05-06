@@ -177,3 +177,202 @@ header {
 }
   
 /* Write your CSS below */
+/*******************************/
+@media screen and (max-width: 760px){
+
+header ul{
+ 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+
+.navbar li {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ffffff;
+  border-right: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+  
+.main-article {
+  display: flex;;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px
+}
+
+.main-article img{
+  width: 100%;
+  height: auto;
+}
+
+.main-article .content {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+}
+
+.articles-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.article {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 0 0 40px 0;
+}
+
+}
+
+/*******************************/
+@media screen and (max-width: 1024px) and  (min-width: 760px){
+
+
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+    border-bottom: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .main-article {
+    display: flex;;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px
+  }
+
+  .manin-article img{
+    width: 50%;
+    height: auto;
+  }
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .articles-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: ;
+    align-items: center;
+    padding: 20px;
+    
+    
+  }
+
+  .article {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 0px 40px 0;
+    align-items: center;
+  }
+
+}
+
+/*******************************/
+@media screen and (max-width: 480px){
+  
+  .newspaper-name {
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: none;
+  }
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: none;
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    width: 100%;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+    border-bottom: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+    
+  .main-article {
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px 5px;
+  }
+  
+  .main-article img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  
+  .articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    
+  }
+  
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 0 40px 0;
+  }
+}
