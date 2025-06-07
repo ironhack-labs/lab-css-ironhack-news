@@ -20,7 +20,7 @@ burger.addEventListener('click', () => {
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 480) {
-    // i will remove toggle class to show navbar fully properly on bigger screens
+    // I will remove toggle class to show navbar fully properly on bigger screens
     navbar.classList.remove('show-menu');
   }
 });
