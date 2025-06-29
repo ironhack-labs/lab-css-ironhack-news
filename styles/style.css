@@ -175,5 +175,99 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+#burger-menu {
+  display: none;
+}
   
 /* Write your CSS below */
+
+/* Mobile screens */
+@media (max-width: 760px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    box-sizing: border-box;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article .image, .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+  }
+
+  .article {
+    width: 100%;
+  }
+}
+
+/* Tablet screens */
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    width: auto;
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .main-article {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 49%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+
+  .navbar li {
+    display: none;
+  }
+
+  #burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+
+  #burger-menu img {
+    width: auto;
+    margin: 0 auto;;
+  }
+
+}
