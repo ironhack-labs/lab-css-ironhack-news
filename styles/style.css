@@ -4,17 +4,27 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -27,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -76,11 +86,19 @@ header {
   border-bottom: 1px solid white;
 }
 
+nav img {
+  display: none;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.3em;
+}
+
 .navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  /* background-color: blue; */
 }
 
 .navbar li {
@@ -119,6 +137,7 @@ header {
   width: 50%;
   padding: 0 20px;
   height: auto;
+  /* border: 1px solid black; */
 }
 
 .main-article .content {
@@ -175,5 +194,96 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+@media (width < 480px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  nav img {
+    display: block;
+  }
+  
+    nav:hover img {
+      display: none;
+  }
+
+  nav:hover .navbar {
+    display: block;
+  }
+}
+
+@media (width < 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+  }
+
+  main {
+    /* flex-wrap: wrap; */
+    /* background-color: yellow; */
+  }
+
+  .main-article {
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+  }
+
+  .main-article .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 100%;
+    /* width: 200px; */
+    /* border: 1px solid black; */
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* background-color: green; */
+  }
+  .article {
+    width: 90%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navbar li {
+    width: 100%;
+    align-self: center;
+  }
+
+  .articles-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .article {
+    width: 45%;
+  }
+}
