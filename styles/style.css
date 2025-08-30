@@ -177,3 +177,79 @@ header {
 }
   
 /* Write your CSS below */
+
+
+@media all and (max-width: 760px){
+  .navbar{
+    flex-direction:column;
+    display: flex;
+    justify-content: center;
+    li { /*make the buttons larger for the entire width of the screen*/
+      width: 100%;
+      border: 1px solid white;
+    };
+  }
+  
+  .main-article{
+    flex-direction:column;  /*all the elements insde the the main article in columnm*/
+    align-items: center; /*elements in the center*/
+    
+    .image, .content{   /*size of element inside of the box*/
+      width:auto;
+    }
+    .image{      /*size*/
+      padding-bottom: 20px;
+    }
+  }
+
+  .articles-container{
+    flex-direction:column;
+    gap: 20px;
+
+    .article{
+      width:auto;
+    }
+  }
+}
+
+
+@media all and (min-width: 760px) and (max-width: 1024px){
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navbar li{
+    flex: 1;                   /* each link takes equal width */
+  }
+
+  .article{
+    min-width: 45%;
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+
+  
+@media all and (max-width: 480px){
+  .navbar{
+    display: none;
+  }
+  header::after {
+    content: url("../images/menu-icon.png");
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 40px;
+
+    color: white;
+    background-color: #333;
+
+    position: relative;
+  }
+}
