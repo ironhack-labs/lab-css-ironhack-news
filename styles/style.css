@@ -94,6 +94,7 @@ header {
 
 .navbar li:last-child {
   border-right: none;
+  
 }
 
 .navbar a {
@@ -125,6 +126,7 @@ header {
   width: 50%;
   padding: 0 20px;
   height: auto;
+  
 }
 
 .articles-container {
@@ -134,6 +136,7 @@ header {
   flex-direction: row;
   align-items: center;
   padding: 20px;
+  
 }
 
 .article {
@@ -177,3 +180,91 @@ header {
 }
   
 /* Write your CSS below */
+
+/*mobile screens*/
+@media (max-width: 760px) {
+  .navbar {
+    
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    }
+  .navbar li {
+   border: none;
+   width: 100%;
+   border-bottom: 1px solid white;
+  }
+  .main-article .image {
+    width:100%;
+    height: auto;
+   margin-bottom: 25px;
+  }
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .main-article .content {
+    width: 100%
+  }
+  .articles-container {
+    display: block; 
+  }
+  .article {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  
+}
+
+  /*small screens*/
+@media (min-width: 760px) and (max-width:1024px) {
+
+    .navbar {
+      justify-content: space-evenly;
+      width: 100%;
+      list-style: 0;
+    }
+    .navbar li {
+      flex: 1;
+    }
+    
+    .main-article .content {
+      font-size: 20px;
+      
+    }
+    .article {
+      width: 45%;
+    }
+    
+    .articles-container {
+      gap: 50px;
+    }
+    
+    
+}
+  @media (max-width: 480px) {
+    .navbar{
+      display: none; 
+    }
+  
+    .menu-icon {
+      margin: 20px;
+      padding: 10px;
+    }
+}
+
+  @media (min-width: 760px) and (max-width: 1024px) {
+    .menu-icon {
+      display: none;
+    }
+}
+
+  @media (max-width: 760px) {
+    
+  
+    .menu-icon {
+      display: none;
+    }
+/*more practice needed for me*/

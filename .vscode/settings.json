@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.ChromeDebuggingAttachment": true
+    "liveServer.settings.host": "0.0.0.0",
+"liveServer.settings.useLocalIp": true
+
+}
