@@ -1,179 +1,228 @@
-/* CSS RESET - do not remove */
-/* Reset default browser styles and provide a consistent starting point */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-  
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+* {
   margin: 0;
   padding: 0;
-  font-weight: lighter;
+  box-sizing: border-box;
 }
 
-
-/*  DO NOT REMOVE - Styling for the label showing the viewport width */
-.viewport-dimensions {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #ee4545;
-  color: #fff;
-  font-weight: 500;
-  padding: 5px 8px;
-  font-size: 14px;
-}
-  
-/* STYLES */
-
-/*  Fonts */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  background: #f5f5f5;
+  color: #333;
 }
 
-/* Basic styles */
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/*  Font sizes */
-p {
-  font-size: 1em;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-/* Header and Navbar */
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
-
-.newspaper-name {
-  font-size: 24px;
-  padding: 10px;
-  border-bottom: 1px solid white;
-}
-
-.navbar {
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.navbar li {
-  width: 130px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid #ffffff;
-}
-
-.navbar li:last-child {
-  border-right: none;
-}
-
-.navbar a {
+a {
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-/* Articles */
-.main-article {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  display: flex;
-}
-
-.main-article img {
-  width: 100%;
-  height: auto;
-}
-
-.main-article .image {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
-
-.main-article .content {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
-
-.articles-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
-}
-
-.article {
-  width: 29%;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-.article img {
-  width: 100%;
-  height: auto;
-}
-
-.article h2 {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.article p {
-  margin-top: 10px;
+  color: inherit;
 }
 
 .btn {
-  background-color: #333;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #2d6cdf;
   color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  font-weight: bold;
   text-decoration: none;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-.btn:hover {
-  background-color: #555;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 1rem 20px; 
 }
 
-.btn-blue {
-  background-color: #007bff;
+.brand {
+  font-weight: 700;
+  padding: 0; 
 }
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-list li a {
+  padding: 12px 0; 
+  color: #fff;
+  background: transparent;
+  border: none;
+}
+
+.menu-icon {
+  display: none; 
+}
+
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.main-article {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+  margin-bottom: 20px; 
+}
+
+.main-article img {
+  border-radius: 6px;
+  margin-bottom: 15px; 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+
+.card img {
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 12px 0 6px;
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  main {
+    max-width: 900px; 
+  }
+
+ 
+  .main-article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .main-article .image {
+    flex: 1; 
+  }
+
+  .main-article .content {
+    flex: 1; 
+  }
+
+  .main-article img {
+    margin-bottom: 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+
+
+
+@media (max-width: 760px) {
+  main {
+    max-width: 520px; 
+  }
+
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px; 
+  }
+
+  .nav {
+    width: 100%; 
+  }
+
+  .nav-list {
+    flex-direction: column; 
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-list li {
+    list-style: none; 
+  }
+
+  .nav-list li a {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    background: #333; 
+    border-top: 1px solid #555;
+  }
+
   
-/* Write your CSS below */
+  .main-article {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+ 
+  .grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  .nav {
+    display: none; 
+  }
+
+  .menu-icon {
+    display: block; 
+    width: 24px; 
+    height: auto;
+    cursor: pointer;
+  }
+
+  .brand {
+    padding-left: 0; 
+  }
+}
+
+
+
+#vw-badge{position:fixed;top:6px;right:6px;background:#ff4971;color:#fff;font:12px/1.2 Arial,sans-serif;padding:4px 8px;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.25);z-index:9999}
