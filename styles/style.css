@@ -177,3 +177,107 @@ header {
 }
   
 /* Write your CSS below */
+
+
+@media screen and (max-width:760px){
+  ul.navbar
+  {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #007bff; */
+      }
+
+  .navbar li
+  {
+    width: 100%;
+    border-bottom:2px solid #ccc;
+    
+      }
+
+  .navbar li:last-child
+  {
+    border-bottom: none;
+  }
+
+main
+{
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: space-between;
+justify-content: stretch;
+}
+
+.articles-container
+{
+  flex-direction: column;
+}
+
+main > .main-article,
+main > .articles-container > .article {
+  width: 80vw;
+  display: flex;
+  flex: 1; 
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 16px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+article
+{
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+
+@media (min-width: 760px) , (max-width: 1024px)  
+{
+  ul.navbar
+  {
+    display: flex;
+    flex-direction: row;
+    background-color: #007bff; 
+      }
+
+  .navbar li
+  {
+    width: 100%;
+    border-right:2px solid #ccc;
+    
+      }
+
+  .navbar li:last-child
+  {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 480px) 
+{
+ul.navbar
+  {
+    display: flex;
+    flex-direction: row;
+      }
+
+  .navbar li
+  {
+    width: 100%;
+    border-right:2px solid #ccc;
+    
+      }
+
+  .navbar li:last-child
+  {
+    border-right: none;
+  }
+
+
+}
+
+
+}
