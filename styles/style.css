@@ -75,6 +75,12 @@ header {
   padding: 10px;
   border-bottom: 1px solid white;
 }
+.menu-icon {
+  display: none;   
+  width: 30px;     
+  height: auto;
+
+}
 
 .navbar {
   list-style-type: none;
@@ -246,3 +252,16 @@ header {
     width: 50%;               
   }
 }
+
+  @media (max-width: 480px) {
+  .navbar {
+    display: none;  
+  }
+  .menu-icon {
+    display: block;
+    justify-content: center;
+    align-items: cente; 
+  }
+}
+
+  
