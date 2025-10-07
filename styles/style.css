@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +38,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -100,6 +111,10 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+.burger-icon {
+  display: none;
 }
 
 /* Articles */
@@ -175,5 +190,178 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+/* MOBILE RESPONSIVE */
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  /* header mobile  */
+
+  header nav .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav .navbar li {
+    border-right: none;
+    border-bottom: solid 1px white;
+    width: 100%;
+  }
+
+  /* articles mobile  */
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .articles-container .article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .main-article .content h2 {
+    margin-top: 1rem;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 20px;
+  }
+
+}
+
+/* TABLET (SMALL SCREEN) RESPONSIVE */
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  /* tablet navbar */
+
+  .navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar li {
+    width: 25%;
+    text-align: center;
+  }
+
+  /* tablet articles  */
+
+  .articles-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .article {
+    width: 45%;
+  }
+
+  .articles-container .article:last-child {
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  /* header small mobile */
+  .newspaper-name {
+    border-bottom: none;
+  }
+
+  /* navbar small mobile  */
+
+  .burger-icon {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .burger-icon:has(input:checked) + .nav {
+    display: flex;
+  }
+
+  header nav .navbar li {
+    border-right: none;
+    border-bottom: solid 1px white;
+    width: 100%;
+  }
+
+  /* articles small mobile  */
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .articles-container .article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .main-article .content h2 {
+    margin-top: 1rem;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 20px;
+  }
+}
