@@ -229,3 +229,41 @@ Iteration 01
   }
 
 }
+
+/* 
+Iteration 02
+*/
+@media only screen and (min-width:760px) and (max-width: 1024px){
+
+  .navbar {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-right: 1px solid #ffffff;
+  }
+
+  .main-article {
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .article {
+    box-sizing: border-box;
+    width: 48%;
+    margin-bottom: 1.5rem;
+  }
+
+}
