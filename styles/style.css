@@ -181,7 +181,7 @@ header {
 /* 
 Iteration 01
 */
-@media only screen and (max-width:760px){
+@media only screen and (max-width:759px){
 
   .navbar {
     width: 100%;
@@ -263,6 +263,43 @@ Iteration 02
   .article {
     box-sizing: border-box;
     width: 48%;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+
+/* 
+Iteration 03
+*/
+@media only screen and (max-width:479px){
+
+  .navbar::after{
+    padding-top: 0.25rem;
+    width: 100%;
+    height: 40px;
+    content: url(/images/menu-icon.png);
+  }
+
+  .navbar li {
+    display: none;
+  }
+
+  .main-article {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .article {
+    width: 100%;
     margin-bottom: 1.5rem;
   }
 
