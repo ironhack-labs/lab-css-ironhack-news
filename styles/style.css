@@ -227,29 +227,21 @@ header {
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 510px) {
 
   .newspaper-name {
     border-bottom: none;
   }
 
   .navbar {
-    flex-direction: row;
-    background-image: url(/images/menu-icon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-bottom: 5px;
-  }
-
-  .navbar li {
-    border-bottom: none;
-  }
-  
-  a {
     display: none;
   }
-}
 
-.articles-container {
+  .menu-icon {
+    display: block;
+  }
+  
+  .articles-container {
     gap: 40px;
   }
+}
