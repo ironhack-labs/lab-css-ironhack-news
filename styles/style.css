@@ -176,4 +176,61 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+@media screen and (max-width: 760px) {
+  
+  .newspaper-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .navbar li a{
+  justify-content: center;
+  align-items: space-evenly;
+  width: 100vw;
+
+
+  }
+.navbar li {
+  border-right: none;
+  width: 100vw;
+  border-bottom: 1px solid;
+}
+
+/* MAIN ARTICLE */ 
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-article {
+  width: 180vw;
+
+}
+
+.articles-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.article{
+  width: 80vw;
+  line-height: 50px;
+}
+
+
+}
+
+  
+
+  
