@@ -37,11 +37,11 @@ body {
 
 /* Basic styles */
 main {
-  max-width: 1000px;
+  max-width: 1000px; /* marches the labs's desktop wigth */
   margin: 0 auto;
   padding: 10px 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* stack sections vertically */
   align-items: center;
 }
 
@@ -75,12 +75,12 @@ header {
   padding: 10px;
   border-bottom: 1px solid white;
 }
-
+/* Navbar baseline for dedktop. We'll override in media queries*/
 .navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Align items to the left */
 }
 
 .navbar li {
@@ -89,7 +89,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid #ffffff; /* Separator between items */
 }
 
 .navbar li:last-child {
@@ -107,7 +107,7 @@ header {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
-  display: flex;
+  display: flex; /* Side by side layout */
 }
 
 .main-article img {
@@ -177,3 +177,82 @@ header {
 }
   
 /* Write your CSS below */
+/*FIXES are comented*/
+/* MOBILE GOAL: stack vertically and make each item full width */
+@media screen and (max-width: 760px) {
+  /* Navbar stacked vertically and make each item full width */
+  .navbar {
+    display: flex;
+    flex-direction: column; /* FIX stack items vertically */
+    align-items: center;
+    border: 3px solid white;
+  }
+  .navbar li {
+    width: 100%; /* FIX make each item full width */
+    border-right: none; /* FIX remove right border */
+    border-bottom: 1px solid white; 
+  }
+  /* Main article: image above text */
+  .main-article {
+    flex-direction: column; 
+    align-items: center;
+  }
+  .main-article .image,
+  .main-article .content {
+    width: 100%; 
+    padding: 10px 0;
+  }
+/*CARDS: 1 column*/
+.articles-container {
+  flex-direction: column;
+  align-items: center
+}
+.article {
+  width: 90%; /* each article takes full width */
+  margin-bottom: 20px; /* space between articles */
+}
+/*Always keep images fluid*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* TABLET (761px to 1024px)
+   GOAL: main article side by side, cards 2 per row
+   IMPORTANT: media query syntax (must use AND between min-width and max-width)
+*/
+@media screen and (min-width: 761px) and (max-width: 1024px) {  /* ← this { fixes the error */
+
+  /* NAV: centered row with some spacing */
+  .navbar {
+    justify-content: space-around;
+  }
+
+  /* Main article stays side by side */
+  .main-article {
+    flex-direction: row;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 50%;
+  }
+
+  /* Articles: 2 columns */
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 45%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+} 
+}
