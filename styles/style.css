@@ -113,6 +113,10 @@ header {
   font-weight: bold;
 }
 
+.menu {
+  display: none;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -189,7 +193,19 @@ header {
 
 /* Write your CSS below */
 
+@media (max-width: 480px) {
 
+  .navbar {
+    display: none;
+  }
+
+  .menu {
+    display:flex;
+    margin: 10px auto;
+    
+  }
+
+}
 
 
 @media (max-width: 760px) {
