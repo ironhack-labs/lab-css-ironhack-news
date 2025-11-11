@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +38,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -100,6 +111,10 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+.menu {
+  display: none;
 }
 
 /* Articles */
@@ -175,5 +190,114 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .menu {
+    display:flex;
+    margin: 10px auto;
+    
+  }
+
+}
+
+
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    width: 760px;
+    border-right: 0px solid #ffffff;
+    border-bottom: 1px solid white;
+  }
+
+  .main-article {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0 0px;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 0 0px;
+    height: auto;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+    .article {
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar li {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 0px;
+  border-left: 1px solid #ffffff;
+}
+
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items:flex-start ;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.article {
+  width: 40%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+}
+
+
+}
