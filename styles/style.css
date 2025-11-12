@@ -177,3 +177,106 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li{
+    widht: 100%;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+  navbar li:last-child{
+    border-bottom: none;
+  }
+
+  .articles-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-article{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-article .image;
+  .main-article .conent {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-article img {
+    width:100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .main-article .content h2,
+  .main-article .content p,
+  .main-article .content .btn {
+    text-align: center;
+  }
+}
+
+/* Iteración 2: Pantallas pequeñas (tablet) */
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  
+  /* Navbar horizontal */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 23%; /* 4 enlaces ocupando espacio igual con un pequeño margen */
+    border-right: 1px solid #fff;
+    border-bottom: none;
+  }
+
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+  /* Artículo principal */
+  .main-article {
+    flex-direction: row; /* Imagen a la izquierda, contenido a la derecha */
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-article .content h2,
+  .main-article .content p,
+  .main-article .content .btn {
+    text-align: left;
+  }
+
+  /* Artículos secundarios: dos por fila */
+  .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 48%; /* Dos artículos por fila con un pequeño espacio entre ellos */
+    margin-bottom: 20px;
+  }
+}
