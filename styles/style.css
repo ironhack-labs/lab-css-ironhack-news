@@ -177,3 +177,106 @@ header {
 }
   
 /* Write your CSS below */
+
+/* Break point for  Mobile Screens (width < 760px) */
+@media screen and (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ .main-article .image {
+    width: 100%;              
+    padding: 0;               
+    margin-bottom: 15px;      
+  }
+  .main-article .content {
+    width: 100%;              
+    padding: 0;               
+    text-align: center;       
+  }
+  .articles-container {
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+  }
+  .article {
+    width: 100%;              
+    margin-bottom: 20px;      
+  }
+}
+
+/* Break point for Small Screens (width > 760px and width < 1024px) */
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .navbar li {
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    width: 100%;
+  }
+  .main-article {
+    flex-direction: row;       
+    width: 100%;               
+    margin: 0 auto;
+  }
+
+  .main-article .image {
+    width: 50%;                
+    padding: 0 10px;
+  }
+
+  .main-article .content {
+    width: 50%;                
+    padding: 0 10px;
+  }
+
+  /* Articles in two columns */
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always two columns = */
+    gap: 20px;  
+    width: 100%;               
+  }
+
+  .article {
+    width: 100%; 
+    box-sizing: border-box;
+  }
+}
+
+/* Style menu icon */
+.menu-icon {
+  display: none; 
+  padding: 10px;
+}
+
+.menu-icon img {
+  width: 30px;
+  height: auto;
+}
+
+/* Break point for Small Mobile Screens (width < 480px) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none; 
+  }
+  .newspaper-name {
+    border: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+
