@@ -101,6 +101,9 @@ header {
   color: #fff;
   font-weight: bold;
 }
+.header-image {
+  display: none;
+}
 
 /* Articles */
 .main-article {
@@ -139,6 +142,7 @@ header {
 .article {
   width: 29%;
   padding: 20px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
 }
 
@@ -177,3 +181,63 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  header .navbar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    flex-grow: 1;
+  }
+  
+  .main-article {
+    flex-direction: column;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 10px 5px;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+ .navbar {
+    justify-content: center;
+  }
+  .article {
+    width: 45%;
+    height: auto;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-image {
+    display: block;
+    width: 45px;
+    height: auto;
+    margin: auto;
+  }
+
+  .navbar li {
+    display: none;
+  }
+}
