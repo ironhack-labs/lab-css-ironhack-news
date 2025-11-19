@@ -1,0 +1,147 @@
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .newspaper-name {
+    border-bottom: none;
+  }
+
+  .mob-nav img {
+    display: block;
+    width: 32px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mob-nav img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .mob-nav img {
+    display: none;
+  }
+}
+
+.main-article {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.main-article .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-article .image {
+  flex: 1;
+}
+.main-article .content {
+  flex: 1.5;
+}
+
+@media (max-width: 992px) {
+  .main-article {
+    flex-direction: column;
+  }
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-article {
+    gap: 10px;
+  }
+
+  .main-article .content h2 {
+    font-size: 1.4rem;
+  }
+
+  .main-article .content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .main-article .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar li {
+    border-bottom: 1px solid white;
+    width: 100%;
+    border-right: none;
+  }
+
+  .mob-nav img {
+    display: none;
+  }
+}
+
+/*  */
+
+@media screen and (min-width: 770px) {
+  .article {
+    width: 29%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .article {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .articles-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  .article h2 {
+    font-size: 1.2rem;
+  }
+
+  .article p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
