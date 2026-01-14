@@ -177,3 +177,40 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .articles-container, .main-article {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .main-article {
+    flex-direction: row; 
+  }
+  .other-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .article-card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    width: 30px;
+    margin: 10px auto;
+  }
+}
