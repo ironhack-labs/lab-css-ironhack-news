@@ -1,3 +1,14 @@
+## Summary and Acknowledgment
+
+**Summary of What I Learned**
+
+In this project, I learned how to create a responsive web page using HTML and CSS, applying Flexbox and media queries to adapt the layout for different screen sizes. I practiced structuring content, styling navigation bars, and making the design user-friendly for both desktop and mobile devices. This experience helped me understand the fundamentals of responsive web design and the importance of accessibility and usability.
+
+**Thank You**
+
+Thank you, Ironhack, for the opportunity to learn and grow as a web developer. Special thanks to Professor Jorge for his guidance and support throughout the course. This project was completed by goldmonkey.studio Elder Miranda.
+
+---
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # LAB | CSS Ironhack News
@@ -516,7 +527,7 @@ There are a couple of possible reasons why you may be unable to *push* changes t
 1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
   ```bash
   git add .
-  git commit -m "Your commit message"
+  git commit -m "  git push origin masterYour commit message"
   git push
   ```
 2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
@@ -531,6 +542,24 @@ If the link shown is the same as the main Ironhack repository, you will need to 
   [Back to top](#faqs)
 
 </details>
+
+
+
+
+  ---
+
+  ## Summary and Acknowledgment
+
+  **Summary of What I Learned**
+
+  In this project, I learned how to create a responsive web page using HTML and CSS, applying Flexbox and media queries to adapt the layout for different screen sizes. I practiced structuring content, styling navigation bars, and making the design user-friendly for both desktop and mobile devices. This experience helped me understand the fundamentals of responsive web design and the importance of accessibility and usability.
+
+  **Thank You**
+
+  Thank you, Ironhack, for the opportunity to learn and grow as a web developer. Special thanks to Professor Jorge for his guidance and support throughout the course. This project was completed by goldmonkey.studio Elder Miranda.
+
+  ---
+
 
 
 
