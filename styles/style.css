@@ -175,5 +175,84 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
+.menu-icon {
+  display: none;
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar li {
+    flex-grow: 1;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .article {
+    width: 45%;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width:100%;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .article {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .main-article  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-icon {
+    display: inline;
+    padding: 5px 0px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .newspaper-name {
+    border: 0;
+  }
+}
