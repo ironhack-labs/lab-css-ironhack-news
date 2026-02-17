@@ -81,6 +81,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  text-align: center;
 }
 
 .navbar li {
@@ -100,6 +101,10 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+.navbar img {
+  display: none;
 }
 
 /* Articles */
@@ -177,3 +182,97 @@ header {
 }
   
 /* Write your CSS below */
+
+
+@media (min-width: 760px) and (max-width: 1024px){
+  
+  .navbar li {
+    width: 100%;
+    
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 35px
+  }
+
+  .navbar li:nth-child(4) {
+    border-right: 0;
+  }
+
+}
+
+@media (max-width: 760px){
+  .navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .navbar li {
+      border-right: none;
+      border-bottom: 1px solid white;
+      width: 100%;
+    }
+
+
+
+    .main-article {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .main-article .image {
+      width: 100%;
+      padding-bottom: 10px;
+    }
+
+    .main-article .content {
+      width: 100%;
+    }
+
+    .articles-container {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+   
+     
+    }
+
+    .article {
+      width: 100%;
+      padding: 40px;
+      border: 1px solid #ccc;
+      margin-bottom: 30px;
+      
+
+    }
+
+    main {
+      padding: 0 40px 0;
+      
+    } 
+ 
+}
+
+@media (max-width: 480px){
+  .navbar li {
+      display: none;
+   
+  }
+
+  .navbar img {
+    display:block;
+    padding-bottom: 15px;
+  }
+
+  .newspaper-name {
+    border: none;
+  }
+
+  main {
+    padding: 0 20px 0;
+  }
+
+}
