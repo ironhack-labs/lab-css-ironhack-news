@@ -213,8 +213,26 @@ header {
 
 }
 
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+ .navbar {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar li {
+    width: 100%;
+  }
+   .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 
+  }
 
+  .article {
+    width: 48%;
+    margin-bottom: 30px;
+  }
 
-
-
+}
