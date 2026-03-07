@@ -81,6 +81,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .navbar li {
@@ -90,10 +91,13 @@ header {
   align-items: center;
   justify-content: center;
   border-right: 1px solid #ffffff;
+
 }
 
 .navbar li:last-child {
   border-right: none;
+  
+  
 }
 
 .navbar a {
@@ -122,9 +126,10 @@ header {
 }
 
 .main-article .content {
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
   height: auto;
+  
 }
 
 .articles-container {
@@ -134,12 +139,14 @@ header {
   flex-direction: row;
   align-items: center;
   padding: 20px;
+
 }
 
 .article {
   width: 29%;
   padding: 20px;
   border: 1px solid #ccc;
+
 }
 
 .article img {
@@ -177,3 +184,81 @@ header {
 }
   
 /* Write your CSS below */
+
+@media screen and (max-width: 760px) {
+  .main-article {
+    flex-direction: column;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    margin: 15px auto;
+  
+    
+  }
+
+  .navbar li {
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px 0;
+  }
+
+  .navbar li:last-child {
+  border-right: 1px solid white;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: space-evenly;
+  }
+
+  .navbar li {
+    flex-direction: space-between;
+    width: 150px;
+    height: 50px;
+
+  }
+.articles {
+
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
+
+}
+
+.articles-container {
+
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: space-between;
+  flex-direction: row;
+  
+}
+
+  
+}
