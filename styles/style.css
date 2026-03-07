@@ -234,5 +234,21 @@ header {
     width: 48%;
     margin-bottom: 30px;
   }
+}
 
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  nav {
+    background-image: url('../images/menu-icon.png');
+    height: 45px;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+.newspaper-name {
+  border-bottom: none;
+}
 }
