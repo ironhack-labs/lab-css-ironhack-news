@@ -175,5 +175,141 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+.menu-icon {
+  display: none;
+}
+
+
+/* Iteration 1 | Mobile Screens (width < 760px) */
+@media screen and (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    
+
+    
+  }
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+
+  }
+  .navbar a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+
+  }
+  .main-article {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .main-article .image {
+      width: 100%;
+      margin: auto;
+    }
+    .main-article img{
+      width: 100%;
+      height: auto;
+      display: block;
+
+    }
+    .main-article .content{
+      width: 100%;
+      padding: 10px 0;
+
+    }
+    .articles-container{
+      display: grid;
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .article {
+      width: 100%;
+      padding: 10px 0;
+    }
+    .articles-container .article img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+   
+}
+  /* Small Screens (width > 760px and width < 1024px) */
+   @media screen and (min-width: 760px) and (max-width: 1024px) {
+      
+    .navbar {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar li {
+    flex: 1;              
+  }
+
+  .navbar a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    width: 100%;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .menu-icon {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+}
+
+/*Small Mobile Screens (width < 480px)*/
+ @media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    width: 30px;
+    margin: auto;
+
   
-/* Write your CSS below */
+ }
+
+}
+
+
+
+  
+
+
+
