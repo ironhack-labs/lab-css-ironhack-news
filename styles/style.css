@@ -42,7 +42,7 @@ main {
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 /*  Font sizes */
@@ -68,6 +68,7 @@ header {
   background-color: #333;
   color: #fff;
   text-align: center;
+  ;
 }
 
 .newspaper-name {
@@ -80,7 +81,7 @@ header {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content:flex-start;
 }
 
 .navbar li {
@@ -104,10 +105,7 @@ header {
 
 /* Articles */
 .main-article {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  display: flex;
+  flex-direction:column;
 }
 
 .main-article img {
@@ -116,14 +114,12 @@ header {
 }
 
 .main-article .image {
-  width: 50%;
-  padding: 0 20px;
+  width: 100%;
   height: auto;
 }
 
 .main-article .content {
-  width: 50%;
-  padding: 0 20px;
+  width: 100%;
   height: auto;
 }
 
@@ -176,4 +172,51 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+/* Write your CSS below */ 
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+  
+}
+
