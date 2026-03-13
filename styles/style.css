@@ -177,3 +177,14 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar {
+    display: none;
+  }
+  .mobile.navbar {
+    display: flex;
+    flex-direction: column;
+    color: white
+    padding; 
+  }
+}
