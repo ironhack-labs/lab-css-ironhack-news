@@ -90,6 +90,7 @@ header {
   align-items: center;
   justify-content: center;
   border-right: 1px solid #ffffff;
+  width: 100%;
 }
 
 .navbar li:last-child {
@@ -175,5 +176,79 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+.menu-icon {
+  display: none;
+}
+
   
 /* Write your CSS below */
+
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+    width: 100%;
+  }
+  .main-article{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+  }
+ .main-article .image {
+    width: 100%;
+  }
+  .main-article .content {
+    width: 100%;
+  }
+  .article {
+    width: 100%;
+    padding: 1rem;
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+ .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar li {
+    width: 100%;
+  }
+  .main-article {
+    width: 100%;
+  }
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: stretch;
+    padding: 0px;
+    gap: 2rem;
+  }
+  .article {
+    width: 100%;
+  } 
+  
+}
+
+@media (max-width: 480px) {
+  .navbar li {
+    display: none;
+  }
+ .menu-icon {
+  display: inline-flex;
+}
+.newspaper-name {
+  border-bottom: 0;
+}
+}
