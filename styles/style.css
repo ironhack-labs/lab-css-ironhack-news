@@ -177,3 +177,141 @@ header {
 }
   
 /* Write your CSS below */
+/* ocultarmos el checkbox */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px){
+  .navbar{
+    display: flex;
+  }
+
+  .navbar li{
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #FFF;
+  }
+
+}
+
+@media (max-width: 760px) {
+  .main-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-article .image{
+    width: 100%;
+    height: auto;
+  }
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .navbar{
+    display: block;
+  }
+
+  .navbar li{
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    border-right: 0px;
+  }
+  
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+    .main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .menu-icon + .navbar{ /*cambiamos cuando se active el chetbox */
+    display: flex;
+  }
+
+  .menu-icon{
+    display: block;
+  }
+  .navbar{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar li{
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    border-right: 0px;
+  }
+   .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-article .image{
+    width: 100%;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
