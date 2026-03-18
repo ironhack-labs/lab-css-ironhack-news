@@ -251,7 +251,7 @@ header {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .main {
     width: 100%;
     margin: 0 auto;
@@ -267,8 +267,6 @@ header {
 
   .menu-icon{
     display: block;
-    height: 10%;
-    width: ;
   }
   .navbar{
     display: none;
