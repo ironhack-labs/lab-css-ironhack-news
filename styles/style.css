@@ -86,11 +86,42 @@ header {
   border-bottom: 1px solid white;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  flex-direction: row;
 }
 
 .navbar li {
@@ -226,9 +257,38 @@ header {
   }
 }
 
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar li {
+    width: 25%;
+    border-bottom: none;
+    border-right: 1px solid #fff;
+  }
+  .navbar li:last-child {
+    border-right: none;
+  }
+  .main-article {
+    flex-direction: row;
+    width: 100%;
+  }
+  .main-article .image,
+  .main-article .content {
+    width: 50%;
+  }
+  .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .article {
+    width: 48%;
+    margin-bottom: 2%;
+  }
+}
 
-
-@media screen and (min-width: 761px) and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
   .navbar {
     flex-direction: column;
     align-items: center;
