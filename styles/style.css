@@ -4,12 +4,24 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -27,7 +39,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 5px 8px;
   font-size: 14px;
 }
-  
+
 /* STYLES */
 
 /*  Fonts */
@@ -49,11 +61,9 @@ main {
 p {
   font-size: 1em;
 }
-
 h1 {
   font-size: 3em;
 }
-
 h2 {
   font-size: 2em;
   margin-bottom: 1em;
@@ -61,6 +71,232 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+}
+
+/***********
+****MEDIA****
+******/
+@media (max-width: 480px) {
+  .navbar {
+    background-image: url(../images/menu-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    position: relative;
+    height: 40px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition:all .2s ease;
+  }
+  .navbar:hover {
+    background-image:none;
+    height: 160px;
+    transition:all .2s ease;
+  }
+  .navbar:hover li {
+    position: relative;
+    opacity: 1;
+  }
+  .navbar li {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+  }
+  .main-article {
+    margin:20px 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .articles-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  .navbar li {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+  }
+  .main-article {
+    margin:20px 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  .main-article .image {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .articles-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1023px) {
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbar li {
+    width: 25%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+  }
+  .main-article {
+    margin:20px 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .articles-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navbar li {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+  }
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: row;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .article {
+    width: 29%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
 }
 
 /* Header and Navbar */
@@ -76,24 +312,9 @@ header {
   border-bottom: 1px solid white;
 }
 
-.navbar {
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.navbar li {
-  width: 130px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid #ffffff;
-}
-
 .navbar li:last-child {
   border-right: none;
+  border-bottom: none;
 }
 
 .navbar a {
@@ -103,58 +324,25 @@ header {
 }
 
 /* Articles */
-.main-article {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  display: flex;
-}
 
-.main-article img {
-  width: 100%;
-  height: auto;
-}
 
-.main-article .image {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
 
-.main-article .content {
-  width: 50%;
-  padding: 0 20px;
-  height: auto;
-}
+  .article img {
+    width: 100%;
+    height: auto;
+  }
 
-.articles-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
-}
+  .article h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
 
-.article {
-  width: 29%;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
+  .article p {
+    margin-top: 10px;
+  }
 
-.article img {
-  width: 100%;
-  height: auto;
-}
 
-.article h2 {
-  font-size: 20px;
-  margin-top: 10px;
-}
 
-.article p {
-  margin-top: 10px;
-}
 
 .btn {
   background-color: #333;
@@ -175,5 +363,5 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
-  
+
 /* Write your CSS below */
