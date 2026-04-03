@@ -11,3 +11,12 @@ window.addEventListener("resize", () => {
   // Set the text of the element to show the viewport width
   viewportDimensions.innerHTML = `Viewport Width: <b>${width}px</b>`;
 });
+
+//Iteracion 3 Activite
+
+const deploy = document.querySelector('.menu-deploy');
+const navbar = document.querySelector('.navbar');
+
+  deploy.addEventListener('click', () => {
+    navbar.classList.toggle('active')
+  });
