@@ -75,12 +75,15 @@ header {
   padding: 10px;
   border-bottom: 1px solid white;
 }
-
+.menu-icon {
+  visibility: hidden;
+  position: fixed;
+}
 .navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .navbar li {
@@ -175,5 +178,84 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+@media (max-width: 768px) {
+ 
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+  .main-article {
+    flex-direction: column;
+  }
   
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .articles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .article {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-icon {
+    position: relative;
+    justify-content: center;
+    visibility: visible;
+    display: inline;
+    cursor: pointer;
+  }
+  nav{
+    height: 10px;
+  }
+  .navbar {
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .navbar li {
+    visibility: hidden;
+    height: 10%;
+    width: 10%;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+    
+  .main-article {
+    flex-direction: column;
+  }
+  
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .articles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 /* Write your CSS below */
