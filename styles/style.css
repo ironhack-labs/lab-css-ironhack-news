@@ -18,6 +18,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
+  
   position: fixed;
   top: 0;
   right: 0;
@@ -37,7 +38,7 @@ body {
 
 /* Basic styles */
 main {
-  max-width: 1000px;
+    max-width: 1000px;
   margin: 0 auto;
   padding: 10px 20px;
   display: flex;
@@ -177,3 +178,89 @@ header {
 }
   
 /* Write your CSS below */
+@media(width < 760px) {
+ 
+.navbar {
+list-style-type: none;
+width:100%;
+display:flex;
+justify-content: center;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.navbar li {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar li:last-child {
+  border-right: none;
+}
+}
+
+main {
+    max-width: 100%;
+  margin: 0 auto;
+  padding: 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+}
+.main-article .image {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+  position:right;
+}
+
+.main-article .content {
+  width: 50%;
+  padding: 0 20px;
+  height: auto;
+  text-align: justify;
+}
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;}
+
+
+ @media(max-width < 760px) {
+  .navbar ul { display: none; }
+  .navbar-img{display:block;}
+   .navbar{visibility:hidden;}
+     }
+
+ 
+nav {display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav a {padding:10px
+}
+  .articles { display: flex;
+    flex-direction: column;	  }
+      article {      width: 100%;	  }
+        .main-article {     display: flex;
+    flex-direction: column;	  }
+  .main-article img {    width: 100%;	  }	
+
+  
+ @media (min-width: 760px) and (max-width: 1024px) {
+ 
+  nav {      display: flex;		  }
+  nav a {      flex: 1;      text-align: center;		  }
+ 
+  .main-article {	    display: flex;		  }
+  .main-article img {     width: 50%;		  }
+  .main-article-content {     width: 50%;
+    padding: 20px;	  }
+   
+  .articles {     display: flex;
+    flex-wrap: wrap;	  }
+  article {     width: 50%;		  }		}
