@@ -177,3 +177,95 @@ header {
 }
   
 /* Write your CSS below */
+
+/* Mobile Screens (width < 760px) */
+
+@media (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-article{
+    width: 900px;
+    margin: 5px auto;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
+  .articles-container {
+    .article {
+      width: 450px;
+      margin: 5px auto;
+      padding: 15px;
+      display: block;
+      text-align: left;
+    }
+  }
+}
+
+
+
+  /* Small Screens (width > 760px and width < 1024px) */
+
+@media (min-width: 760px) and (max-width: 1024px){
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    text-align: center;
+  }
+  .main-article{
+    width: 900px;
+    margin: 5px auto;
+    padding: 15px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+  .articles-container {
+    .article {
+      width: 450px;
+      margin: 5px auto;
+      padding: 15px;
+      display: block;
+      text-align: left;
+    }
+  }
+  }
+
+
+
+
+
+   /* Small Mobile Screens (width < 480px) */
+
+@media (max-width: 480px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-article{
+    width: 900px;
+    margin: 5px auto;
+    padding: 15px;
+    display: block;
+    text-align: left;
+    align-items: center;
+}
+  .articles-container {
+    .article {
+      width: 450px;
+      margin: 5px auto;
+      padding: 15px;
+      display: block;
+      text-align: left;
+    }
+  }
+  }
