@@ -87,6 +87,49 @@ header {
   border-bottom: 1px solid white;
 }
 
+nav{
+  width: 100%;
+}
+
+/* Checkbox Hidden */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Navbar mobile default */
+.navbar {
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+}
+
+#menu-toggle:checked  ~ .navbar {
+  display: flex;
+}
+
+.navbar li {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+
+.navbar a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
 
 /* Articles */
 .main-article {
@@ -94,6 +137,8 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-article img {
@@ -102,28 +147,28 @@ header {
 }
 
 .main-article .image {
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
   height: auto;
 }
 
 .main-article .content {
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
   height: auto;
 }
 
 .articles-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
 .article {
-  width: 29%;
+  width: 100%;
   padding: 20px;
   border: 1px solid #ccc;
 }
@@ -164,34 +209,80 @@ header {
 
 /* Write your CSS below */
 
-@media (min-width: 1024px) {
-  .navbar {
-    list-style-type: none;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+/* 480px - 759px: mobile, but navbar visible vertically  */
+@media (min-width: 480px) {
+  .hamburger {
+    display: none;
   }
 
-  .navbar li {
-    width: 130px;
-    height: 40px;
+  .navbar {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #ffffff;
+    flex-direction: column;
+  }
+} 
+
+/* 760px - 1023px: tablet */
+@media (min-width: 760px) {
+  .navbar {
+    flex-direction: row;
+  }
+  
+  .navbar li {
+    flex: 1;
+    border-top: none;
+    border-right: 1px solid #fff;
   }
 
   .navbar li:last-child {
     border-right: none;
   }
 
-  .navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    display: block;
-    padding: 18px 16px;
-    border-bottom: 1px solid #ffffff;
+  .main-article {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
   }
 
+  .main-article .image,
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .main-article .content {
+    margin-top: 0;
+  }
+
+  .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .article {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar li {
+    flex: none;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar a {
+    padding: 12px 16px;
+  }
+
+  .article {
+    width: calc(33.333% - 14px);
+  }
 }
