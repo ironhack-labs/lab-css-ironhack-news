@@ -30,6 +30,14 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   
 /* STYLES */
 
+/* Menu icon — hidden by default on larger screens */
+.menu-icon {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
 /*  Fonts */
 body {
   font-family: "Helvetica", sans-serif;
@@ -176,4 +184,87 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+@media (max-width: 760px) {
+
+  /* Show menu icon, hide navbar links */
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* 1. Navbar items displayed vertically, one below the other */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  /* 2. All articles displayed in a column, one below the other */
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  /* 3. Main Article: image on top, then title, text, button */
+  .main-article {
+    flex-direction: column;
+  }
+
+  .main-article .image {
+    width: 100%;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  /* 1. Navbar: horizontal, equal space, full width */
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .navbar li {
+    flex: 1;
+    width: auto;
+  }
+
+  /* 2. Main article: full width, image left / content right */
+  .main-article {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .main-article .image {
+    width: 50%;
+  }
+
+  .main-article .content {
+    width: 50%;
+  }
+
+  /* 3. Other articles: 2 per row, equal space */
+  .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .article {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+}
