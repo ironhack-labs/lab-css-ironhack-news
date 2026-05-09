@@ -177,3 +177,82 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  }
+  .navbar li {
+  width: 760px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: none;
+  border-bottom: 1px solid #ffffff;
+}
+  .main-article {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  }
+  .btn, .btn-blue {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+  }
+  .articles-container {
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+  width:600px;
+}
+ article {
+   display:flex;
+   flex-direction:column;
+   justify-content:space-between;
+   padding: 50px, 0px, 50px, 0px;
+   margin: 50px, 0px, 50px, 0px;
+   width: 600px;
+   
+ }
+ section {
+  width: 600px;
+ }
+}
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+.navbar {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
+  }
+  .navbar li {
+  width: 760px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.image {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
+}
+.article {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 20px;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+}
+}
