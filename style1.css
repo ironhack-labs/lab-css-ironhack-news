@@ -1,10 +1,13 @@
 
-/*.main-article .image {
+/*c.main-article .image {
   width: 50%;
   padding: 0 20px;
   height: auto;
   display: block;
 }
+  .main-article .image {
+    flex: 1;
+  }
 
 .main-article .content {
   width: 50%;
