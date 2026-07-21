@@ -89,7 +89,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid white
 }
 
 .navbar li:last-child {
@@ -176,4 +176,58 @@ header {
   background-color: #007bff;
 }
   
-/* Write your CSS below */
+/* Write your CSS below  iteraion 1*/
+@media (width < 760px){
+  .navbar {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .navbar li {
+  border-right: none;
+  border-bottom:1px solid white;
+  width: 100%;
+  }
+
+ .main-article {
+    flex-direction: column;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  }
+  .main-article h2 {
+    font-size: larger;
+    margin-top: 10px;
+  }
+
+/* Write your CSS below  iteraion 2 */
+@media (width > 760px) and (width<=1024px){
+.navbar {
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+   
+   }
+.article{
+  width: 48%;
+  margin-bottom: 20px;
+
+}
+
+}
