@@ -182,7 +182,7 @@ header {
   display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 760px) and (max-width: 1024px) {
 
   .navbar li {
     flex: 1;
@@ -194,7 +194,7 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .navbar {
     flex-direction: column;
   }
