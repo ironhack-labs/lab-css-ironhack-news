@@ -14,6 +14,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 0;
   font-weight: lighter;
 }
+#menu {
+  display: none;
+}
 
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
@@ -177,3 +180,86 @@ header {
 }
   
 /* Write your CSS below */
+@media(width < 760px){
+
+main{
+  padding: 20px 50px;
+}
+#menu{
+  display: none;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+  
+}
+.navbar li{
+  width: 100%;
+  border: white solid 1px;
+  border-left: none;
+  border-right: none;
+}
+
+
+.main-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+
+}
+ .main-article .image,
+  .main-article .content {
+    width: 100%;
+    padding: 20px;
+  }
+  .article{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  main .articles-container{
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (width > 760px) and (width < 1024px){
+  .main-article{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%;
+
+}
+.article{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(50% - 10px);
+  padding: 30px;
+  margin: 20px 0px;
+}
+main .articles-container{
+  padding: 0px;
+}
+
+
+}
+@media (width<480px){
+
+#menu{
+ display: inline;
+ border: none;
+
+}
+  .navbar li{
+    display: none;
+  }
+}
