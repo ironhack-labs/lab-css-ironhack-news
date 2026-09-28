@@ -175,5 +175,108 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+/* MENU ICON */
+.menu-icon {
+  /* layout */
+  display: none;
+}
+
   
 /* Write your CSS below */
+
+/* ITERATION 1 — MOBILE */
+@media (max-width: 759px) {
+  /* NAVIGATION */
+  .navbar {
+    /* layout */
+    flex-direction: column;
+  }
+
+    .navbar li {
+      /* box-model */
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #fff;
+    }
+
+    .navbar li:last-child {
+      /* box-model */
+      border-bottom: none;
+    }
+
+  /* MAIN ARTICLE */
+  .main-article {
+    /* layout */
+    flex-direction: column;
+  }
+
+    .main-article .image,
+    .main-article .content {
+      /* box-model */
+      width: 100%;
+    }
+
+    .main-article .content {
+      /* box-model */
+      padding-top: 20px;
+    }
+
+  /* SECONDARY ARTICLES */
+  .articles-container {
+    /* layout */
+    flex-direction: column;
+    gap: 35px;
+  }
+
+    .article {
+      /* box-model */
+      width: 100%;
+    }
+}
+
+
+/* ITERATION 2 — TABLET */
+@media (min-width: 760px) and (max-width: 1024px) {
+  /* NAVIGATION */
+  .navbar li {
+    /* box-model */
+    width: 25%;
+  }
+
+  /* SECONDARY ARTICLES */
+  .articles-container {
+    /* layout */
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+
+    .article {
+      /* box-model */
+      width: 44%;
+    }
+}
+
+
+/* ITERATION 3 — SMALL MOBILE */
+@media (max-width: 479px) {
+  .newspaper-name { 
+    border-bottom: 0;
+  }
+  /* NAVIGATION */
+  .navbar {
+    /* layout */
+    display: none;
+  }
+
+  .menu-icon {
+    /* layout */
+    display: block;
+
+    /* box-model */
+    width: 30px;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-sizing: content-box;
+  }
+}
