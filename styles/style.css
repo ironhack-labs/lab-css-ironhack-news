@@ -177,3 +177,72 @@ header {
 }
   
 /* Write your CSS below */
+
+/* iteracción 1 */
+@media(width<760px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li{
+    border-right: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+  .main-article{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  .articles-container{
+    flex-direction: column;
+    width: 100%;
+   
+  }
+  .article{
+    width: 100%;
+  }
+
+   .main-article .image,
+  .main-article .content {
+    width: 100%;
+  }
+}
+
+/* iteracción 2 */
+@media(width > 760px) and (width < 1024px) {
+  .navbar li{
+    flex: 1;
+  }
+  .main-article{
+    width: 100%;
+  }
+  .articles-container{
+    display: flex;
+    gap: 20px;
+    
+  }
+  .article{
+    width: 45%;
+    height: 95%;
+  }
+}
+
+/* iteraccion 3 */
+@media(width < 480px){
+  .navbar{
+    display: none;
+    
+  }
+  nav {
+    background-image: url("/images/menu-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    height: 50px;
+
+  }
+}
