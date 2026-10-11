@@ -65,8 +65,8 @@ h3 {
 
 /* Header and Navbar */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(194, 165, 86);
+  color: white;
   text-align: center;
 }
 
@@ -89,7 +89,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid white;
 }
 
 .navbar li:last-child {
@@ -98,7 +98,7 @@ header {
 
 .navbar a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: bold;
 }
 
@@ -139,7 +139,7 @@ header {
 .article {
   width: 29%;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid white;
 }
 
 .article img {
@@ -158,7 +158,7 @@ header {
 
 .btn {
   background-color: #333;
-  color: #fff;
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -169,11 +169,98 @@ header {
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: bla;
 }
 
 .btn-blue {
-  background-color: #007bff;
+  background-color: green;
 }
   
 /* Write your CSS below */
+
+/* Iteration 1: Mobile screens */
+@media (max-width: 759px) {
+
+  /* Navbar vertical */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+
+  /* Main article: image above content */
+  .main-article {
+    flex-direction: column;
+  }
+
+  .main-article .image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-article .content {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* All articles in one column */
+  .articles-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .article {
+    width: 100%;
+  }
+}
+
+
+/* Iteration 2: Tablet screens */
+@media (min-width: 760px) and (max-width: 1024px) {
+
+  /* Navbar horizontal */
+  .navbar {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 25%;
+  }
+
+  /* Main article: image left, content right */
+  .main-article {
+    flex-direction: row;
+  }
+
+  .main-article .image {
+    width: 50%;
+  }
+
+  .main-article .content {
+    width: 50%;
+  }
+
+  /* Other articles: two per row */
+  .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .article {
+    width: calc(50% - 10px);
+  }
+}
+```
