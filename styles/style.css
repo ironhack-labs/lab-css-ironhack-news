@@ -177,3 +177,106 @@ header {
 }
   
 /* Write your CSS below */
+
+.menu-toggle,
+.sidelis {
+  display: none;
+}
+
+@media screen and ( max-width: 760px) {
+  
+.navbar {
+  flex-direction: column;
+}
+
+.navbar li {
+  width: 100%;
+  border-right: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.main-article {
+  width: 100%;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.main-article .image,
+.main-article .content {
+  width: 100%;
+  padding: 0;
+}
+
+.main-article .content {
+  margin-top: 20px;
+}
+
+.articles-container {
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+.article {
+  width: 100%;
+  margin-bottom: 30px;
+}
+}
+
+@media screen and ( min-width: 761px) and (max-width: 1024px) {
+
+  .navbar li {
+    flex: 1;
+    width: auto;
+  }
+
+  .main-article {
+    margin: 20px 0;
+  }
+
+  .main-article .image,
+  .main-article .content {
+    padding: 0 15px;
+  }
+
+  .articles-container {
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .article {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and ( max-width: 480px) {
+
+  .sidelis {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+
+  .sidelis img{
+    width: 40px;
+    height: auto;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .menu-toggle:checked ~ .navbar{
+    display: flex;
+  }
+
+  .main-article {
+    padding: 15px;
+  }
+  .h2 {
+    font-size: 1.6rem;
+  }
+}
