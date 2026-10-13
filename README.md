@@ -11,34 +11,29 @@
    <h2>Learning Goals</h2>
   </summary>
 
+This exercise allows you to practice and apply the concepts and techniques taught in class.
 
-  This exercise allows you to practice and apply the concepts and techniques taught in class. 
+Upon completion of this exercise, you will be able to:
 
-  Upon completion of this exercise, you will be able to:
-
-  - Develop a responsive webpage using the provided designs as a guide.
-  - Use CSS media queries to adapt the page layout to different screen sizes.
-  - Use CSS Flexbox to position elements on a webpage dynamically as either rows or columns.
+- Develop a responsive webpage using the provided designs as a guide.
+- Use CSS media queries to adapt the page layout to different screen sizes.
+- Use CSS Flexbox to position elements on a webpage dynamically as either rows or columns.
 
   <br>
 
-  <hr> 
-
+  <hr>
 
 </details>
 
-
-
 ## Introduction
 
-As a web developer, one of your tasks will be to make sure that the web pages and websites you build look good and work well on all devices and screen sizes. In this exercise, we will work on the *Ironhack News* web page, and your task is to make it fully responsive using the media queries and Flexbox knowledge you learned in the previous lessons.
+As a web developer, one of your tasks will be to make sure that the web pages and websites you build look good and work well on all devices and screen sizes. In this exercise, we will work on the _Ironhack News_ web page, and your task is to make it fully responsive using the media queries and Flexbox knowledge you learned in the previous lessons.
 
 <br>
 
 ## Getting Started
+
 For this exercise, we will use VSCode and the Live Server extension to run the JavaScript code. To do it, follow these steps:
-
-
 
 - Fork this repo
 
@@ -48,11 +43,7 @@ For this exercise, we will use VSCode and the Live Server extension to run the J
 
 - Once in VS Code, open the `index.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.<br>To open the file, right-click on the `index.html` file and select **Open with Live Server**.
 
-  
-
 <br>
-
-
 
 ## Submission
 
@@ -66,20 +57,13 @@ git push origin master
 
 - Create a Pull Request and submit your assignment.
 
-
 <br>
-
-
 
 ## Instructions
 
 Before you start writing any code, make sure to review the existing code and the page structure in the `index.html` file, as well as the base styles already defined in the `style.css` file. Once you review the code, you can start working on the tasks outlined in the iterations below.
 
-
-
-You should do all your work in the `style.css` file. The file is already linked to the `index.html` file, so you don't need to worry about it. 
-
-
+You should do all your work in the `style.css` file. The file is already linked to the `index.html` file, so you don't need to worry about it.
 
 The page is already styled for large screens (width > 1024px). This is how it looks:
 
@@ -95,23 +79,23 @@ Your task in the following iterations will be to add styles using media queries 
 
 <br>
 
-----
+---
 
 ### Iteration 1 | Mobile Screens (width < 760px)
 
 We will start by styling the page for mobile screens first. :iphone:
 
 Add a media query to the `style.css` file that targets screens with a `max-width` of `760px` and the styles to make the page look like in the image below. In particular, you should add the styles to achieve the following:
-- The *Navbar* elements (*"Home"*, *"News"*, *"Tech"* and *"Other"*) should be displayed vertically, one below the other.
-- All articles (*"Main Article"*, *"Article 1"*, *"Article 2"*, and *"Article 3"*) should be displayed in a column, one below the other.
-- The *"Main Article"* *image* should be displayed at the top, followed by the *title*, *text*, and the "Read more" button below it.
+
+- The _Navbar_ elements (_"Home"_, _"News"_, _"Tech"_ and _"Other"_) should be displayed vertically, one below the other.
+- All articles (_"Main Article"_, _"Article 1"_, _"Article 2"_, and _"Article 3"_) should be displayed in a column, one below the other.
+- The _"Main Article"_ _image_ should be displayed at the top, followed by the _title_, _text_, and the "Read more" button below it.
 
 <br>
 
 <p align="center">
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-css-ironhack-news/01-iteration-1-preview.png" width="350px" alt="iteration-1-preview" />
 </p>
-
 
 <br>
 
@@ -125,12 +109,13 @@ Use the following full page screenshot as the guide:
 
   <br/>
 
-  [Back to top](#iteration-1--mobile-screens-width--760px)
+[Back to top](#iteration-1--mobile-screens-width--760px)
+
 </details>
 
 <br>
 
-----
+---
 
 ### Iteration 2 | Small Screens (width > 760px and width < 1024px)
 
@@ -139,20 +124,18 @@ Next, we will add styles for tablet screens. :computer:
 Add a new media query to the `style.css` file that targets screens with a `min-width` of `760px` and a `max-width` of `1024px`. In particular, you should add the styles to achieve the following:
 
 - The `navbar` links should be displayed horizontally, one next to the other, taking equal space and filling the entire width of the page.
-- The *"Main Article"* should be displayed on the top of the page, taking the entire width of the page.
-- The *"Main Article"* should be divided into two parts: 
-  - on the **left** side, the *image* should be displayed,
-  - on the **right** side, the *title*, *text*, and the "Read more" button should be displayed.
+- The _"Main Article"_ should be displayed on the top of the page, taking the entire width of the page.
+- The _"Main Article"_ should be divided into two parts:
+  - on the **left** side, the _image_ should be displayed,
+  - on the **right** side, the _title_, _text_, and the "Read more" button should be displayed.
 
-- The other articles (*"Article 1"*, *"Article 2"*, and *"Article 3"*) should be displayed by two in a row, taking equal space.
-
+- The other articles (_"Article 1"_, _"Article 2"_, and _"Article 3"_) should be displayed by two in a row, taking equal space.
 
 <br>
 
 <p align="center">
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-css-ironhack-news/03-iteration-2-preview.png" width="500px" alt="iteration-2-preview" />
 </p>
-
 
 <br>
 
@@ -165,17 +148,17 @@ Use the following full page screenshot as the guide:
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-css-ironhack-news/04-iteration-2-full-page-screenshot.png" width="700px"/>
   <br/>
 
+[Back to top](#iteration-2--small-screens-width--760px-and-width--1024px)
 
-  [Back to top](#iteration-2--small-screens-width--760px-and-width--1024px)
 </details>
 
 <br>
 
-----
+---
 
 ### Bonus: Iteration 3 | Small Mobile Screens (width < 480px)
 
-In this bonus iteration, your task is to **hide the "Navbar" links on small mobile screens** :iphone: and instead display the *"menu"* icon. 
+In this bonus iteration, your task is to **hide the "Navbar" links on small mobile screens** :iphone: and instead display the _"menu"_ icon.
 
 To do this, you will need to add a new element to the `index.html` to display the menu icon and add the necessary styles to the `style.css` file.
 You can find the menu icon in the `images/` folder.
@@ -191,7 +174,6 @@ The final result should look like in the below image.
 <p align="center">
   <i>Credits - Menu icon by ariefstudio <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">(Flaticon)</a></i>
 </p>
-
 
 <br>
 
@@ -209,22 +191,21 @@ The final result should look like in the below image.
   <summary>I am stuck in the exercise and don't know how to solve the problem or where to start.</summary>
   <br>
 
-  If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
+If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
 
+For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources.
 
-  For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources. 
+Once you have a clear understanding of the problem, you will be able to start working toward the solution.
 
+[Back to top](#faqs)
 
-  Once you have a clear understanding of the problem, you will be able to start working toward the solution.
-
-  [Back to top](#faqs)
 </details>
 
 <details>
   <summary>How do I define a media query in CSS?</summary>
   <br>
 
-  Media queries in CSS use the following syntax: **`@media`** followed by the media type (like `screen`), and a condition. This condition can check things like the size of the screen (width and height) or its orientation (portrait or landscape). When the condition is true, the styles inside the media query are applied.
+Media queries in CSS use the following syntax: **`@media`** followed by the media type (like `screen`), and a condition. This condition can check things like the size of the screen (width and height) or its orientation (portrait or landscape). When the condition is true, the styles inside the media query are applied.
 
   <br>
 
@@ -236,16 +217,15 @@ The final result should look like in the below image.
 }
 ```
 
-  *Note: In the above example, `<media-type>`, and `<condition>` are placeholders. Replace them with your specific values.*
+_Note: In the above example, `<media-type>`, and `<condition>` are placeholders. Replace them with your specific values._
 
   <br>
 
-  Here's an example of defining a couple of media queries in CSS:
+Here's an example of defining a couple of media queries in CSS:
 
 **CSS**
 
 ```css
-
 /* Apply this style when the screen width is 600px or less */
 @media screen and (max-width: 600px) {
   body {
@@ -264,24 +244,23 @@ The final result should look like in the below image.
 In the above example, the body background color changes depending on the screen width.
 The first media query applies when the screen width is 600px or less, and the second applies whenn the width is between 600px and 1200px.
 
-Beyond width, media queries can be used to apply styles based on other features like screen *height* and *orientation* (portrait or landscape), enabling more dynamic and adaptive designs.
+Beyond width, media queries can be used to apply styles based on other features like screen _height_ and _orientation_ (portrait or landscape), enabling more dynamic and adaptive designs.
 
 For more information on media queries and the syntax, check: [MDN: Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
   <br>
 
 </details>
 
-
 <details>
   <summary>How do I center align HTML text elements?</summary>
   <br>
 
-  To center align HTML *text elements*, you can use the `text-align` property and set it to `center`. This property can be applied to any *inline* or *block-level* element.
+To center align HTML _text elements_, you can use the `text-align` property and set it to `center`. This property can be applied to any _inline_ or _block-level_ element.
 
 Here is an example of how you can use the `text-align` property to center align multiple text elements:
 
@@ -290,7 +269,7 @@ Here is an example of how you can use the `text-align` property to center align 
 ```html
 <div>
   <h2>This is a title</h2>
-  
+
   <p>This is some text in here</p>
 </div>
 ```
@@ -313,16 +292,15 @@ This will center align all `p` and `h2` elements within the parent `div`.
 
 For more information, check: [W3C: Centering Things](https://www.w3.org/Style/Examples/007/center.en.html)
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
+
 </details>
-
-
 
 <details>
   <summary>How do I center align HTML block elements?</summary>
   <br>
 
-  To center align a block-level element, such as a `div`, `h1`, etc., you can use the `margin` property and set it to `auto`. This will center the element horizontally within its parent container. 
+To center align a block-level element, such as a `div`, `h1`, etc., you can use the `margin` property and set it to `auto`. This will center the element horizontally within its parent container.
 
 Here is an example of how you can do this:
 
@@ -331,7 +309,7 @@ Here is an example of how you can do this:
 ```html
 <section>
   <div>
-    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
   </div>
 </section>
 ```
@@ -349,14 +327,15 @@ div {
 
 This will set the `width` property of the `div` to 500 pixels and we set the left and right margins to be equal by using `margin: 0 auto;`.
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
+
 </details>
 
 <details>
   <summary>How do I center align an HTML image element?</summary>
   <br>
 
-  There are a few ways you can center align an image element.
+There are a few ways you can center align an image element.
 
 ##### 1. Align an image using `text-align`
 
@@ -403,15 +382,16 @@ img {
 }
 ```
 
-This will center the image horizontally within the parent `section` element. The `display: block` property is used to make the image a *block-level* element, allowing the `margin: 0 auto` property to work. The `margin: 0 auto` property sets the left and right margins to be equal, centering the element within its parent container.
+This will center the image horizontally within the parent `section` element. The `display: block` property is used to make the image a _block-level_ element, allowing the `margin: 0 auto` property to work. The `margin: 0 auto` property sets the left and right margins to be equal, centering the element within its parent container.
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
+
 </details>
 
 <details>
   <summary>How can I center align elements within a Flexbox container?</summary>
   <br>
-To center align elements within a Flexbox parent container, you can use the `justify-content` property and set it to `center`. This will horizontally center the elements within the Flexbox container. 
+To center align elements within a Flexbox parent container, you can use the `justify-content` property and set it to `center`. This will horizontally center the elements within the Flexbox container.
 
 **Example:**
 
@@ -420,10 +400,7 @@ To center align elements within a Flexbox parent container, you can use the `jus
   display: flex;
   justify-content: center; /* Center elements horizontally */
 }
-
 ```
-
-
 
 You can also use the `align-items` property and set it to `center` to vertically center align the elements within the Flexbox container.
 
@@ -432,29 +409,30 @@ Example:
 ```css
 .container {
   display: flex;
-  justify-content: center;  /* Center elements horizontally */
-  align-items: center;      /* Center elements vertically */
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
 }
 ```
-<br>
 
+<br>
 
 For more information and an interactive Flexbox guide, check: [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox)
 
 <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
+
 </details>
 
 <details>
   <summary>How can I change the header from having 1 column to having 2 columns using Flexbox?</summary>
   <br>
 
-  To change the header of an HTML page from having one column to having two columns using Flexbox, you should do the following in your CSS:
+To change the header of an HTML page from having one column to having two columns using Flexbox, you should do the following in your CSS:
 
-1.  Use the `display` property and set it to `flex`. 
-2.  Add the `flex-direction` property and set it to `column` to arrange the elements in a column. 
-3.  Add the `justify-content` property to align the elements horizontally 
+1.  Use the `display` property and set it to `flex`.
+2.  Add the `flex-direction` property and set it to `column` to arrange the elements in a column.
+3.  Add the `justify-content` property to align the elements horizontally
 4.  Use the `align-items` property to align them vertically.
 
 ```css
@@ -483,16 +461,15 @@ To make the header responsive and change it to a two column layout on screens th
 
 The header will maintain a single-column layout on smaller screens, but on screens larger than 800 pixels wide, it will change to a two-column layout.
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
+
 </details>
 
 <details>
   <summary>Why are my media query styles not displaying properly on my browser?</summary>
   <br>
 
-  When using media queries to create a responsive layout, it is recommended to start with the default styles for mobile (smaller) screens and then use media queries at the end of your stylesheet to apply styles for each increasing viewport size.
-
-
+When using media queries to create a responsive layout, it is recommended to start with the default styles for mobile (smaller) screens and then use media queries at the end of your stylesheet to apply styles for each increasing viewport size.
 
 There are a few possible reasons why your media query styles may not be properly displayed on your browser.
 
@@ -501,36 +478,37 @@ There are a few possible reasons why your media query styles may not be properly
 3. Ensure you have the correct syntax in your media query. The correct syntax is `@media (expression) {...}`.
 4. Make sure that you are using the correct media query expression. For example, if you are trying to target screens that are wider than 800 pixels, you should use the `min-width` in your expression, like this: `@media (min-width: 800px) {...}.`
 
-  For more information on CSS media queries, check: [MDN: Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
+For more information on CSS media queries, check: [MDN: Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
+
 </details>
-
 
 <details>
   <summary>I am unable to push changes to the repository. What should I do?</summary>
   <br>
 
-There are a couple of possible reasons why you may be unable to *push* changes to a Git repository:
+There are a couple of possible reasons why you may be unable to _push_ changes to a Git repository:
 
 1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
-  ```bash
-  git add .
-  git commit -m "Your commit message"
-  git push
-  ```
-2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
-To check which remote repository you have cloned, run the following terminal command from the project folder:
-  ```bash
-  git remote -v
-  ```
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push
+```
+
+2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a _Fork_ first, you do not have write access to the repository.
+   To check which remote repository you have cloned, run the following terminal command from the project folder:
+
+```bash
+git remote -v
+```
+
 If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first and then clone your fork to your local machine to be able to push the changes.
 
 **Note**: You should make a copy of your local code to avoid losing it in the process.
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
-
-
-
